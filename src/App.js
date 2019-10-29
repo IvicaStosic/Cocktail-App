@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "./Components/Logo/Logo";
 import NavBar from "./Components/Nav/NavBar";
-import "./App.css";
+import "./styles/style.css";
 
 import { CocktailProvider } from "./Components/CocktailProvider/CocktailContext";
 

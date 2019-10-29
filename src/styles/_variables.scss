@@ -1,0 +1,12 @@
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin imgRound($height, $width, $radius) {
+  hight: $height;
+  width: $width;
+  border-radius: $radius;
+}

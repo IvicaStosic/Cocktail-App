@@ -2,6 +2,8 @@ import React, { useState, useContext } from "react";
 import RenderOne from "../RenderOne/RenderOne";
 import { CocktailContext } from "../CocktailProvider/CocktailContext";
 
+import "../../styles/style.css";
+
 const AllCocktails = props => {
   const { A, B } = useContext(CocktailContext);
   const [a, setA] = A;
@@ -10,25 +12,32 @@ const AllCocktails = props => {
   console.log(props);
   return (
     <div>
-      <a href="">A</a>
-      {a.map(drink => (
-        <RenderOne
-          key={drink.idDrink}
-          name={drink.strDrink}
-          type={drink.strAlcoholic}
-          image={drink.strDrinkThumb}
-        />
-      ))}
+      <div className="letterGroup">
+        <a href="">A</a>
+
+        <div className="allCocktails">
+          {a.map(drink => (
+            <RenderOne
+              key={drink.idDrink}
+              name={drink.strDrink}
+              type={drink.strAlcoholic}
+              image={drink.strDrinkThumb}
+            />
+          ))}
+        </div>
+      </div>
 
       <a href="">B</a>
-      {b.map(drink => (
-        <RenderOne
-          key={drink.idDrink}
-          name={drink.strDrink}
-          type={drink.strAlcoholic}
-          image={drink.strDrinkThumb}
-        />
-      ))}
+      <div className="allCocktails">
+        {b.map(drink => (
+          <RenderOne
+            key={drink.idDrink}
+            name={drink.strDrink}
+            type={drink.strAlcoholic}
+            image={drink.strDrinkThumb}
+          />
+        ))}
+      </div>
     </div>
   );
 };

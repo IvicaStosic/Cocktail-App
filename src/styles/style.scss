@@ -1,0 +1,69 @@
+@import "./_variables";
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.letterGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-sizing: border-box;
+  border: 2px solid yellow;
+  padding: 5px;
+}
+
+.allCocktails {
+  @include flexCenter(row);
+  justify-content: start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  border: 2px solid green;
+  background: rgba($color: #e2b7b7, $alpha: 1);
+}
+
+.renderOne {
+  @include flexCenter(column);
+  box-sizing: border-box;
+  border: 2px solid blue;
+  border-radius: 5px;
+  height: 200px;
+  width: 100px;
+  justify-content: space-around;
+  margin: 10px;
+  &:hover {
+    background: rgba($color: #683737, $alpha: 1);
+  }
+}
+
+.imgSmall {
+  @include imgRound(80px, 80px, 40px);
+}
+
+.imgLarge {
+  @include imgRound(150px, 150px, 25px);
+}
