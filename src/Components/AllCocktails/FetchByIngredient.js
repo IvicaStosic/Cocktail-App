@@ -1,33 +1,32 @@
 import React, { useState, useEffect } from "react";
-import RenderOneDetailed from "../RenderOne/RnderOneDetailed";
-import "../../styles/style.css";
+import RenderOne from "../RenderOne/RenderOne";
+import { async } from "q";
 
-const RandomCocktail = () => {
+const FetchByIngredient = () => {
+  const [ingredient, setIngredient] = useState([]);
+
   useEffect(() => {
-    fetchRandom();
+    FetchByIngredientList();
   }, []);
 
-  const [random, setRandom] = useState([]);
+  let ingredientChoice = ["Gin"];
 
-  const fetchRandom = async () => {
+  const FetchByIngredientList = async () => {
     const response = await fetch(
-      "https://www.thecocktaildb.com/api/json/v1/1/random.php"
+      "https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Gin"
     );
-    const random = await response.json();
-    console.log(random.drinks);
-    setRandom(random.drinks);
+    console.log("test glass");
+    const data = await response.json();
+    console.log(data);
+    setIngredient(data.drinks);
   };
 
   return (
     <div>
-      <div>
-        <button className="searchButtonTop" onClick={fetchRandom}>
-          Another one maybe?
-        </button>
-      </div>
-      {random.map(drink => (
-        <div key="drink.idDrink">
-          <RenderOneDetailed
+      {ingredient.map(drink => (
+        <div>
+          <RenderOne
+            key={drink.idDrink}
             name={drink.strDrink}
             type={drink.strAlcoholic}
             image={drink.strDrinkThumb}
@@ -66,13 +65,8 @@ const RandomCocktail = () => {
           />
         </div>
       ))}
-      <div>
-        <button className="searchButtonBottom" onClick={fetchRandom}>
-          Another one maybe?
-        </button>
-      </div>
     </div>
   );
 };
 
-export default RandomCocktail;
+export default FetchByIngredient;

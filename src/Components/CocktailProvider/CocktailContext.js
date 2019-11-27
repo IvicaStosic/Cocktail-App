@@ -70,7 +70,7 @@ export const CocktailProvider = props => {
         );
         data.push(await response.json());
 
-        console.log(data);
+        //console.log(data);
       }
       //console.log(data.length);
       setA(data[0].drinks);
@@ -100,7 +100,7 @@ export const CocktailProvider = props => {
       setY(data[24].drinks);
       setZ(data[25].drinks);
     };
-    console.log("test");
+    //console.log("test");
     getCoktails();
   }, []);
 
@@ -114,7 +114,36 @@ export const CocktailProvider = props => {
     [a, b]
   );*/
   return (
-    <CocktailContext.Provider value={{ A: [a, setA], B: [b, setB] }}>
+    <CocktailContext.Provider
+      value={{
+        A: [a, setA],
+        B: [b, setB],
+        C: [c, setC],
+        D: [d, setD],
+        E: [e, setE],
+        F: [f, setF],
+        G: [g, setG],
+        H: [h, setH],
+        I: [i, setI],
+        J: [j, setJ],
+        K: [k, setK],
+        L: [l, setL],
+        M: [m, setM],
+        N: [n, setN],
+        O: [o, setO],
+        P: [p, setP],
+        Q: [q, setQ],
+        R: [r, setR],
+        S: [s, setS],
+        T: [t, setT],
+        U: [u, setU],
+        V: [v, setV],
+        W: [w, setW],
+        X: [x, setX],
+        Y: [y, setY],
+        Z: [z, setZ]
+      }}
+    >
       {props.children}
     </CocktailContext.Provider>
   );

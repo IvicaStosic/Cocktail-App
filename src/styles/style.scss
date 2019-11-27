@@ -10,60 +10,175 @@
 
 .App {
   text-align: center;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100vh;
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    width: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    position: relative;
+    .logo {
+      border: 2px solid yellow;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+    .main {
+      position: absolute;
+      top: 200px;
+      border: 2px solid green;
+      width: 100vh;
+    }
+  }
 }
 
 .App-link {
   color: #09d3ac;
 }
 
-.letterGroup {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  box-sizing: border-box;
-  border: 2px solid yellow;
-  padding: 5px;
-}
-
-.allCocktails {
-  @include flexCenter(row);
-  justify-content: start;
-  align-content: flex-start;
-  flex-wrap: wrap;
-  border: 2px solid green;
-  background: rgba($color: #e2b7b7, $alpha: 1);
-}
-
-.renderOne {
-  @include flexCenter(column);
-  box-sizing: border-box;
-  border: 2px solid blue;
-  border-radius: 5px;
-  height: 200px;
-  width: 100px;
-  justify-content: space-around;
-  margin: 10px;
-  &:hover {
-    background: rgba($color: #683737, $alpha: 1);
+.allCocktailsPage {
+  .pageLinks {
+    position: sticky;
+    top: 0;
+    background: #282c34;
+    padding-bottom: 0px;
+    @include flexCenter(row);
+    a {
+      padding: 10px;
+    }
+  }
+  .letterGroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-sizing: border-box;
+    border: 2px solid yellow;
+    padding: 5px;
+    .allCocktails {
+      @include flexCenter(row);
+      justify-content: start;
+      align-content: flex-start;
+      flex-wrap: wrap;
+      border: 2px solid green;
+      background: rgba($color: #e2b7b7, $alpha: 1);
+    }
   }
 }
 
-.imgSmall {
-  @include imgRound(80px, 80px, 40px);
+.popup {
+  border: 2px solid blue;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  .popup\_inner {
+    border: 2px solid blue;
+    position: absolute;
+    width: 80vh;
+    height: 80%;
+    left: 25%;
+    right: 25%;
+    top: 25%;
+    bottom: 25%;
+    margin: auto;
+    border-radius: 20px;
+    background: white;
+  }
 }
 
-.imgLarge {
-  @include imgRound(150px, 150px, 25px);
+.renderOneDetailed {
+  @include flexCenter(column);
+  width: 90vh;
+  border: 2px solid grey;
+  border-radius: 20px;
+  background: white;
+  h4 {
+    color: black;
+  }
+  p {
+    color: black;
+  }
+  .imgLarge {
+    @include imgRound(150px, 150px, 25px);
+  }
+  table {
+    width: 80vh;
+    border: 2px solid black;
+
+    border-radius: 20px;
+    thead {
+      height: 100px;
+      background: grey;
+      border: 2px solid yellow;
+    }
+    tbody {
+      background-color: white;
+      border: 2px solid black;
+      color: black;
+      td {
+        width: 50%;
+      }
+    }
+    tfoot {
+      background: grey;
+      td {
+      }
+    }
+  }
+}
+
+.renderOne {
+  @include flexCenter(row);
+  box-sizing: border-box;
+  border: 2px solid blue;
+  border-radius: 5px;
+  height: 100px;
+  width: 300px;
+  justify-content: space-around;
+  margin: 10px;
+  .imgSmall {
+    @include imgRound(80px, 80px, 40px);
+  }
+  &:hover {
+    background: rgba($color: #683737, $alpha: 1);
+    cursor: context-menu;
+  }
+}
+
+.navLinks {
+  @include flexCenter(row);
+  width: 100%;
+  justify-content: space-around;
+  list-style: none;
+  padding: 5px;
+  margin: 5px auto;
+  border: 2px solid blue;
+  width: 50%;
+  position: absolute;
+  top: -200px;
+  right: 0px;
+  height: 200px;
+  a {
+  }
+}
+
+.searchButtonTop {
+  @include searchButton;
+  border-radius: 25px 25px 0 0;
+}
+
+.searchButtonBottom {
+  @include searchButton;
+  border-radius: 0 0 25px 25px;
 }

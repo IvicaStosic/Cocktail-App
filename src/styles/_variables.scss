@@ -10,3 +10,12 @@
   width: $width;
   border-radius: $radius;
 }
+
+@mixin searchButton {
+  height: 50px;
+  width: 300px;
+  background: #683737c0;
+  &:hover {
+    cursor: pointer;
+  }
+}

@@ -10,8 +10,12 @@ function App() {
     <div className="App">
       <CocktailProvider>
         <header className="App-header">
-          <Logo />
-          <NavBar />
+          <div className="logo">
+            <Logo />
+          </div>
+          <div className="main">
+            <NavBar />
+          </div>
         </header>
       </CocktailProvider>
     </div>
