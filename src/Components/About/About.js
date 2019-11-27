@@ -8,7 +8,6 @@ function About() {
   return (
     <div>
       <p>About</p>
-      <FetchById />
     </div>
   );
 }
@@ -18,4 +17,5 @@ export default About;
 /*<FetchByIngredient />
       <FetchByType />
       <FetchByGlass />
+      <FetchById />
       */

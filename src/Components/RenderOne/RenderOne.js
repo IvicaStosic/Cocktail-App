@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import Popup from "../AllCocktails/Popup";
+import { Link } from "react-router-dom";
 import "../../styles/style.css";
 
 const RenderOne = ({
+  key,
   name,
   type,
   image,
@@ -48,7 +50,9 @@ const RenderOne = ({
   return (
     <div className="renderOne" onClick={togglePopup}>
       <div className="photo">
-        <img src={image} alt="not found" className="imgSmall"></img>
+        <Link to={`/all/1/${key}`}>
+          <img src={image} alt="not found" className="imgSmall"></img>
+        </Link>
       </div>
       <div className="shortDescription">
         <h4>{name}</h4>
@@ -58,6 +62,7 @@ const RenderOne = ({
       {popup ? (
         <Popup
           closePopup={togglePopup}
+          key={key}
           name={name}
           type={type}
           image={image}

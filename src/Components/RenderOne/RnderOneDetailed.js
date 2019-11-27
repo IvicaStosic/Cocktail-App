@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "../../styles/style.css";
+import FetchByGlass from "../AllCocktails/FetchByGlass";
 
 const RenderOneDetailed = ({
+  key,
   name,
   type,
   image,
@@ -41,7 +44,13 @@ const RenderOneDetailed = ({
   return (
     <div className="renderOneDetailed">
       <h4>{name}</h4>
-      <p>({type})</p>
+      <p>
+        (
+        <Link to={`/all/2/${type}`} key="key">
+          {type}
+        </Link>
+        )
+      </p>
       <img src={image} alt="not found" className="imgLarge"></img>
       <table className="table">
         <thead className="thead">
@@ -52,7 +61,9 @@ const RenderOneDetailed = ({
         </thead>
         <tbody className="tbody">
           <tr>
-            <td>{ing1}</td>
+            <td>
+              <Link to={`/all/ing/${ing1}`}>{ing1}</Link>
+            </td>
             <td>{measure1}</td>
           </tr>
           <tr>
@@ -118,7 +129,12 @@ const RenderOneDetailed = ({
           </tr>
 
           <tr>
-            <td colSpan="2">Serve in {glass}</td>
+            <td colSpan="2">
+              Serve in{" "}
+              <Link to={`/all/3/${glass}`} key={key}>
+                {glass}
+              </Link>
+            </td>
           </tr>
         </tfoot>
       </table>

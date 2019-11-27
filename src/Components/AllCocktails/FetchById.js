@@ -1,21 +1,18 @@
 import React, { useState, useEffect } from "react";
 import RenderOne from "../RenderOne/RenderOne";
-import { async } from "q";
+import RenderOneDetailed from "../RenderOne/RnderOneDetailed";
 
-const FetchById = () => {
+const FetchById = ({ match }) => {
   const [id, setId] = useState([]);
 
   useEffect(() => {
     fetchById();
   }, []);
 
-  let idChoice = ["Gin"];
-
   const fetchById = async () => {
     const response = await fetch(
-      "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=11007"
+      `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${match.params.id}`
     );
-    console.log("test glass");
     const data = await response.json();
     console.log(data);
     setId(data.drinks);
@@ -25,7 +22,7 @@ const FetchById = () => {
     <div>
       {id.map(drink => (
         <div>
-          <RenderOne
+          <RenderOneDetailed
             key={drink.idDrink}
             name={drink.strDrink}
             type={drink.strAlcoholic}
