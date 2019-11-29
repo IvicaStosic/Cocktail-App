@@ -25,8 +25,8 @@ const FetchByType = ({ match }) => {
         <div>
           <RenderOne
             key={drink.idDrink}
+            id={drink.idDrink}
             name={drink.strDrink}
-            type={drink.strAlcoholic}
             image={drink.strDrinkThumb}
           />
         </div>

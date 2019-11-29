@@ -102,6 +102,7 @@ const AllCocktails = props => {
             ? a.map(drink => (
                 <RenderOne
                   key={drink.idDrink}
+                  id={drink.idDrink}
                   name={drink.strDrink}
                   type={drink.strAlcoholic}
                   image={drink.strDrinkThumb}

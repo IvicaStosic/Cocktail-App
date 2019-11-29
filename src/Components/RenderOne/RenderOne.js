@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "../../styles/style.css";
 
 const RenderOne = ({
-  key,
+  id,
   name,
   type,
   image,
@@ -50,19 +50,19 @@ const RenderOne = ({
   return (
     <div className="renderOne" onClick={togglePopup}>
       <div className="photo">
-        <Link to={`/all/1/${key}`}>
+        <Link to={`/all/1/${id}`}>
           <img src={image} alt="not found" className="imgSmall"></img>
         </Link>
       </div>
       <div className="shortDescription">
         <h4>{name}</h4>
-        <p>({type})</p>
       </div>
 
       {popup ? (
         <Popup
           closePopup={togglePopup}
-          key={key}
+          key={id}
+          id={id}
           name={name}
           type={type}
           image={image}

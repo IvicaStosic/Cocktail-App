@@ -9,8 +9,10 @@ const FetchByIngredient = ({ match }) => {
   }, []);
 
   const FetchByIngredientList = async () => {
+    /*let ing = [];
+    match.params.ing1 ? ing.push(match.params.ing1.split(" ").join("_")) : null;*/
     let ingredientChoice = match.params.ing1.split(" ").join("_");
-
+    //console.log(ing);
     const response = await fetch(
       `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${ingredientChoice}`
     );
@@ -25,6 +27,7 @@ const FetchByIngredient = ({ match }) => {
         <div>
           <RenderOne
             key={drink.idDrink}
+            id={drink.idDrink}
             name={drink.strDrink}
             type={drink.strAlcoholic}
             image={drink.strDrinkThumb}

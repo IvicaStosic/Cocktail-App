@@ -13,6 +13,7 @@ const FetchById = ({ match }) => {
     const response = await fetch(
       `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${match.params.id}`
     );
+    console.log({ match });
     const data = await response.json();
     console.log(data);
     setId(data.drinks);
@@ -24,6 +25,7 @@ const FetchById = ({ match }) => {
         <div>
           <RenderOneDetailed
             key={drink.idDrink}
+            id={drink.idDrink}
             name={drink.strDrink}
             type={drink.strAlcoholic}
             image={drink.strDrinkThumb}

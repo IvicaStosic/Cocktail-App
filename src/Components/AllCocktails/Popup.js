@@ -7,7 +7,8 @@ const Popup = props => {
     <div className="popup">
       <div className="popup\_inner">
         <RenderOneDetailed
-          key={props.key}
+          key={props.id}
+          id={props.id}
           name={props.name}
           type={props.type}
           image={props.image}

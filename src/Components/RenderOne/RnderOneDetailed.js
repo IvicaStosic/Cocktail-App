@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../../styles/style.css";
-import FetchByGlass from "../AllCocktails/FetchByGlass";
 
 const RenderOneDetailed = ({
-  key,
+  id,
   name,
   type,
   image,
@@ -46,7 +45,7 @@ const RenderOneDetailed = ({
       <h4>{name}</h4>
       <p>
         (
-        <Link to={`/all/2/${type}`} key="key">
+        <Link to={`/all/2/${type}`} key="id">
           {type}
         </Link>
         )
@@ -131,7 +130,7 @@ const RenderOneDetailed = ({
           <tr>
             <td colSpan="2">
               Serve in{" "}
-              <Link to={`/all/3/${glass}`} key={key}>
+              <Link to={`/all/3/${glass}`} key={id}>
                 {glass}
               </Link>
             </td>
