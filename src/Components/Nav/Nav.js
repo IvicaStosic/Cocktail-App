@@ -7,16 +7,16 @@ function Nav() {
   return (
     <div>
       <ul className="navLinks">
-        <Link to="/">
+        <Link to="/" className="link">
           <li>Home</li>
         </Link>
-        <Link to="/all">
+        <Link to="/all" className="link">
           <li>All Cocktails</li>
         </Link>
-        <Link to="/random">
+        <Link to="/random" className="link">
           <li>Random Cocktail</li>
         </Link>
-        <Link to="/about">
+        <Link to="/about" className="link">
           <li>About</li>
         </Link>
       </ul>

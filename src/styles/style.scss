@@ -10,29 +10,72 @@
 
 .App {
   text-align: center;
-  width: 100vh;
-  .App-header {
-    background-color: #282c34;
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  position: relative;
+  min-width: 100vh;
+  height: 200px;
+  font-family: "verdana", "serif", "sans-serif";
+  .logo {
+    border: 2px solid yellow;
+    border: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100px;
+    width: 25%;
+    @include logo;
+  }
+  .main {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 100px;
+    border: 2px solid green;
+    border: none;
     min-height: 100vh;
-    width: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
+    background-image: linear-gradient(to top, #9be15d 0%, #00e3ae 100%);
+  }
+}
+
+.navLinks {
+  @include flexCenter(row);
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0px;
+  margin: 0 auto;
+  border: 2px solid blue;
+  border: none;
+  width: 75%;
+  position: absolute;
+  top: -100px;
+  right: 0px;
+  height: 100px;
+  font-size: 1.5em;
+  .link {
     color: white;
-    position: relative;
-    .logo {
-      border: 2px solid yellow;
-      position: absolute;
-      top: 0px;
-      left: 0px;
+    &:hover {
+      background-color: white;
+      color: black;
+      border-radius: 7px;
     }
-    .main {
-      position: absolute;
-      top: 200px;
-      border: 2px solid green;
-      width: 100vh;
+    &:active,
+    &:focus,
+    &:visited,
+    &:link {
+      text-decoration: none;
+    }
+    li {
+      &:active {
+        color: yellowgreen;
+      }
     }
   }
 }
@@ -49,7 +92,21 @@
     padding-bottom: 0px;
     @include flexCenter(row);
     a {
+      font-weight: 500;
       padding: 10px;
+      color: white;
+      &:active,
+      &:focus,
+      &:visited,
+      &:link {
+        text-decoration: none;
+      }
+      &:focus {
+        color: blue;
+      }
+      &:hover {
+        color: rgb(100, 99, 143);
+      }
     }
   }
   .letterGroup {
@@ -59,14 +116,15 @@
     align-items: flex-start;
     box-sizing: border-box;
     border: 2px solid yellow;
+    border: none;
     padding: 5px;
     .allCocktails {
       @include flexCenter(row);
       justify-content: start;
-      align-content: flex-start;
+      align-items: center;
       flex-wrap: wrap;
       border: 2px solid green;
-      background: rgba($color: #e2b7b7, $alpha: 1);
+      border: none;
     }
   }
 }
@@ -94,6 +152,9 @@
     margin: auto;
     border-radius: 20px;
     background: white;
+    button {
+      padding: 5px;
+    }
   }
 }
 
@@ -132,8 +193,6 @@
     }
     tfoot {
       background: grey;
-      td {
-      }
     }
   }
 }
@@ -141,35 +200,37 @@
 .renderOne {
   @include flexCenter(row);
   box-sizing: border-box;
-  border: 2px solid blue;
-  border-radius: 5px;
+  border: 3px solid black;
+  box-shadow: 0px 5px 20px black;
+  border-radius: 7px;
   height: 100px;
   width: 300px;
   justify-content: space-around;
   margin: 10px;
+  background: white;
   .imgSmall {
     @include imgRound(80px, 80px, 40px);
   }
   &:hover {
-    background: rgba($color: #683737, $alpha: 1);
+    background: rgba($color: #858585, $alpha: 1);
     cursor: context-menu;
   }
 }
 
-.navLinks {
-  @include flexCenter(row);
+.renderFetchChoice {
+  @include flexCenter(column);
+  flex-wrap: wrap;
   width: 100%;
   justify-content: space-around;
-  list-style: none;
-  padding: 5px;
-  margin: 5px auto;
-  border: 2px solid blue;
-  width: 50%;
-  position: absolute;
-  top: -200px;
-  right: 0px;
-  height: 200px;
-  a {
+  .fetchChoice {
+    color: black;
+  }
+
+  .fetchChoiceList {
+    @include flexCenter(row);
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
   }
 }
 

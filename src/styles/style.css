@@ -9,13 +9,7 @@
 
 .App {
   text-align: center;
-  width: 100vh;
-}
-
-.App .App-header {
   background-color: #282c34;
-  min-height: 100vh;
-  width: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,22 +24,201 @@
       -ms-flex-pack: center;
           justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
   position: relative;
+  min-width: 100vh;
+  height: 200px;
+  font-family: "verdana", "serif", "sans-serif";
 }
 
-.App .App-header .logo {
+.App .logo {
   border: 2px solid yellow;
+  border: none;
   position: absolute;
   top: 0px;
   left: 0px;
+  height: 100px;
+  width: 25%;
 }
 
-.App .App-header .main {
+.App .logo #logo {
   position: absolute;
-  top: 200px;
+  left: 15px;
+  top: 15px;
+  bottom: 15px;
+  -webkit-animation: fill 0.5s ease forwards 5s;
+          animation: fill 0.5s ease forwards 5s;
+  height: 10vh;
+  width: 90%;
+}
+
+.App .logo #logo path:nth-child(2) {
+  stroke-dasharray: 532;
+  stroke-dashoffset: 532;
+  -webkit-animation: line-anim 2s ease forwards;
+          animation: line-anim 2s ease forwards;
+}
+
+.App .logo #logo path:nth-child(3) {
+  stroke-dasharray: 366;
+  stroke-dashoffset: 366;
+  -webkit-animation: line-anim 2s ease forwards 0.3s;
+          animation: line-anim 2s ease forwards 0.3s;
+}
+
+.App .logo #logo path:nth-child(4) {
+  stroke-dasharray: 330;
+  stroke-dashoffset: 330;
+  -webkit-animation: line-anim 2s ease forwards 0.6s;
+          animation: line-anim 2s ease forwards 0.6s;
+}
+
+.App .logo #logo path:nth-child(5) {
+  stroke-dasharray: 530;
+  stroke-dashoffset: 530;
+  -webkit-animation: line-anim 2s ease forwards 0.9s;
+          animation: line-anim 2s ease forwards 0.9s;
+}
+
+.App .logo #logo path:nth-child(6) {
+  stroke-dasharray: 426;
+  stroke-dashoffset: 426;
+  -webkit-animation: line-anim 2s ease forwards 1.2s;
+          animation: line-anim 2s ease forwards 1.2s;
+}
+
+.App .logo #logo path:nth-child(7) {
+  stroke-dasharray: 405;
+  stroke-dashoffset: 405;
+  -webkit-animation: line-anim 2s ease forwards 1.5s;
+          animation: line-anim 2s ease forwards 1.5s;
+}
+
+.App .logo #logo path:nth-child(8) {
+  stroke-dasharray: 273;
+  stroke-dashoffset: 273;
+  -webkit-animation: line-anim 2s ease forwards 1.8s;
+          animation: line-anim 2s ease forwards 1.8s;
+}
+
+.App .logo #logo path:nth-child(9) {
+  stroke-dasharray: 227;
+  stroke-dashoffset: 227;
+  -webkit-animation: line-anim 2s ease forwards 2.1s;
+          animation: line-anim 2s ease forwards 2.1s;
+}
+
+.App .logo #logo path:nth-child(10) {
+  stroke-dasharray: 691;
+  stroke-dashoffset: 691;
+  -webkit-animation: line-anim 2s ease forwards 2.4s;
+          animation: line-anim 2s ease forwards 2.4s;
+}
+
+.App .logo #logo path:nth-child(11) {
+  stroke-dasharray: 534;
+  stroke-dashoffset: 534;
+  -webkit-animation: line-anim 2s ease forwards 2.7s;
+          animation: line-anim 2s ease forwards 2.7s;
+}
+
+.App .logo #logo path:nth-child(12) {
+  stroke-dasharray: 534;
+  stroke-dashoffset: 534;
+  -webkit-animation: line-anim 2s ease forwards 3s;
+          animation: line-anim 2s ease forwards 3s;
+}
+
+@-webkit-keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
+}
+
+.App .main {
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 100px;
   border: 2px solid green;
-  width: 100vh;
+  border: none;
+  min-height: 100vh;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#9be15d), to(#00e3ae));
+  background-image: linear-gradient(to top, #9be15d 0%, #00e3ae 100%);
+}
+
+.navLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+  padding: 0px;
+  margin: 0 auto;
+  border: 2px solid blue;
+  border: none;
+  width: 75%;
+  position: absolute;
+  top: -100px;
+  right: 0px;
+  height: 100px;
+  font-size: 1.5em;
+}
+
+.navLinks .link {
+  color: white;
+}
+
+.navLinks .link:hover {
+  background-color: white;
+  color: black;
+  border-radius: 7px;
+}
+
+.navLinks .link:active, .navLinks .link:focus, .navLinks .link:visited, .navLinks .link:link {
+  text-decoration: none;
+}
+
+.navLinks .link li:active {
+  color: yellowgreen;
 }
 
 .App-link {
@@ -74,7 +247,21 @@
 }
 
 .allCocktailsPage .pageLinks a {
+  font-weight: 500;
   padding: 10px;
+  color: white;
+}
+
+.allCocktailsPage .pageLinks a:active, .allCocktailsPage .pageLinks a:focus, .allCocktailsPage .pageLinks a:visited, .allCocktailsPage .pageLinks a:link {
+  text-decoration: none;
+}
+
+.allCocktailsPage .pageLinks a:focus {
+  color: blue;
+}
+
+.allCocktailsPage .pageLinks a:hover {
+  color: #64638f;
 }
 
 .allCocktailsPage .letterGroup {
@@ -94,6 +281,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 2px solid yellow;
+  border: none;
   padding: 5px;
 }
 
@@ -114,12 +302,11 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
+  align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   border: 2px solid green;
-  background: #e2b7b7;
+  border: none;
 }
 
 .popup {
@@ -147,6 +334,10 @@
   margin: auto;
   border-radius: 20px;
   background: white;
+}
+
+.popup .popup\_inner button {
+  padding: 5px;
 }
 
 .renderOneDetailed {
@@ -225,13 +416,16 @@
           flex-direction: row;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 2px solid blue;
-  border-radius: 5px;
+  border: 3px solid black;
+  -webkit-box-shadow: 0px 5px 20px black;
+          box-shadow: 0px 5px 20px black;
+  border-radius: 7px;
   height: 100px;
   width: 300px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin: 10px;
+  background: white;
 }
 
 .renderOne .imgSmall {
@@ -241,11 +435,36 @@
 }
 
 .renderOne:hover {
-  background: #683737;
+  background: #858585;
   cursor: context-menu;
 }
 
-.navLinks {
+.renderFetchChoice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.renderFetchChoice .fetchChoice {
+  color: black;
+}
+
+.renderFetchChoice .fetchChoiceList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -259,18 +478,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  list-style: none;
-  padding: 5px;
-  margin: 5px auto;
-  border: 2px solid blue;
-  width: 50%;
-  position: absolute;
-  top: -200px;
-  right: 0px;
-  height: 200px;
 }
 
 .searchButtonTop {

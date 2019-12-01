@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import RenderOne from "../RenderOne/RenderOne";
+import "../../styles/style.css";
 
 const FetchByGlass = ({ match }) => {
   const [glass, setGlass] = useState([]);
@@ -20,17 +21,21 @@ const FetchByGlass = ({ match }) => {
   };
 
   return (
-    <div>
-      {glass.map(drink => (
-        <div>
-          <RenderOne
-            key={drink.idDrink}
-            id={drink.idDrink}
-            name={drink.strDrink}
-            image={drink.strDrinkThumb}
-          />
-        </div>
-      ))}
+    <div className="renderFetchChoice">
+      <div>
+        <h1 className="fetchChoice">{match.params.glass}</h1>
+      </div>
+      <div className="fetchChoiceList">
+        {glass.map(drink => (
+          <div key={drink.idDrink}>
+            <RenderOne
+              id={drink.idDrink}
+              name={drink.strDrink}
+              image={drink.strDrinkThumb}
+            />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

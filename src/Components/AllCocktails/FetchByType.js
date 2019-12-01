@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import RenderOne from "../RenderOne/RenderOne";
+import "../../styles/style.css";
 
 const FetchByType = ({ match }) => {
   const [type, setType] = useState([]);
@@ -13,24 +14,26 @@ const FetchByType = ({ match }) => {
     const response = await fetch(
       `https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=${typeChoice}`
     );
-    console.log("test glass");
     const data = await response.json();
-    console.log(data);
     setType(data.drinks);
   };
 
   return (
-    <div>
-      {type.map(drink => (
-        <div>
-          <RenderOne
-            key={drink.idDrink}
-            id={drink.idDrink}
-            name={drink.strDrink}
-            image={drink.strDrinkThumb}
-          />
-        </div>
-      ))}
+    <div className="renderFetchChoice">
+      <div>
+        <h1 className="fetchChoice">{match.params.type}</h1>
+      </div>
+      <div className="fetchChoiceList">
+        {type.map(drink => (
+          <div key={drink.idDrink}>
+            <RenderOne
+              id={drink.idDrink}
+              name={drink.strDrink}
+              image={drink.strDrinkThumb}
+            />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

@@ -9,14 +9,12 @@ function App() {
   return (
     <div className="App">
       <CocktailProvider>
-        <header className="App-header">
-          <div className="logo">
-            <Logo />
-          </div>
-          <div className="main">
-            <NavBar />
-          </div>
-        </header>
+        <div className="logo">
+          <Logo />
+        </div>
+        <div className="main">
+          <NavBar />
+        </div>
       </CocktailProvider>
     </div>
   );

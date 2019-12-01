@@ -57,7 +57,6 @@ const RenderOne = ({
       <div className="shortDescription">
         <h4>{name}</h4>
       </div>
-
       {popup ? (
         <Popup
           closePopup={togglePopup}

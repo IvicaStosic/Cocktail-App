@@ -22,9 +22,8 @@ const FetchById = ({ match }) => {
   return (
     <div>
       {id.map(drink => (
-        <div>
+        <div key={drink.idDrink}>
           <RenderOneDetailed
-            key={drink.idDrink}
             id={drink.idDrink}
             name={drink.strDrink}
             type={drink.strAlcoholic}

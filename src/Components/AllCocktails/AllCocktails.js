@@ -152,6 +152,7 @@ const AllCocktails = props => {
             ? b.map(drink => (
                 <RenderOne
                   key={drink.idDrink}
+                  id={drink.idDrink}
                   name={drink.strDrink}
                   type={drink.strAlcoholic}
                   image={drink.strDrinkThumb}
@@ -201,6 +202,7 @@ const AllCocktails = props => {
             ? c.map(drink => (
                 <RenderOne
                   key={drink.idDrink}
+                  id={drink.idDrink}
                   name={drink.strDrink}
                   type={drink.strAlcoholic}
                   image={drink.strDrinkThumb}
@@ -250,6 +252,7 @@ const AllCocktails = props => {
             ? d.map(drink => (
                 <RenderOne
                   key={drink.idDrink}
+                  id={drink.idDrink}
                   name={drink.strDrink}
                   type={drink.strAlcoholic}
                   image={drink.strDrinkThumb}
@@ -299,6 +302,7 @@ const AllCocktails = props => {
             ? e.map(drink => (
                 <RenderOne
                   key={drink.idDrink}
+                  id={drink.idDrink}
                   name={drink.strDrink}
                   type={drink.strAlcoholic}
                   image={drink.strDrinkThumb}
@@ -348,6 +352,7 @@ const AllCocktails = props => {
             ? f.map(drink => (
                 <RenderOne
                   key={drink.idDrink}
+                  id={drink.idDrink}
                   name={drink.strDrink}
                   type={drink.strAlcoholic}
                   image={drink.strDrinkThumb}
@@ -397,6 +402,7 @@ const AllCocktails = props => {
             ? g.map(drink => (
                 <RenderOne
                   key={drink.idDrink}
+                  id={drink.idDrink}
                   name={drink.strDrink}
                   type={drink.strAlcoholic}
                   image={drink.strDrinkThumb}
@@ -446,6 +452,7 @@ const AllCocktails = props => {
             ? h.map(drink => (
                 <RenderOne
                   key={drink.idDrink}
+                  id={drink.idDrink}
                   name={drink.strDrink}
                   type={drink.strAlcoholic}
                   image={drink.strDrinkThumb}
@@ -495,6 +502,7 @@ const AllCocktails = props => {
             ? i.map(drink => (
                 <RenderOne
                   key={drink.idDrink}
+                  id={drink.idDrink}
                   name={drink.strDrink}
                   type={drink.strAlcoholic}
                   image={drink.strDrinkThumb}
@@ -544,6 +552,7 @@ const AllCocktails = props => {
             ? j.map(drink => (
                 <RenderOne
                   key={drink.idDrink}
+                  id={drink.idDrink}
                   name={drink.strDrink}
                   type={drink.strAlcoholic}
                   image={drink.strDrinkThumb}
@@ -593,6 +602,7 @@ const AllCocktails = props => {
             ? k.map(drink => (
                 <RenderOne
                   key={drink.idDrink}
+                  id={drink.idDrink}
                   name={drink.strDrink}
                   type={drink.strAlcoholic}
                   image={drink.strDrinkThumb}
@@ -642,6 +652,7 @@ const AllCocktails = props => {
             ? l.map(drink => (
                 <RenderOne
                   key={drink.idDrink}
+                  id={drink.idDrink}
                   name={drink.strDrink}
                   type={drink.strAlcoholic}
                   image={drink.strDrinkThumb}
@@ -691,6 +702,7 @@ const AllCocktails = props => {
             ? m.map(drink => (
                 <RenderOne
                   key={drink.idDrink}
+                  id={drink.idDrink}
                   name={drink.strDrink}
                   type={drink.strAlcoholic}
                   image={drink.strDrinkThumb}
@@ -740,6 +752,7 @@ const AllCocktails = props => {
             ? n.map(drink => (
                 <RenderOne
                   key={drink.idDrink}
+                  id={drink.idDrink}
                   name={drink.strDrink}
                   type={drink.strAlcoholic}
                   image={drink.strDrinkThumb}
@@ -789,6 +802,7 @@ const AllCocktails = props => {
             ? o.map(drink => (
                 <RenderOne
                   key={drink.idDrink}
+                  id={drink.idDrink}
                   name={drink.strDrink}
                   type={drink.strAlcoholic}
                   image={drink.strDrinkThumb}
@@ -838,6 +852,7 @@ const AllCocktails = props => {
             ? p.map(drink => (
                 <RenderOne
                   key={drink.idDrink}
+                  id={drink.idDrink}
                   name={drink.strDrink}
                   type={drink.strAlcoholic}
                   image={drink.strDrinkThumb}
@@ -887,6 +902,7 @@ const AllCocktails = props => {
             ? q.map(drink => (
                 <RenderOne
                   key={drink.idDrink}
+                  id={drink.idDrink}
                   name={drink.strDrink}
                   type={drink.strAlcoholic}
                   image={drink.strDrinkThumb}
@@ -936,6 +952,7 @@ const AllCocktails = props => {
             ? r.map(drink => (
                 <RenderOne
                   key={drink.idDrink}
+                  id={drink.idDrink}
                   name={drink.strDrink}
                   type={drink.strAlcoholic}
                   image={drink.strDrinkThumb}
@@ -985,6 +1002,7 @@ const AllCocktails = props => {
             ? s.map(drink => (
                 <RenderOne
                   key={drink.idDrink}
+                  id={drink.idDrink}
                   name={drink.strDrink}
                   type={drink.strAlcoholic}
                   image={drink.strDrinkThumb}
@@ -1034,6 +1052,7 @@ const AllCocktails = props => {
             ? t.map(drink => (
                 <RenderOne
                   key={drink.idDrink}
+                  id={drink.idDrink}
                   name={drink.strDrink}
                   type={drink.strAlcoholic}
                   image={drink.strDrinkThumb}
@@ -1083,6 +1102,7 @@ const AllCocktails = props => {
             ? u.map(drink => (
                 <RenderOne
                   key={drink.idDrink}
+                  id={drink.idDrink}
                   name={drink.strDrink}
                   type={drink.strAlcoholic}
                   image={drink.strDrinkThumb}
@@ -1132,6 +1152,7 @@ const AllCocktails = props => {
             ? v.map(drink => (
                 <RenderOne
                   key={drink.idDrink}
+                  id={drink.idDrink}
                   name={drink.strDrink}
                   type={drink.strAlcoholic}
                   image={drink.strDrinkThumb}
@@ -1181,6 +1202,7 @@ const AllCocktails = props => {
             ? w.map(drink => (
                 <RenderOne
                   key={drink.idDrink}
+                  id={drink.idDrink}
                   name={drink.strDrink}
                   type={drink.strAlcoholic}
                   image={drink.strDrinkThumb}
@@ -1230,6 +1252,7 @@ const AllCocktails = props => {
             ? x.map(drink => (
                 <RenderOne
                   key={drink.idDrink}
+                  id={drink.idDrink}
                   name={drink.strDrink}
                   type={drink.strAlcoholic}
                   image={drink.strDrinkThumb}
@@ -1279,6 +1302,7 @@ const AllCocktails = props => {
             ? y.map(drink => (
                 <RenderOne
                   key={drink.idDrink}
+                  id={drink.idDrink}
                   name={drink.strDrink}
                   type={drink.strAlcoholic}
                   image={drink.strDrinkThumb}
@@ -1328,6 +1352,7 @@ const AllCocktails = props => {
             ? z.map(drink => (
                 <RenderOne
                   key={drink.idDrink}
+                  id={drink.idDrink}
                   name={drink.strDrink}
                   type={drink.strAlcoholic}
                   image={drink.strDrinkThumb}
