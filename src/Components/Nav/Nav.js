@@ -11,7 +11,7 @@ function Nav() {
           <li>Home</li>
         </Link>
         <Link to="/all" className="link">
-          <li>All Cocktails</li>
+          <li>A-Z Cocktails</li>
         </Link>
         <Link to="/random" className="link">
           <li>Random Cocktail</li>

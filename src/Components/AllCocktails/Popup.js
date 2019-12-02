@@ -1,5 +1,5 @@
 import React from "react";
-import RenderOneDetailed from "..//RenderOne/RnderOneDetailed";
+import RenderOneDetailed from "../RenderOne/RenderOneDetailed";
 import "../../styles/style.css";
 
 const Popup = props => {

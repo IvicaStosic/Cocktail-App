@@ -7,6 +7,51 @@
   margin: 0;
 }
 
+h1 {
+  font-family: "Covered By Your Grace";
+  font-size: 23px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 23px;
+}
+
+h3 {
+  font-family: "Covered By Your Grace";
+  font-size: 17px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 23px;
+}
+
+p {
+  font-family: "Covered By Your Grace";
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+blockquote {
+  font-family: "Covered By Your Grace";
+  font-size: 17px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+pre {
+  font-family: "Covered By Your Grace";
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 18.5714px;
+}
+
 .App {
   text-align: center;
   background-color: #282c34;
@@ -23,12 +68,12 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: black;
   position: relative;
   min-width: 100vh;
   height: 200px;
-  font-family: "verdana", "serif", "sans-serif";
+  font-family: "Covered By Your Grace", "serif", "sans-serif";
+  font-optical-sizing: auto;
 }
 
 .App .logo {
@@ -37,7 +82,7 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  height: 100px;
+  height: 10vh;
   width: 25%;
 }
 
@@ -166,7 +211,7 @@
   top: 100px;
   border: 2px solid green;
   border: none;
-  min-height: 100vh;
+  min-height: 90vh;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#9be15d), to(#00e3ae));
   background-image: linear-gradient(to top, #9be15d 0%, #00e3ae 100%);
 }
@@ -191,7 +236,7 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
   list-style: none;
-  padding: 0px;
+  padding: 10px;
   margin: 0 auto;
   border: 2px solid blue;
   border: none;
@@ -200,29 +245,67 @@
   top: -100px;
   right: 0px;
   height: 100px;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 .navLinks .link {
+  padding: 10px;
   color: white;
+}
+
+.navLinks .link:hover, .navLinks .link:active, .navLinks .link:focus, .navLinks .linkvisited, .navLinks .link:link, .navLinks .link:active {
+  text-decoration: none;
 }
 
 .navLinks .link:hover {
   background-color: white;
   color: black;
-  border-radius: 7px;
-}
-
-.navLinks .link:active, .navLinks .link:focus, .navLinks .link:visited, .navLinks .link:link {
-  text-decoration: none;
+  border-radius: 10px;
 }
 
 .navLinks .link li:active {
   color: yellowgreen;
 }
 
-.App-link {
-  color: #09d3ac;
+.homePage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 80vh;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.homePage h1 {
+  font-size: 2em;
+  line-height: 1.2;
+  width: 80%;
+}
+
+.homePage h3 {
+  font-size: 2em;
+  line-height: 1.2;
+  width: 80%;
+}
+
+.homePage h5 {
+  font-size: 2em;
+  line-height: 1.2;
+  width: 80%;
+}
+
+.homePage .homeLinks:hover, .homePage .homeLinks:active, .homePage .homeLinks:focus, .homePage .homeLinksvisited, .homePage .homeLinks:link, .homePage .homeLinks:active {
+  text-decoration: none;
 }
 
 .allCocktailsPage .pageLinks {
@@ -244,15 +327,18 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .allCocktailsPage .pageLinks a {
+  font-size: 2em;
   font-weight: 500;
   padding: 10px;
   color: white;
 }
 
-.allCocktailsPage .pageLinks a:active, .allCocktailsPage .pageLinks a:focus, .allCocktailsPage .pageLinks a:visited, .allCocktailsPage .pageLinks a:link {
+.allCocktailsPage .pageLinks a:hover, .allCocktailsPage .pageLinks a:active, .allCocktailsPage .pageLinks a:focus, .allCocktailsPage .pageLinks avisited, .allCocktailsPage .pageLinks a:link, .allCocktailsPage .pageLinks a:active {
   text-decoration: none;
 }
 
@@ -264,7 +350,7 @@
   color: #64638f;
 }
 
-.allCocktailsPage .letterGroup {
+.allCocktailsPage .mainContentGroup .letterGroup {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -285,7 +371,13 @@
   padding: 5px;
 }
 
-.allCocktailsPage .letterGroup .allCocktails {
+.allCocktailsPage .mainContentGroup .letterGroup p {
+  font-size: 1.8em;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.allCocktailsPage .mainContentGroup .letterGroup .allCocktails {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -462,6 +554,7 @@
 
 .renderFetchChoice .fetchChoice {
   color: black;
+  font-size: 2em;
 }
 
 .renderFetchChoice .fetchChoiceList {
@@ -485,25 +578,42 @@
       justify-content: space-around;
 }
 
-.searchButtonTop {
+.randomCoctail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 20px;
+}
+
+.randomCoctail .searchButtonTop {
   height: 50px;
   width: 300px;
   background: #683737c0;
   border-radius: 25px 25px 0 0;
 }
 
-.searchButtonTop:hover {
+.randomCoctail .searchButtonTop:hover {
   cursor: pointer;
 }
 
-.searchButtonBottom {
+.randomCoctail .searchButtonBottom {
   height: 50px;
   width: 300px;
   background: #683737c0;
   border-radius: 0 0 25px 25px;
 }
 
-.searchButtonBottom:hover {
+.randomCoctail .searchButtonBottom:hover {
   cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

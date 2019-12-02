@@ -20,6 +20,17 @@
   }
 }
 
+@mixin textDecorationNone {
+  &:hover,
+  &:active,
+  &:focus,
+  &visited,
+  &:link,
+  &:active {
+    text-decoration: none;
+  }
+}
+
 @mixin logo {
   #logo {
     position: absolute;

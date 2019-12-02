@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import RenderOne from "../RenderOne/RenderOne";
-import RenderOneDetailed from "../RenderOne/RnderOneDetailed";
+import RenderOneDetailed from "../RenderOne/RenderOneDetailed";
 
 const FetchById = ({ match }) => {
   const [id, setId] = useState([]);

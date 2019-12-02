@@ -8,6 +8,47 @@
   margin: 0;
 }
 
+h1 {
+  font-family: "Covered By Your Grace";
+  font-size: 23px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 23px;
+}
+h3 {
+  font-family: "Covered By Your Grace";
+  font-size: 17px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 23px;
+}
+p {
+  font-family: "Covered By Your Grace";
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 23px;
+}
+blockquote {
+  font-family: "Covered By Your Grace";
+  font-size: 17px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 23px;
+}
+pre {
+  font-family: "Covered By Your Grace";
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 18.5714px;
+}
+
 .App {
   text-align: center;
   background-color: #282c34;
@@ -15,19 +56,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: black;
   position: relative;
   min-width: 100vh;
   height: 200px;
-  font-family: "verdana", "serif", "sans-serif";
+  font-family: "Covered By Your Grace", "serif", "sans-serif";
+  font-optical-sizing: auto;
   .logo {
     border: 2px solid yellow;
     border: none;
     position: absolute;
     top: 0px;
     left: 0px;
-    height: 100px;
+    height: 10vh;
     width: 25%;
     @include logo;
   }
@@ -38,7 +79,7 @@
     top: 100px;
     border: 2px solid green;
     border: none;
-    min-height: 100vh;
+    min-height: 90vh;
     background-image: linear-gradient(to top, #9be15d 0%, #00e3ae 100%);
   }
 }
@@ -49,7 +90,7 @@
   width: 100%;
   justify-content: space-around;
   list-style: none;
-  padding: 0px;
+  padding: 10px;
   margin: 0 auto;
   border: 2px solid blue;
   border: none;
@@ -58,20 +99,17 @@
   top: -100px;
   right: 0px;
   height: 100px;
-  font-size: 1.5em;
+  font-size: 2em;
   .link {
+    padding: 10px;
     color: white;
+    @include textDecorationNone;
     &:hover {
       background-color: white;
       color: black;
-      border-radius: 7px;
+      border-radius: 10px;
     }
-    &:active,
-    &:focus,
-    &:visited,
-    &:link {
-      text-decoration: none;
-    }
+
     li {
       &:active {
         color: yellowgreen;
@@ -80,8 +118,30 @@
   }
 }
 
-.App-link {
-  color: #09d3ac;
+.homePage {
+  @include flexCenter(column);
+  height: 80vh;
+  justify-content: space-around;
+
+  h1 {
+    font-size: 2em;
+    line-height: 1.2;
+    width: 80%;
+  }
+  h3 {
+    font-size: 2em;
+    line-height: 1.2;
+    width: 80%;
+  }
+
+  h5 {
+    font-size: 2em;
+    line-height: 1.2;
+    width: 80%;
+  }
+  .homeLinks {
+    @include textDecorationNone;
+  }
 }
 
 .allCocktailsPage {
@@ -91,16 +151,13 @@
     background: #282c34;
     padding-bottom: 0px;
     @include flexCenter(row);
+    flex-wrap: wrap;
     a {
+      font-size: 2em;
       font-weight: 500;
       padding: 10px;
       color: white;
-      &:active,
-      &:focus,
-      &:visited,
-      &:link {
-        text-decoration: none;
-      }
+      @include textDecorationNone;
       &:focus {
         color: blue;
       }
@@ -109,22 +166,29 @@
       }
     }
   }
-  .letterGroup {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    box-sizing: border-box;
-    border: 2px solid yellow;
-    border: none;
-    padding: 5px;
-    .allCocktails {
-      @include flexCenter(row);
-      justify-content: start;
-      align-items: center;
-      flex-wrap: wrap;
-      border: 2px solid green;
+  .mainContentGroup {
+    .letterGroup {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      box-sizing: border-box;
+      border: 2px solid yellow;
       border: none;
+      padding: 5px;
+      p {
+        font-size: 1.8em;
+        font-weight: 600;
+        padding-bottom: 20px;
+      }
+      .allCocktails {
+        @include flexCenter(row);
+        justify-content: start;
+        align-items: center;
+        flex-wrap: wrap;
+        border: 2px solid green;
+        border: none;
+      }
     }
   }
 }
@@ -224,6 +288,7 @@
   justify-content: space-around;
   .fetchChoice {
     color: black;
+    font-size: 2em;
   }
 
   .fetchChoiceList {
@@ -234,12 +299,17 @@
   }
 }
 
-.searchButtonTop {
-  @include searchButton;
-  border-radius: 25px 25px 0 0;
-}
-
-.searchButtonBottom {
-  @include searchButton;
-  border-radius: 0 0 25px 25px;
+.randomCoctail {
+  @include flexCenter(column);
+  padding-top: 20px;
+  .searchButtonTop {
+    @include searchButton;
+    border-radius: 25px 25px 0 0;
+  }
+  .mainContent {
+  }
+  .searchButtonBottom {
+    @include searchButton;
+    border-radius: 0 0 25px 25px;
+  }
 }

@@ -94,1303 +94,1305 @@ const AllCocktails = props => {
   return (
     <div className="allCocktailsPage">
       {links}
-      <div className="letterGroup">
-        <p id="a">A</p>
+      <div className="mainContentGroup">
+        <div className="letterGroup">
+          <p id="a">~A~</p>
 
-        <div className="allCocktails">
-          {a
-            ? a.map(drink => (
-                <RenderOne
-                  key={drink.idDrink}
-                  id={drink.idDrink}
-                  name={drink.strDrink}
-                  type={drink.strAlcoholic}
-                  image={drink.strDrinkThumb}
-                  ing1={drink.strIngredient1}
-                  ing2={drink.strIngredient2}
-                  ing3={drink.strIngredient3}
-                  ing4={drink.strIngredient4}
-                  ing5={drink.strIngredient5}
-                  ing6={drink.strIngredient6}
-                  ing7={drink.strIngredient7}
-                  ing8={drink.strIngredient8}
-                  ing9={drink.strIngredient9}
-                  ing10={drink.strIngredient10}
-                  ing11={drink.strIngredient11}
-                  ing12={drink.strIngredient12}
-                  ing13={drink.strIngredient13}
-                  ing14={drink.strIngredient14}
-                  ing15={drink.strIngredient15}
-                  measure1={drink.strMeasure1}
-                  measure2={drink.strMeasure2}
-                  measure3={drink.strMeasure3}
-                  measure4={drink.strMeasure4}
-                  measure5={drink.strMeasure5}
-                  measure6={drink.strMeasure6}
-                  measure7={drink.strMeasure7}
-                  measure8={drink.strMeasure8}
-                  measure9={drink.strMeasure9}
-                  measure10={drink.strMeasure10}
-                  measure11={drink.strMeasure11}
-                  measure12={drink.strMeasure12}
-                  measure13={drink.strMeasure13}
-                  measure14={drink.strMeasure14}
-                  measure15={drink.strMeasure15}
-                  instructions={drink.strInstructions}
-                  glass={drink.strGlass}
-                />
-              ))
-            : null}
+          <div className="allCocktails">
+            {a
+              ? a.map(drink => (
+                  <RenderOne
+                    key={drink.idDrink}
+                    id={drink.idDrink}
+                    name={drink.strDrink}
+                    type={drink.strAlcoholic}
+                    image={drink.strDrinkThumb}
+                    ing1={drink.strIngredient1}
+                    ing2={drink.strIngredient2}
+                    ing3={drink.strIngredient3}
+                    ing4={drink.strIngredient4}
+                    ing5={drink.strIngredient5}
+                    ing6={drink.strIngredient6}
+                    ing7={drink.strIngredient7}
+                    ing8={drink.strIngredient8}
+                    ing9={drink.strIngredient9}
+                    ing10={drink.strIngredient10}
+                    ing11={drink.strIngredient11}
+                    ing12={drink.strIngredient12}
+                    ing13={drink.strIngredient13}
+                    ing14={drink.strIngredient14}
+                    ing15={drink.strIngredient15}
+                    measure1={drink.strMeasure1}
+                    measure2={drink.strMeasure2}
+                    measure3={drink.strMeasure3}
+                    measure4={drink.strMeasure4}
+                    measure5={drink.strMeasure5}
+                    measure6={drink.strMeasure6}
+                    measure7={drink.strMeasure7}
+                    measure8={drink.strMeasure8}
+                    measure9={drink.strMeasure9}
+                    measure10={drink.strMeasure10}
+                    measure11={drink.strMeasure11}
+                    measure12={drink.strMeasure12}
+                    measure13={drink.strMeasure13}
+                    measure14={drink.strMeasure14}
+                    measure15={drink.strMeasure15}
+                    instructions={drink.strInstructions}
+                    glass={drink.strGlass}
+                  />
+                ))
+              : null}
+          </div>
         </div>
-      </div>
 
-      <div className="letterGroup">
-        <p id="b">B</p>
+        <div className="letterGroup">
+          <p id="b">B</p>
 
-        <div className="allCocktails">
-          {b
-            ? b.map(drink => (
-                <RenderOne
-                  key={drink.idDrink}
-                  id={drink.idDrink}
-                  name={drink.strDrink}
-                  type={drink.strAlcoholic}
-                  image={drink.strDrinkThumb}
-                  ing1={drink.strIngredient1}
-                  ing2={drink.strIngredient2}
-                  ing3={drink.strIngredient3}
-                  ing4={drink.strIngredient4}
-                  ing5={drink.strIngredient5}
-                  ing6={drink.strIngredient6}
-                  ing7={drink.strIngredient7}
-                  ing8={drink.strIngredient8}
-                  ing9={drink.strIngredient9}
-                  ing10={drink.strIngredient10}
-                  ing11={drink.strIngredient11}
-                  ing12={drink.strIngredient12}
-                  ing13={drink.strIngredient13}
-                  ing14={drink.strIngredient14}
-                  ing15={drink.strIngredient15}
-                  measure1={drink.strMeasure1}
-                  measure2={drink.strMeasure2}
-                  measure3={drink.strMeasure3}
-                  measure4={drink.strMeasure4}
-                  measure5={drink.strMeasure5}
-                  measure6={drink.strMeasure6}
-                  measure7={drink.strMeasure7}
-                  measure8={drink.strMeasure8}
-                  measure9={drink.strMeasure9}
-                  measure10={drink.strMeasure10}
-                  measure11={drink.strMeasure11}
-                  measure12={drink.strMeasure12}
-                  measure13={drink.strMeasure13}
-                  measure14={drink.strMeasure14}
-                  measure15={drink.strMeasure15}
-                  instructions={drink.strInstructions}
-                  glass={drink.strGlass}
-                />
-              ))
-            : null}
+          <div className="allCocktails">
+            {b
+              ? b.map(drink => (
+                  <RenderOne
+                    key={drink.idDrink}
+                    id={drink.idDrink}
+                    name={drink.strDrink}
+                    type={drink.strAlcoholic}
+                    image={drink.strDrinkThumb}
+                    ing1={drink.strIngredient1}
+                    ing2={drink.strIngredient2}
+                    ing3={drink.strIngredient3}
+                    ing4={drink.strIngredient4}
+                    ing5={drink.strIngredient5}
+                    ing6={drink.strIngredient6}
+                    ing7={drink.strIngredient7}
+                    ing8={drink.strIngredient8}
+                    ing9={drink.strIngredient9}
+                    ing10={drink.strIngredient10}
+                    ing11={drink.strIngredient11}
+                    ing12={drink.strIngredient12}
+                    ing13={drink.strIngredient13}
+                    ing14={drink.strIngredient14}
+                    ing15={drink.strIngredient15}
+                    measure1={drink.strMeasure1}
+                    measure2={drink.strMeasure2}
+                    measure3={drink.strMeasure3}
+                    measure4={drink.strMeasure4}
+                    measure5={drink.strMeasure5}
+                    measure6={drink.strMeasure6}
+                    measure7={drink.strMeasure7}
+                    measure8={drink.strMeasure8}
+                    measure9={drink.strMeasure9}
+                    measure10={drink.strMeasure10}
+                    measure11={drink.strMeasure11}
+                    measure12={drink.strMeasure12}
+                    measure13={drink.strMeasure13}
+                    measure14={drink.strMeasure14}
+                    measure15={drink.strMeasure15}
+                    instructions={drink.strInstructions}
+                    glass={drink.strGlass}
+                  />
+                ))
+              : null}
+          </div>
         </div>
-      </div>
 
-      <div className="letterGroup">
-        <p id="c">C</p>
+        <div className="letterGroup">
+          <p id="c">C</p>
 
-        <div className="allCocktails">
-          {c
-            ? c.map(drink => (
-                <RenderOne
-                  key={drink.idDrink}
-                  id={drink.idDrink}
-                  name={drink.strDrink}
-                  type={drink.strAlcoholic}
-                  image={drink.strDrinkThumb}
-                  ing1={drink.strIngredient1}
-                  ing2={drink.strIngredient2}
-                  ing3={drink.strIngredient3}
-                  ing4={drink.strIngredient4}
-                  ing5={drink.strIngredient5}
-                  ing6={drink.strIngredient6}
-                  ing7={drink.strIngredient7}
-                  ing8={drink.strIngredient8}
-                  ing9={drink.strIngredient9}
-                  ing10={drink.strIngredient10}
-                  ing11={drink.strIngredient11}
-                  ing12={drink.strIngredient12}
-                  ing13={drink.strIngredient13}
-                  ing14={drink.strIngredient14}
-                  ing15={drink.strIngredient15}
-                  measure1={drink.strMeasure1}
-                  measure2={drink.strMeasure2}
-                  measure3={drink.strMeasure3}
-                  measure4={drink.strMeasure4}
-                  measure5={drink.strMeasure5}
-                  measure6={drink.strMeasure6}
-                  measure7={drink.strMeasure7}
-                  measure8={drink.strMeasure8}
-                  measure9={drink.strMeasure9}
-                  measure10={drink.strMeasure10}
-                  measure11={drink.strMeasure11}
-                  measure12={drink.strMeasure12}
-                  measure13={drink.strMeasure13}
-                  measure14={drink.strMeasure14}
-                  measure15={drink.strMeasure15}
-                  instructions={drink.strInstructions}
-                  glass={drink.strGlass}
-                />
-              ))
-            : null}
+          <div className="allCocktails">
+            {c
+              ? c.map(drink => (
+                  <RenderOne
+                    key={drink.idDrink}
+                    id={drink.idDrink}
+                    name={drink.strDrink}
+                    type={drink.strAlcoholic}
+                    image={drink.strDrinkThumb}
+                    ing1={drink.strIngredient1}
+                    ing2={drink.strIngredient2}
+                    ing3={drink.strIngredient3}
+                    ing4={drink.strIngredient4}
+                    ing5={drink.strIngredient5}
+                    ing6={drink.strIngredient6}
+                    ing7={drink.strIngredient7}
+                    ing8={drink.strIngredient8}
+                    ing9={drink.strIngredient9}
+                    ing10={drink.strIngredient10}
+                    ing11={drink.strIngredient11}
+                    ing12={drink.strIngredient12}
+                    ing13={drink.strIngredient13}
+                    ing14={drink.strIngredient14}
+                    ing15={drink.strIngredient15}
+                    measure1={drink.strMeasure1}
+                    measure2={drink.strMeasure2}
+                    measure3={drink.strMeasure3}
+                    measure4={drink.strMeasure4}
+                    measure5={drink.strMeasure5}
+                    measure6={drink.strMeasure6}
+                    measure7={drink.strMeasure7}
+                    measure8={drink.strMeasure8}
+                    measure9={drink.strMeasure9}
+                    measure10={drink.strMeasure10}
+                    measure11={drink.strMeasure11}
+                    measure12={drink.strMeasure12}
+                    measure13={drink.strMeasure13}
+                    measure14={drink.strMeasure14}
+                    measure15={drink.strMeasure15}
+                    instructions={drink.strInstructions}
+                    glass={drink.strGlass}
+                  />
+                ))
+              : null}
+          </div>
         </div>
-      </div>
 
-      <div className="letterGroup">
-        <p id="d">D</p>
+        <div className="letterGroup">
+          <p id="d">D</p>
 
-        <div className="allCocktails">
-          {d
-            ? d.map(drink => (
-                <RenderOne
-                  key={drink.idDrink}
-                  id={drink.idDrink}
-                  name={drink.strDrink}
-                  type={drink.strAlcoholic}
-                  image={drink.strDrinkThumb}
-                  ing1={drink.strIngredient1}
-                  ing2={drink.strIngredient2}
-                  ing3={drink.strIngredient3}
-                  ing4={drink.strIngredient4}
-                  ing5={drink.strIngredient5}
-                  ing6={drink.strIngredient6}
-                  ing7={drink.strIngredient7}
-                  ing8={drink.strIngredient8}
-                  ing9={drink.strIngredient9}
-                  ing10={drink.strIngredient10}
-                  ing11={drink.strIngredient11}
-                  ing12={drink.strIngredient12}
-                  ing13={drink.strIngredient13}
-                  ing14={drink.strIngredient14}
-                  ing15={drink.strIngredient15}
-                  measure1={drink.strMeasure1}
-                  measure2={drink.strMeasure2}
-                  measure3={drink.strMeasure3}
-                  measure4={drink.strMeasure4}
-                  measure5={drink.strMeasure5}
-                  measure6={drink.strMeasure6}
-                  measure7={drink.strMeasure7}
-                  measure8={drink.strMeasure8}
-                  measure9={drink.strMeasure9}
-                  measure10={drink.strMeasure10}
-                  measure11={drink.strMeasure11}
-                  measure12={drink.strMeasure12}
-                  measure13={drink.strMeasure13}
-                  measure14={drink.strMeasure14}
-                  measure15={drink.strMeasure15}
-                  instructions={drink.strInstructions}
-                  glass={drink.strGlass}
-                />
-              ))
-            : null}
+          <div className="allCocktails">
+            {d
+              ? d.map(drink => (
+                  <RenderOne
+                    key={drink.idDrink}
+                    id={drink.idDrink}
+                    name={drink.strDrink}
+                    type={drink.strAlcoholic}
+                    image={drink.strDrinkThumb}
+                    ing1={drink.strIngredient1}
+                    ing2={drink.strIngredient2}
+                    ing3={drink.strIngredient3}
+                    ing4={drink.strIngredient4}
+                    ing5={drink.strIngredient5}
+                    ing6={drink.strIngredient6}
+                    ing7={drink.strIngredient7}
+                    ing8={drink.strIngredient8}
+                    ing9={drink.strIngredient9}
+                    ing10={drink.strIngredient10}
+                    ing11={drink.strIngredient11}
+                    ing12={drink.strIngredient12}
+                    ing13={drink.strIngredient13}
+                    ing14={drink.strIngredient14}
+                    ing15={drink.strIngredient15}
+                    measure1={drink.strMeasure1}
+                    measure2={drink.strMeasure2}
+                    measure3={drink.strMeasure3}
+                    measure4={drink.strMeasure4}
+                    measure5={drink.strMeasure5}
+                    measure6={drink.strMeasure6}
+                    measure7={drink.strMeasure7}
+                    measure8={drink.strMeasure8}
+                    measure9={drink.strMeasure9}
+                    measure10={drink.strMeasure10}
+                    measure11={drink.strMeasure11}
+                    measure12={drink.strMeasure12}
+                    measure13={drink.strMeasure13}
+                    measure14={drink.strMeasure14}
+                    measure15={drink.strMeasure15}
+                    instructions={drink.strInstructions}
+                    glass={drink.strGlass}
+                  />
+                ))
+              : null}
+          </div>
         </div>
-      </div>
 
-      <div className="letterGroup">
-        <p id="e">E</p>
+        <div className="letterGroup">
+          <p id="e">E</p>
 
-        <div className="allCocktails">
-          {e
-            ? e.map(drink => (
-                <RenderOne
-                  key={drink.idDrink}
-                  id={drink.idDrink}
-                  name={drink.strDrink}
-                  type={drink.strAlcoholic}
-                  image={drink.strDrinkThumb}
-                  ing1={drink.strIngredient1}
-                  ing2={drink.strIngredient2}
-                  ing3={drink.strIngredient3}
-                  ing4={drink.strIngredient4}
-                  ing5={drink.strIngredient5}
-                  ing6={drink.strIngredient6}
-                  ing7={drink.strIngredient7}
-                  ing8={drink.strIngredient8}
-                  ing9={drink.strIngredient9}
-                  ing10={drink.strIngredient10}
-                  ing11={drink.strIngredient11}
-                  ing12={drink.strIngredient12}
-                  ing13={drink.strIngredient13}
-                  ing14={drink.strIngredient14}
-                  ing15={drink.strIngredient15}
-                  measure1={drink.strMeasure1}
-                  measure2={drink.strMeasure2}
-                  measure3={drink.strMeasure3}
-                  measure4={drink.strMeasure4}
-                  measure5={drink.strMeasure5}
-                  measure6={drink.strMeasure6}
-                  measure7={drink.strMeasure7}
-                  measure8={drink.strMeasure8}
-                  measure9={drink.strMeasure9}
-                  measure10={drink.strMeasure10}
-                  measure11={drink.strMeasure11}
-                  measure12={drink.strMeasure12}
-                  measure13={drink.strMeasure13}
-                  measure14={drink.strMeasure14}
-                  measure15={drink.strMeasure15}
-                  instructions={drink.strInstructions}
-                  glass={drink.strGlass}
-                />
-              ))
-            : null}
+          <div className="allCocktails">
+            {e
+              ? e.map(drink => (
+                  <RenderOne
+                    key={drink.idDrink}
+                    id={drink.idDrink}
+                    name={drink.strDrink}
+                    type={drink.strAlcoholic}
+                    image={drink.strDrinkThumb}
+                    ing1={drink.strIngredient1}
+                    ing2={drink.strIngredient2}
+                    ing3={drink.strIngredient3}
+                    ing4={drink.strIngredient4}
+                    ing5={drink.strIngredient5}
+                    ing6={drink.strIngredient6}
+                    ing7={drink.strIngredient7}
+                    ing8={drink.strIngredient8}
+                    ing9={drink.strIngredient9}
+                    ing10={drink.strIngredient10}
+                    ing11={drink.strIngredient11}
+                    ing12={drink.strIngredient12}
+                    ing13={drink.strIngredient13}
+                    ing14={drink.strIngredient14}
+                    ing15={drink.strIngredient15}
+                    measure1={drink.strMeasure1}
+                    measure2={drink.strMeasure2}
+                    measure3={drink.strMeasure3}
+                    measure4={drink.strMeasure4}
+                    measure5={drink.strMeasure5}
+                    measure6={drink.strMeasure6}
+                    measure7={drink.strMeasure7}
+                    measure8={drink.strMeasure8}
+                    measure9={drink.strMeasure9}
+                    measure10={drink.strMeasure10}
+                    measure11={drink.strMeasure11}
+                    measure12={drink.strMeasure12}
+                    measure13={drink.strMeasure13}
+                    measure14={drink.strMeasure14}
+                    measure15={drink.strMeasure15}
+                    instructions={drink.strInstructions}
+                    glass={drink.strGlass}
+                  />
+                ))
+              : null}
+          </div>
         </div>
-      </div>
 
-      <div className="letterGroup">
-        <p id="f">F</p>
+        <div className="letterGroup">
+          <p id="f">F</p>
 
-        <div className="allCocktails">
-          {f
-            ? f.map(drink => (
-                <RenderOne
-                  key={drink.idDrink}
-                  id={drink.idDrink}
-                  name={drink.strDrink}
-                  type={drink.strAlcoholic}
-                  image={drink.strDrinkThumb}
-                  ing1={drink.strIngredient1}
-                  ing2={drink.strIngredient2}
-                  ing3={drink.strIngredient3}
-                  ing4={drink.strIngredient4}
-                  ing5={drink.strIngredient5}
-                  ing6={drink.strIngredient6}
-                  ing7={drink.strIngredient7}
-                  ing8={drink.strIngredient8}
-                  ing9={drink.strIngredient9}
-                  ing10={drink.strIngredient10}
-                  ing11={drink.strIngredient11}
-                  ing12={drink.strIngredient12}
-                  ing13={drink.strIngredient13}
-                  ing14={drink.strIngredient14}
-                  ing15={drink.strIngredient15}
-                  measure1={drink.strMeasure1}
-                  measure2={drink.strMeasure2}
-                  measure3={drink.strMeasure3}
-                  measure4={drink.strMeasure4}
-                  measure5={drink.strMeasure5}
-                  measure6={drink.strMeasure6}
-                  measure7={drink.strMeasure7}
-                  measure8={drink.strMeasure8}
-                  measure9={drink.strMeasure9}
-                  measure10={drink.strMeasure10}
-                  measure11={drink.strMeasure11}
-                  measure12={drink.strMeasure12}
-                  measure13={drink.strMeasure13}
-                  measure14={drink.strMeasure14}
-                  measure15={drink.strMeasure15}
-                  instructions={drink.strInstructions}
-                  glass={drink.strGlass}
-                />
-              ))
-            : null}
+          <div className="allCocktails">
+            {f
+              ? f.map(drink => (
+                  <RenderOne
+                    key={drink.idDrink}
+                    id={drink.idDrink}
+                    name={drink.strDrink}
+                    type={drink.strAlcoholic}
+                    image={drink.strDrinkThumb}
+                    ing1={drink.strIngredient1}
+                    ing2={drink.strIngredient2}
+                    ing3={drink.strIngredient3}
+                    ing4={drink.strIngredient4}
+                    ing5={drink.strIngredient5}
+                    ing6={drink.strIngredient6}
+                    ing7={drink.strIngredient7}
+                    ing8={drink.strIngredient8}
+                    ing9={drink.strIngredient9}
+                    ing10={drink.strIngredient10}
+                    ing11={drink.strIngredient11}
+                    ing12={drink.strIngredient12}
+                    ing13={drink.strIngredient13}
+                    ing14={drink.strIngredient14}
+                    ing15={drink.strIngredient15}
+                    measure1={drink.strMeasure1}
+                    measure2={drink.strMeasure2}
+                    measure3={drink.strMeasure3}
+                    measure4={drink.strMeasure4}
+                    measure5={drink.strMeasure5}
+                    measure6={drink.strMeasure6}
+                    measure7={drink.strMeasure7}
+                    measure8={drink.strMeasure8}
+                    measure9={drink.strMeasure9}
+                    measure10={drink.strMeasure10}
+                    measure11={drink.strMeasure11}
+                    measure12={drink.strMeasure12}
+                    measure13={drink.strMeasure13}
+                    measure14={drink.strMeasure14}
+                    measure15={drink.strMeasure15}
+                    instructions={drink.strInstructions}
+                    glass={drink.strGlass}
+                  />
+                ))
+              : null}
+          </div>
         </div>
-      </div>
 
-      <div className="letterGroup">
-        <p id="g">G</p>
+        <div className="letterGroup">
+          <p id="g">G</p>
 
-        <div className="allCocktails">
-          {g
-            ? g.map(drink => (
-                <RenderOne
-                  key={drink.idDrink}
-                  id={drink.idDrink}
-                  name={drink.strDrink}
-                  type={drink.strAlcoholic}
-                  image={drink.strDrinkThumb}
-                  ing1={drink.strIngredient1}
-                  ing2={drink.strIngredient2}
-                  ing3={drink.strIngredient3}
-                  ing4={drink.strIngredient4}
-                  ing5={drink.strIngredient5}
-                  ing6={drink.strIngredient6}
-                  ing7={drink.strIngredient7}
-                  ing8={drink.strIngredient8}
-                  ing9={drink.strIngredient9}
-                  ing10={drink.strIngredient10}
-                  ing11={drink.strIngredient11}
-                  ing12={drink.strIngredient12}
-                  ing13={drink.strIngredient13}
-                  ing14={drink.strIngredient14}
-                  ing15={drink.strIngredient15}
-                  measure1={drink.strMeasure1}
-                  measure2={drink.strMeasure2}
-                  measure3={drink.strMeasure3}
-                  measure4={drink.strMeasure4}
-                  measure5={drink.strMeasure5}
-                  measure6={drink.strMeasure6}
-                  measure7={drink.strMeasure7}
-                  measure8={drink.strMeasure8}
-                  measure9={drink.strMeasure9}
-                  measure10={drink.strMeasure10}
-                  measure11={drink.strMeasure11}
-                  measure12={drink.strMeasure12}
-                  measure13={drink.strMeasure13}
-                  measure14={drink.strMeasure14}
-                  measure15={drink.strMeasure15}
-                  instructions={drink.strInstructions}
-                  glass={drink.strGlass}
-                />
-              ))
-            : null}
+          <div className="allCocktails">
+            {g
+              ? g.map(drink => (
+                  <RenderOne
+                    key={drink.idDrink}
+                    id={drink.idDrink}
+                    name={drink.strDrink}
+                    type={drink.strAlcoholic}
+                    image={drink.strDrinkThumb}
+                    ing1={drink.strIngredient1}
+                    ing2={drink.strIngredient2}
+                    ing3={drink.strIngredient3}
+                    ing4={drink.strIngredient4}
+                    ing5={drink.strIngredient5}
+                    ing6={drink.strIngredient6}
+                    ing7={drink.strIngredient7}
+                    ing8={drink.strIngredient8}
+                    ing9={drink.strIngredient9}
+                    ing10={drink.strIngredient10}
+                    ing11={drink.strIngredient11}
+                    ing12={drink.strIngredient12}
+                    ing13={drink.strIngredient13}
+                    ing14={drink.strIngredient14}
+                    ing15={drink.strIngredient15}
+                    measure1={drink.strMeasure1}
+                    measure2={drink.strMeasure2}
+                    measure3={drink.strMeasure3}
+                    measure4={drink.strMeasure4}
+                    measure5={drink.strMeasure5}
+                    measure6={drink.strMeasure6}
+                    measure7={drink.strMeasure7}
+                    measure8={drink.strMeasure8}
+                    measure9={drink.strMeasure9}
+                    measure10={drink.strMeasure10}
+                    measure11={drink.strMeasure11}
+                    measure12={drink.strMeasure12}
+                    measure13={drink.strMeasure13}
+                    measure14={drink.strMeasure14}
+                    measure15={drink.strMeasure15}
+                    instructions={drink.strInstructions}
+                    glass={drink.strGlass}
+                  />
+                ))
+              : null}
+          </div>
         </div>
-      </div>
 
-      <div className="letterGroup">
-        <p id="h">H</p>
+        <div className="letterGroup">
+          <p id="h">H</p>
 
-        <div className="allCocktails">
-          {h
-            ? h.map(drink => (
-                <RenderOne
-                  key={drink.idDrink}
-                  id={drink.idDrink}
-                  name={drink.strDrink}
-                  type={drink.strAlcoholic}
-                  image={drink.strDrinkThumb}
-                  ing1={drink.strIngredient1}
-                  ing2={drink.strIngredient2}
-                  ing3={drink.strIngredient3}
-                  ing4={drink.strIngredient4}
-                  ing5={drink.strIngredient5}
-                  ing6={drink.strIngredient6}
-                  ing7={drink.strIngredient7}
-                  ing8={drink.strIngredient8}
-                  ing9={drink.strIngredient9}
-                  ing10={drink.strIngredient10}
-                  ing11={drink.strIngredient11}
-                  ing12={drink.strIngredient12}
-                  ing13={drink.strIngredient13}
-                  ing14={drink.strIngredient14}
-                  ing15={drink.strIngredient15}
-                  measure1={drink.strMeasure1}
-                  measure2={drink.strMeasure2}
-                  measure3={drink.strMeasure3}
-                  measure4={drink.strMeasure4}
-                  measure5={drink.strMeasure5}
-                  measure6={drink.strMeasure6}
-                  measure7={drink.strMeasure7}
-                  measure8={drink.strMeasure8}
-                  measure9={drink.strMeasure9}
-                  measure10={drink.strMeasure10}
-                  measure11={drink.strMeasure11}
-                  measure12={drink.strMeasure12}
-                  measure13={drink.strMeasure13}
-                  measure14={drink.strMeasure14}
-                  measure15={drink.strMeasure15}
-                  instructions={drink.strInstructions}
-                  glass={drink.strGlass}
-                />
-              ))
-            : null}
+          <div className="allCocktails">
+            {h
+              ? h.map(drink => (
+                  <RenderOne
+                    key={drink.idDrink}
+                    id={drink.idDrink}
+                    name={drink.strDrink}
+                    type={drink.strAlcoholic}
+                    image={drink.strDrinkThumb}
+                    ing1={drink.strIngredient1}
+                    ing2={drink.strIngredient2}
+                    ing3={drink.strIngredient3}
+                    ing4={drink.strIngredient4}
+                    ing5={drink.strIngredient5}
+                    ing6={drink.strIngredient6}
+                    ing7={drink.strIngredient7}
+                    ing8={drink.strIngredient8}
+                    ing9={drink.strIngredient9}
+                    ing10={drink.strIngredient10}
+                    ing11={drink.strIngredient11}
+                    ing12={drink.strIngredient12}
+                    ing13={drink.strIngredient13}
+                    ing14={drink.strIngredient14}
+                    ing15={drink.strIngredient15}
+                    measure1={drink.strMeasure1}
+                    measure2={drink.strMeasure2}
+                    measure3={drink.strMeasure3}
+                    measure4={drink.strMeasure4}
+                    measure5={drink.strMeasure5}
+                    measure6={drink.strMeasure6}
+                    measure7={drink.strMeasure7}
+                    measure8={drink.strMeasure8}
+                    measure9={drink.strMeasure9}
+                    measure10={drink.strMeasure10}
+                    measure11={drink.strMeasure11}
+                    measure12={drink.strMeasure12}
+                    measure13={drink.strMeasure13}
+                    measure14={drink.strMeasure14}
+                    measure15={drink.strMeasure15}
+                    instructions={drink.strInstructions}
+                    glass={drink.strGlass}
+                  />
+                ))
+              : null}
+          </div>
         </div>
-      </div>
 
-      <div className="letterGroup">
-        <p id="i">I</p>
+        <div className="letterGroup">
+          <p id="i">I</p>
 
-        <div className="allCocktails">
-          {i
-            ? i.map(drink => (
-                <RenderOne
-                  key={drink.idDrink}
-                  id={drink.idDrink}
-                  name={drink.strDrink}
-                  type={drink.strAlcoholic}
-                  image={drink.strDrinkThumb}
-                  ing1={drink.strIngredient1}
-                  ing2={drink.strIngredient2}
-                  ing3={drink.strIngredient3}
-                  ing4={drink.strIngredient4}
-                  ing5={drink.strIngredient5}
-                  ing6={drink.strIngredient6}
-                  ing7={drink.strIngredient7}
-                  ing8={drink.strIngredient8}
-                  ing9={drink.strIngredient9}
-                  ing10={drink.strIngredient10}
-                  ing11={drink.strIngredient11}
-                  ing12={drink.strIngredient12}
-                  ing13={drink.strIngredient13}
-                  ing14={drink.strIngredient14}
-                  ing15={drink.strIngredient15}
-                  measure1={drink.strMeasure1}
-                  measure2={drink.strMeasure2}
-                  measure3={drink.strMeasure3}
-                  measure4={drink.strMeasure4}
-                  measure5={drink.strMeasure5}
-                  measure6={drink.strMeasure6}
-                  measure7={drink.strMeasure7}
-                  measure8={drink.strMeasure8}
-                  measure9={drink.strMeasure9}
-                  measure10={drink.strMeasure10}
-                  measure11={drink.strMeasure11}
-                  measure12={drink.strMeasure12}
-                  measure13={drink.strMeasure13}
-                  measure14={drink.strMeasure14}
-                  measure15={drink.strMeasure15}
-                  instructions={drink.strInstructions}
-                  glass={drink.strGlass}
-                />
-              ))
-            : null}
+          <div className="allCocktails">
+            {i
+              ? i.map(drink => (
+                  <RenderOne
+                    key={drink.idDrink}
+                    id={drink.idDrink}
+                    name={drink.strDrink}
+                    type={drink.strAlcoholic}
+                    image={drink.strDrinkThumb}
+                    ing1={drink.strIngredient1}
+                    ing2={drink.strIngredient2}
+                    ing3={drink.strIngredient3}
+                    ing4={drink.strIngredient4}
+                    ing5={drink.strIngredient5}
+                    ing6={drink.strIngredient6}
+                    ing7={drink.strIngredient7}
+                    ing8={drink.strIngredient8}
+                    ing9={drink.strIngredient9}
+                    ing10={drink.strIngredient10}
+                    ing11={drink.strIngredient11}
+                    ing12={drink.strIngredient12}
+                    ing13={drink.strIngredient13}
+                    ing14={drink.strIngredient14}
+                    ing15={drink.strIngredient15}
+                    measure1={drink.strMeasure1}
+                    measure2={drink.strMeasure2}
+                    measure3={drink.strMeasure3}
+                    measure4={drink.strMeasure4}
+                    measure5={drink.strMeasure5}
+                    measure6={drink.strMeasure6}
+                    measure7={drink.strMeasure7}
+                    measure8={drink.strMeasure8}
+                    measure9={drink.strMeasure9}
+                    measure10={drink.strMeasure10}
+                    measure11={drink.strMeasure11}
+                    measure12={drink.strMeasure12}
+                    measure13={drink.strMeasure13}
+                    measure14={drink.strMeasure14}
+                    measure15={drink.strMeasure15}
+                    instructions={drink.strInstructions}
+                    glass={drink.strGlass}
+                  />
+                ))
+              : null}
+          </div>
         </div>
-      </div>
 
-      <div className="letterGroup">
-        <p id="j">J</p>
+        <div className="letterGroup">
+          <p id="j">J</p>
 
-        <div className="allCocktails">
-          {j
-            ? j.map(drink => (
-                <RenderOne
-                  key={drink.idDrink}
-                  id={drink.idDrink}
-                  name={drink.strDrink}
-                  type={drink.strAlcoholic}
-                  image={drink.strDrinkThumb}
-                  ing1={drink.strIngredient1}
-                  ing2={drink.strIngredient2}
-                  ing3={drink.strIngredient3}
-                  ing4={drink.strIngredient4}
-                  ing5={drink.strIngredient5}
-                  ing6={drink.strIngredient6}
-                  ing7={drink.strIngredient7}
-                  ing8={drink.strIngredient8}
-                  ing9={drink.strIngredient9}
-                  ing10={drink.strIngredient10}
-                  ing11={drink.strIngredient11}
-                  ing12={drink.strIngredient12}
-                  ing13={drink.strIngredient13}
-                  ing14={drink.strIngredient14}
-                  ing15={drink.strIngredient15}
-                  measure1={drink.strMeasure1}
-                  measure2={drink.strMeasure2}
-                  measure3={drink.strMeasure3}
-                  measure4={drink.strMeasure4}
-                  measure5={drink.strMeasure5}
-                  measure6={drink.strMeasure6}
-                  measure7={drink.strMeasure7}
-                  measure8={drink.strMeasure8}
-                  measure9={drink.strMeasure9}
-                  measure10={drink.strMeasure10}
-                  measure11={drink.strMeasure11}
-                  measure12={drink.strMeasure12}
-                  measure13={drink.strMeasure13}
-                  measure14={drink.strMeasure14}
-                  measure15={drink.strMeasure15}
-                  instructions={drink.strInstructions}
-                  glass={drink.strGlass}
-                />
-              ))
-            : null}
+          <div className="allCocktails">
+            {j
+              ? j.map(drink => (
+                  <RenderOne
+                    key={drink.idDrink}
+                    id={drink.idDrink}
+                    name={drink.strDrink}
+                    type={drink.strAlcoholic}
+                    image={drink.strDrinkThumb}
+                    ing1={drink.strIngredient1}
+                    ing2={drink.strIngredient2}
+                    ing3={drink.strIngredient3}
+                    ing4={drink.strIngredient4}
+                    ing5={drink.strIngredient5}
+                    ing6={drink.strIngredient6}
+                    ing7={drink.strIngredient7}
+                    ing8={drink.strIngredient8}
+                    ing9={drink.strIngredient9}
+                    ing10={drink.strIngredient10}
+                    ing11={drink.strIngredient11}
+                    ing12={drink.strIngredient12}
+                    ing13={drink.strIngredient13}
+                    ing14={drink.strIngredient14}
+                    ing15={drink.strIngredient15}
+                    measure1={drink.strMeasure1}
+                    measure2={drink.strMeasure2}
+                    measure3={drink.strMeasure3}
+                    measure4={drink.strMeasure4}
+                    measure5={drink.strMeasure5}
+                    measure6={drink.strMeasure6}
+                    measure7={drink.strMeasure7}
+                    measure8={drink.strMeasure8}
+                    measure9={drink.strMeasure9}
+                    measure10={drink.strMeasure10}
+                    measure11={drink.strMeasure11}
+                    measure12={drink.strMeasure12}
+                    measure13={drink.strMeasure13}
+                    measure14={drink.strMeasure14}
+                    measure15={drink.strMeasure15}
+                    instructions={drink.strInstructions}
+                    glass={drink.strGlass}
+                  />
+                ))
+              : null}
+          </div>
         </div>
-      </div>
 
-      <div className="letterGroup">
-        <p id="k">K</p>
+        <div className="letterGroup">
+          <p id="k">K</p>
 
-        <div className="allCocktails">
-          {k
-            ? k.map(drink => (
-                <RenderOne
-                  key={drink.idDrink}
-                  id={drink.idDrink}
-                  name={drink.strDrink}
-                  type={drink.strAlcoholic}
-                  image={drink.strDrinkThumb}
-                  ing1={drink.strIngredient1}
-                  ing2={drink.strIngredient2}
-                  ing3={drink.strIngredient3}
-                  ing4={drink.strIngredient4}
-                  ing5={drink.strIngredient5}
-                  ing6={drink.strIngredient6}
-                  ing7={drink.strIngredient7}
-                  ing8={drink.strIngredient8}
-                  ing9={drink.strIngredient9}
-                  ing10={drink.strIngredient10}
-                  ing11={drink.strIngredient11}
-                  ing12={drink.strIngredient12}
-                  ing13={drink.strIngredient13}
-                  ing14={drink.strIngredient14}
-                  ing15={drink.strIngredient15}
-                  measure1={drink.strMeasure1}
-                  measure2={drink.strMeasure2}
-                  measure3={drink.strMeasure3}
-                  measure4={drink.strMeasure4}
-                  measure5={drink.strMeasure5}
-                  measure6={drink.strMeasure6}
-                  measure7={drink.strMeasure7}
-                  measure8={drink.strMeasure8}
-                  measure9={drink.strMeasure9}
-                  measure10={drink.strMeasure10}
-                  measure11={drink.strMeasure11}
-                  measure12={drink.strMeasure12}
-                  measure13={drink.strMeasure13}
-                  measure14={drink.strMeasure14}
-                  measure15={drink.strMeasure15}
-                  instructions={drink.strInstructions}
-                  glass={drink.strGlass}
-                />
-              ))
-            : null}
+          <div className="allCocktails">
+            {k
+              ? k.map(drink => (
+                  <RenderOne
+                    key={drink.idDrink}
+                    id={drink.idDrink}
+                    name={drink.strDrink}
+                    type={drink.strAlcoholic}
+                    image={drink.strDrinkThumb}
+                    ing1={drink.strIngredient1}
+                    ing2={drink.strIngredient2}
+                    ing3={drink.strIngredient3}
+                    ing4={drink.strIngredient4}
+                    ing5={drink.strIngredient5}
+                    ing6={drink.strIngredient6}
+                    ing7={drink.strIngredient7}
+                    ing8={drink.strIngredient8}
+                    ing9={drink.strIngredient9}
+                    ing10={drink.strIngredient10}
+                    ing11={drink.strIngredient11}
+                    ing12={drink.strIngredient12}
+                    ing13={drink.strIngredient13}
+                    ing14={drink.strIngredient14}
+                    ing15={drink.strIngredient15}
+                    measure1={drink.strMeasure1}
+                    measure2={drink.strMeasure2}
+                    measure3={drink.strMeasure3}
+                    measure4={drink.strMeasure4}
+                    measure5={drink.strMeasure5}
+                    measure6={drink.strMeasure6}
+                    measure7={drink.strMeasure7}
+                    measure8={drink.strMeasure8}
+                    measure9={drink.strMeasure9}
+                    measure10={drink.strMeasure10}
+                    measure11={drink.strMeasure11}
+                    measure12={drink.strMeasure12}
+                    measure13={drink.strMeasure13}
+                    measure14={drink.strMeasure14}
+                    measure15={drink.strMeasure15}
+                    instructions={drink.strInstructions}
+                    glass={drink.strGlass}
+                  />
+                ))
+              : null}
+          </div>
         </div>
-      </div>
 
-      <div className="letterGroup">
-        <p id="l">L</p>
+        <div className="letterGroup">
+          <p id="l">L</p>
 
-        <div className="allCocktails">
-          {l
-            ? l.map(drink => (
-                <RenderOne
-                  key={drink.idDrink}
-                  id={drink.idDrink}
-                  name={drink.strDrink}
-                  type={drink.strAlcoholic}
-                  image={drink.strDrinkThumb}
-                  ing1={drink.strIngredient1}
-                  ing2={drink.strIngredient2}
-                  ing3={drink.strIngredient3}
-                  ing4={drink.strIngredient4}
-                  ing5={drink.strIngredient5}
-                  ing6={drink.strIngredient6}
-                  ing7={drink.strIngredient7}
-                  ing8={drink.strIngredient8}
-                  ing9={drink.strIngredient9}
-                  ing10={drink.strIngredient10}
-                  ing11={drink.strIngredient11}
-                  ing12={drink.strIngredient12}
-                  ing13={drink.strIngredient13}
-                  ing14={drink.strIngredient14}
-                  ing15={drink.strIngredient15}
-                  measure1={drink.strMeasure1}
-                  measure2={drink.strMeasure2}
-                  measure3={drink.strMeasure3}
-                  measure4={drink.strMeasure4}
-                  measure5={drink.strMeasure5}
-                  measure6={drink.strMeasure6}
-                  measure7={drink.strMeasure7}
-                  measure8={drink.strMeasure8}
-                  measure9={drink.strMeasure9}
-                  measure10={drink.strMeasure10}
-                  measure11={drink.strMeasure11}
-                  measure12={drink.strMeasure12}
-                  measure13={drink.strMeasure13}
-                  measure14={drink.strMeasure14}
-                  measure15={drink.strMeasure15}
-                  instructions={drink.strInstructions}
-                  glass={drink.strGlass}
-                />
-              ))
-            : null}
+          <div className="allCocktails">
+            {l
+              ? l.map(drink => (
+                  <RenderOne
+                    key={drink.idDrink}
+                    id={drink.idDrink}
+                    name={drink.strDrink}
+                    type={drink.strAlcoholic}
+                    image={drink.strDrinkThumb}
+                    ing1={drink.strIngredient1}
+                    ing2={drink.strIngredient2}
+                    ing3={drink.strIngredient3}
+                    ing4={drink.strIngredient4}
+                    ing5={drink.strIngredient5}
+                    ing6={drink.strIngredient6}
+                    ing7={drink.strIngredient7}
+                    ing8={drink.strIngredient8}
+                    ing9={drink.strIngredient9}
+                    ing10={drink.strIngredient10}
+                    ing11={drink.strIngredient11}
+                    ing12={drink.strIngredient12}
+                    ing13={drink.strIngredient13}
+                    ing14={drink.strIngredient14}
+                    ing15={drink.strIngredient15}
+                    measure1={drink.strMeasure1}
+                    measure2={drink.strMeasure2}
+                    measure3={drink.strMeasure3}
+                    measure4={drink.strMeasure4}
+                    measure5={drink.strMeasure5}
+                    measure6={drink.strMeasure6}
+                    measure7={drink.strMeasure7}
+                    measure8={drink.strMeasure8}
+                    measure9={drink.strMeasure9}
+                    measure10={drink.strMeasure10}
+                    measure11={drink.strMeasure11}
+                    measure12={drink.strMeasure12}
+                    measure13={drink.strMeasure13}
+                    measure14={drink.strMeasure14}
+                    measure15={drink.strMeasure15}
+                    instructions={drink.strInstructions}
+                    glass={drink.strGlass}
+                  />
+                ))
+              : null}
+          </div>
         </div>
-      </div>
 
-      <div className="letterGroup">
-        <p id="m">M</p>
+        <div className="letterGroup">
+          <p id="m">M</p>
 
-        <div className="allCocktails">
-          {m
-            ? m.map(drink => (
-                <RenderOne
-                  key={drink.idDrink}
-                  id={drink.idDrink}
-                  name={drink.strDrink}
-                  type={drink.strAlcoholic}
-                  image={drink.strDrinkThumb}
-                  ing1={drink.strIngredient1}
-                  ing2={drink.strIngredient2}
-                  ing3={drink.strIngredient3}
-                  ing4={drink.strIngredient4}
-                  ing5={drink.strIngredient5}
-                  ing6={drink.strIngredient6}
-                  ing7={drink.strIngredient7}
-                  ing8={drink.strIngredient8}
-                  ing9={drink.strIngredient9}
-                  ing10={drink.strIngredient10}
-                  ing11={drink.strIngredient11}
-                  ing12={drink.strIngredient12}
-                  ing13={drink.strIngredient13}
-                  ing14={drink.strIngredient14}
-                  ing15={drink.strIngredient15}
-                  measure1={drink.strMeasure1}
-                  measure2={drink.strMeasure2}
-                  measure3={drink.strMeasure3}
-                  measure4={drink.strMeasure4}
-                  measure5={drink.strMeasure5}
-                  measure6={drink.strMeasure6}
-                  measure7={drink.strMeasure7}
-                  measure8={drink.strMeasure8}
-                  measure9={drink.strMeasure9}
-                  measure10={drink.strMeasure10}
-                  measure11={drink.strMeasure11}
-                  measure12={drink.strMeasure12}
-                  measure13={drink.strMeasure13}
-                  measure14={drink.strMeasure14}
-                  measure15={drink.strMeasure15}
-                  instructions={drink.strInstructions}
-                  glass={drink.strGlass}
-                />
-              ))
-            : null}
+          <div className="allCocktails">
+            {m
+              ? m.map(drink => (
+                  <RenderOne
+                    key={drink.idDrink}
+                    id={drink.idDrink}
+                    name={drink.strDrink}
+                    type={drink.strAlcoholic}
+                    image={drink.strDrinkThumb}
+                    ing1={drink.strIngredient1}
+                    ing2={drink.strIngredient2}
+                    ing3={drink.strIngredient3}
+                    ing4={drink.strIngredient4}
+                    ing5={drink.strIngredient5}
+                    ing6={drink.strIngredient6}
+                    ing7={drink.strIngredient7}
+                    ing8={drink.strIngredient8}
+                    ing9={drink.strIngredient9}
+                    ing10={drink.strIngredient10}
+                    ing11={drink.strIngredient11}
+                    ing12={drink.strIngredient12}
+                    ing13={drink.strIngredient13}
+                    ing14={drink.strIngredient14}
+                    ing15={drink.strIngredient15}
+                    measure1={drink.strMeasure1}
+                    measure2={drink.strMeasure2}
+                    measure3={drink.strMeasure3}
+                    measure4={drink.strMeasure4}
+                    measure5={drink.strMeasure5}
+                    measure6={drink.strMeasure6}
+                    measure7={drink.strMeasure7}
+                    measure8={drink.strMeasure8}
+                    measure9={drink.strMeasure9}
+                    measure10={drink.strMeasure10}
+                    measure11={drink.strMeasure11}
+                    measure12={drink.strMeasure12}
+                    measure13={drink.strMeasure13}
+                    measure14={drink.strMeasure14}
+                    measure15={drink.strMeasure15}
+                    instructions={drink.strInstructions}
+                    glass={drink.strGlass}
+                  />
+                ))
+              : null}
+          </div>
         </div>
-      </div>
 
-      <div className="letterGroup">
-        <p id="n">N</p>
+        <div className="letterGroup">
+          <p id="n">N</p>
 
-        <div className="allCocktails">
-          {n
-            ? n.map(drink => (
-                <RenderOne
-                  key={drink.idDrink}
-                  id={drink.idDrink}
-                  name={drink.strDrink}
-                  type={drink.strAlcoholic}
-                  image={drink.strDrinkThumb}
-                  ing1={drink.strIngredient1}
-                  ing2={drink.strIngredient2}
-                  ing3={drink.strIngredient3}
-                  ing4={drink.strIngredient4}
-                  ing5={drink.strIngredient5}
-                  ing6={drink.strIngredient6}
-                  ing7={drink.strIngredient7}
-                  ing8={drink.strIngredient8}
-                  ing9={drink.strIngredient9}
-                  ing10={drink.strIngredient10}
-                  ing11={drink.strIngredient11}
-                  ing12={drink.strIngredient12}
-                  ing13={drink.strIngredient13}
-                  ing14={drink.strIngredient14}
-                  ing15={drink.strIngredient15}
-                  measure1={drink.strMeasure1}
-                  measure2={drink.strMeasure2}
-                  measure3={drink.strMeasure3}
-                  measure4={drink.strMeasure4}
-                  measure5={drink.strMeasure5}
-                  measure6={drink.strMeasure6}
-                  measure7={drink.strMeasure7}
-                  measure8={drink.strMeasure8}
-                  measure9={drink.strMeasure9}
-                  measure10={drink.strMeasure10}
-                  measure11={drink.strMeasure11}
-                  measure12={drink.strMeasure12}
-                  measure13={drink.strMeasure13}
-                  measure14={drink.strMeasure14}
-                  measure15={drink.strMeasure15}
-                  instructions={drink.strInstructions}
-                  glass={drink.strGlass}
-                />
-              ))
-            : null}
+          <div className="allCocktails">
+            {n
+              ? n.map(drink => (
+                  <RenderOne
+                    key={drink.idDrink}
+                    id={drink.idDrink}
+                    name={drink.strDrink}
+                    type={drink.strAlcoholic}
+                    image={drink.strDrinkThumb}
+                    ing1={drink.strIngredient1}
+                    ing2={drink.strIngredient2}
+                    ing3={drink.strIngredient3}
+                    ing4={drink.strIngredient4}
+                    ing5={drink.strIngredient5}
+                    ing6={drink.strIngredient6}
+                    ing7={drink.strIngredient7}
+                    ing8={drink.strIngredient8}
+                    ing9={drink.strIngredient9}
+                    ing10={drink.strIngredient10}
+                    ing11={drink.strIngredient11}
+                    ing12={drink.strIngredient12}
+                    ing13={drink.strIngredient13}
+                    ing14={drink.strIngredient14}
+                    ing15={drink.strIngredient15}
+                    measure1={drink.strMeasure1}
+                    measure2={drink.strMeasure2}
+                    measure3={drink.strMeasure3}
+                    measure4={drink.strMeasure4}
+                    measure5={drink.strMeasure5}
+                    measure6={drink.strMeasure6}
+                    measure7={drink.strMeasure7}
+                    measure8={drink.strMeasure8}
+                    measure9={drink.strMeasure9}
+                    measure10={drink.strMeasure10}
+                    measure11={drink.strMeasure11}
+                    measure12={drink.strMeasure12}
+                    measure13={drink.strMeasure13}
+                    measure14={drink.strMeasure14}
+                    measure15={drink.strMeasure15}
+                    instructions={drink.strInstructions}
+                    glass={drink.strGlass}
+                  />
+                ))
+              : null}
+          </div>
         </div>
-      </div>
 
-      <div className="letterGroup">
-        <p id="o">O</p>
+        <div className="letterGroup">
+          <p id="o">O</p>
 
-        <div className="allCocktails">
-          {o
-            ? o.map(drink => (
-                <RenderOne
-                  key={drink.idDrink}
-                  id={drink.idDrink}
-                  name={drink.strDrink}
-                  type={drink.strAlcoholic}
-                  image={drink.strDrinkThumb}
-                  ing1={drink.strIngredient1}
-                  ing2={drink.strIngredient2}
-                  ing3={drink.strIngredient3}
-                  ing4={drink.strIngredient4}
-                  ing5={drink.strIngredient5}
-                  ing6={drink.strIngredient6}
-                  ing7={drink.strIngredient7}
-                  ing8={drink.strIngredient8}
-                  ing9={drink.strIngredient9}
-                  ing10={drink.strIngredient10}
-                  ing11={drink.strIngredient11}
-                  ing12={drink.strIngredient12}
-                  ing13={drink.strIngredient13}
-                  ing14={drink.strIngredient14}
-                  ing15={drink.strIngredient15}
-                  measure1={drink.strMeasure1}
-                  measure2={drink.strMeasure2}
-                  measure3={drink.strMeasure3}
-                  measure4={drink.strMeasure4}
-                  measure5={drink.strMeasure5}
-                  measure6={drink.strMeasure6}
-                  measure7={drink.strMeasure7}
-                  measure8={drink.strMeasure8}
-                  measure9={drink.strMeasure9}
-                  measure10={drink.strMeasure10}
-                  measure11={drink.strMeasure11}
-                  measure12={drink.strMeasure12}
-                  measure13={drink.strMeasure13}
-                  measure14={drink.strMeasure14}
-                  measure15={drink.strMeasure15}
-                  instructions={drink.strInstructions}
-                  glass={drink.strGlass}
-                />
-              ))
-            : null}
+          <div className="allCocktails">
+            {o
+              ? o.map(drink => (
+                  <RenderOne
+                    key={drink.idDrink}
+                    id={drink.idDrink}
+                    name={drink.strDrink}
+                    type={drink.strAlcoholic}
+                    image={drink.strDrinkThumb}
+                    ing1={drink.strIngredient1}
+                    ing2={drink.strIngredient2}
+                    ing3={drink.strIngredient3}
+                    ing4={drink.strIngredient4}
+                    ing5={drink.strIngredient5}
+                    ing6={drink.strIngredient6}
+                    ing7={drink.strIngredient7}
+                    ing8={drink.strIngredient8}
+                    ing9={drink.strIngredient9}
+                    ing10={drink.strIngredient10}
+                    ing11={drink.strIngredient11}
+                    ing12={drink.strIngredient12}
+                    ing13={drink.strIngredient13}
+                    ing14={drink.strIngredient14}
+                    ing15={drink.strIngredient15}
+                    measure1={drink.strMeasure1}
+                    measure2={drink.strMeasure2}
+                    measure3={drink.strMeasure3}
+                    measure4={drink.strMeasure4}
+                    measure5={drink.strMeasure5}
+                    measure6={drink.strMeasure6}
+                    measure7={drink.strMeasure7}
+                    measure8={drink.strMeasure8}
+                    measure9={drink.strMeasure9}
+                    measure10={drink.strMeasure10}
+                    measure11={drink.strMeasure11}
+                    measure12={drink.strMeasure12}
+                    measure13={drink.strMeasure13}
+                    measure14={drink.strMeasure14}
+                    measure15={drink.strMeasure15}
+                    instructions={drink.strInstructions}
+                    glass={drink.strGlass}
+                  />
+                ))
+              : null}
+          </div>
         </div>
-      </div>
 
-      <div className="letterGroup">
-        <p id="p">P</p>
+        <div className="letterGroup">
+          <p id="p">P</p>
 
-        <div className="allCocktails">
-          {p
-            ? p.map(drink => (
-                <RenderOne
-                  key={drink.idDrink}
-                  id={drink.idDrink}
-                  name={drink.strDrink}
-                  type={drink.strAlcoholic}
-                  image={drink.strDrinkThumb}
-                  ing1={drink.strIngredient1}
-                  ing2={drink.strIngredient2}
-                  ing3={drink.strIngredient3}
-                  ing4={drink.strIngredient4}
-                  ing5={drink.strIngredient5}
-                  ing6={drink.strIngredient6}
-                  ing7={drink.strIngredient7}
-                  ing8={drink.strIngredient8}
-                  ing9={drink.strIngredient9}
-                  ing10={drink.strIngredient10}
-                  ing11={drink.strIngredient11}
-                  ing12={drink.strIngredient12}
-                  ing13={drink.strIngredient13}
-                  ing14={drink.strIngredient14}
-                  ing15={drink.strIngredient15}
-                  measure1={drink.strMeasure1}
-                  measure2={drink.strMeasure2}
-                  measure3={drink.strMeasure3}
-                  measure4={drink.strMeasure4}
-                  measure5={drink.strMeasure5}
-                  measure6={drink.strMeasure6}
-                  measure7={drink.strMeasure7}
-                  measure8={drink.strMeasure8}
-                  measure9={drink.strMeasure9}
-                  measure10={drink.strMeasure10}
-                  measure11={drink.strMeasure11}
-                  measure12={drink.strMeasure12}
-                  measure13={drink.strMeasure13}
-                  measure14={drink.strMeasure14}
-                  measure15={drink.strMeasure15}
-                  instructions={drink.strInstructions}
-                  glass={drink.strGlass}
-                />
-              ))
-            : null}
+          <div className="allCocktails">
+            {p
+              ? p.map(drink => (
+                  <RenderOne
+                    key={drink.idDrink}
+                    id={drink.idDrink}
+                    name={drink.strDrink}
+                    type={drink.strAlcoholic}
+                    image={drink.strDrinkThumb}
+                    ing1={drink.strIngredient1}
+                    ing2={drink.strIngredient2}
+                    ing3={drink.strIngredient3}
+                    ing4={drink.strIngredient4}
+                    ing5={drink.strIngredient5}
+                    ing6={drink.strIngredient6}
+                    ing7={drink.strIngredient7}
+                    ing8={drink.strIngredient8}
+                    ing9={drink.strIngredient9}
+                    ing10={drink.strIngredient10}
+                    ing11={drink.strIngredient11}
+                    ing12={drink.strIngredient12}
+                    ing13={drink.strIngredient13}
+                    ing14={drink.strIngredient14}
+                    ing15={drink.strIngredient15}
+                    measure1={drink.strMeasure1}
+                    measure2={drink.strMeasure2}
+                    measure3={drink.strMeasure3}
+                    measure4={drink.strMeasure4}
+                    measure5={drink.strMeasure5}
+                    measure6={drink.strMeasure6}
+                    measure7={drink.strMeasure7}
+                    measure8={drink.strMeasure8}
+                    measure9={drink.strMeasure9}
+                    measure10={drink.strMeasure10}
+                    measure11={drink.strMeasure11}
+                    measure12={drink.strMeasure12}
+                    measure13={drink.strMeasure13}
+                    measure14={drink.strMeasure14}
+                    measure15={drink.strMeasure15}
+                    instructions={drink.strInstructions}
+                    glass={drink.strGlass}
+                  />
+                ))
+              : null}
+          </div>
         </div>
-      </div>
 
-      <div className="letterGroup">
-        <p id="q">Q</p>
+        <div className="letterGroup">
+          <p id="q">Q</p>
 
-        <div className="allCocktails">
-          {q
-            ? q.map(drink => (
-                <RenderOne
-                  key={drink.idDrink}
-                  id={drink.idDrink}
-                  name={drink.strDrink}
-                  type={drink.strAlcoholic}
-                  image={drink.strDrinkThumb}
-                  ing1={drink.strIngredient1}
-                  ing2={drink.strIngredient2}
-                  ing3={drink.strIngredient3}
-                  ing4={drink.strIngredient4}
-                  ing5={drink.strIngredient5}
-                  ing6={drink.strIngredient6}
-                  ing7={drink.strIngredient7}
-                  ing8={drink.strIngredient8}
-                  ing9={drink.strIngredient9}
-                  ing10={drink.strIngredient10}
-                  ing11={drink.strIngredient11}
-                  ing12={drink.strIngredient12}
-                  ing13={drink.strIngredient13}
-                  ing14={drink.strIngredient14}
-                  ing15={drink.strIngredient15}
-                  measure1={drink.strMeasure1}
-                  measure2={drink.strMeasure2}
-                  measure3={drink.strMeasure3}
-                  measure4={drink.strMeasure4}
-                  measure5={drink.strMeasure5}
-                  measure6={drink.strMeasure6}
-                  measure7={drink.strMeasure7}
-                  measure8={drink.strMeasure8}
-                  measure9={drink.strMeasure9}
-                  measure10={drink.strMeasure10}
-                  measure11={drink.strMeasure11}
-                  measure12={drink.strMeasure12}
-                  measure13={drink.strMeasure13}
-                  measure14={drink.strMeasure14}
-                  measure15={drink.strMeasure15}
-                  instructions={drink.strInstructions}
-                  glass={drink.strGlass}
-                />
-              ))
-            : null}
+          <div className="allCocktails">
+            {q
+              ? q.map(drink => (
+                  <RenderOne
+                    key={drink.idDrink}
+                    id={drink.idDrink}
+                    name={drink.strDrink}
+                    type={drink.strAlcoholic}
+                    image={drink.strDrinkThumb}
+                    ing1={drink.strIngredient1}
+                    ing2={drink.strIngredient2}
+                    ing3={drink.strIngredient3}
+                    ing4={drink.strIngredient4}
+                    ing5={drink.strIngredient5}
+                    ing6={drink.strIngredient6}
+                    ing7={drink.strIngredient7}
+                    ing8={drink.strIngredient8}
+                    ing9={drink.strIngredient9}
+                    ing10={drink.strIngredient10}
+                    ing11={drink.strIngredient11}
+                    ing12={drink.strIngredient12}
+                    ing13={drink.strIngredient13}
+                    ing14={drink.strIngredient14}
+                    ing15={drink.strIngredient15}
+                    measure1={drink.strMeasure1}
+                    measure2={drink.strMeasure2}
+                    measure3={drink.strMeasure3}
+                    measure4={drink.strMeasure4}
+                    measure5={drink.strMeasure5}
+                    measure6={drink.strMeasure6}
+                    measure7={drink.strMeasure7}
+                    measure8={drink.strMeasure8}
+                    measure9={drink.strMeasure9}
+                    measure10={drink.strMeasure10}
+                    measure11={drink.strMeasure11}
+                    measure12={drink.strMeasure12}
+                    measure13={drink.strMeasure13}
+                    measure14={drink.strMeasure14}
+                    measure15={drink.strMeasure15}
+                    instructions={drink.strInstructions}
+                    glass={drink.strGlass}
+                  />
+                ))
+              : null}
+          </div>
         </div>
-      </div>
 
-      <div className="letterGroup">
-        <p id="r">R</p>
+        <div className="letterGroup">
+          <p id="r">R</p>
 
-        <div className="allCocktails">
-          {r
-            ? r.map(drink => (
-                <RenderOne
-                  key={drink.idDrink}
-                  id={drink.idDrink}
-                  name={drink.strDrink}
-                  type={drink.strAlcoholic}
-                  image={drink.strDrinkThumb}
-                  ing1={drink.strIngredient1}
-                  ing2={drink.strIngredient2}
-                  ing3={drink.strIngredient3}
-                  ing4={drink.strIngredient4}
-                  ing5={drink.strIngredient5}
-                  ing6={drink.strIngredient6}
-                  ing7={drink.strIngredient7}
-                  ing8={drink.strIngredient8}
-                  ing9={drink.strIngredient9}
-                  ing10={drink.strIngredient10}
-                  ing11={drink.strIngredient11}
-                  ing12={drink.strIngredient12}
-                  ing13={drink.strIngredient13}
-                  ing14={drink.strIngredient14}
-                  ing15={drink.strIngredient15}
-                  measure1={drink.strMeasure1}
-                  measure2={drink.strMeasure2}
-                  measure3={drink.strMeasure3}
-                  measure4={drink.strMeasure4}
-                  measure5={drink.strMeasure5}
-                  measure6={drink.strMeasure6}
-                  measure7={drink.strMeasure7}
-                  measure8={drink.strMeasure8}
-                  measure9={drink.strMeasure9}
-                  measure10={drink.strMeasure10}
-                  measure11={drink.strMeasure11}
-                  measure12={drink.strMeasure12}
-                  measure13={drink.strMeasure13}
-                  measure14={drink.strMeasure14}
-                  measure15={drink.strMeasure15}
-                  instructions={drink.strInstructions}
-                  glass={drink.strGlass}
-                />
-              ))
-            : null}
+          <div className="allCocktails">
+            {r
+              ? r.map(drink => (
+                  <RenderOne
+                    key={drink.idDrink}
+                    id={drink.idDrink}
+                    name={drink.strDrink}
+                    type={drink.strAlcoholic}
+                    image={drink.strDrinkThumb}
+                    ing1={drink.strIngredient1}
+                    ing2={drink.strIngredient2}
+                    ing3={drink.strIngredient3}
+                    ing4={drink.strIngredient4}
+                    ing5={drink.strIngredient5}
+                    ing6={drink.strIngredient6}
+                    ing7={drink.strIngredient7}
+                    ing8={drink.strIngredient8}
+                    ing9={drink.strIngredient9}
+                    ing10={drink.strIngredient10}
+                    ing11={drink.strIngredient11}
+                    ing12={drink.strIngredient12}
+                    ing13={drink.strIngredient13}
+                    ing14={drink.strIngredient14}
+                    ing15={drink.strIngredient15}
+                    measure1={drink.strMeasure1}
+                    measure2={drink.strMeasure2}
+                    measure3={drink.strMeasure3}
+                    measure4={drink.strMeasure4}
+                    measure5={drink.strMeasure5}
+                    measure6={drink.strMeasure6}
+                    measure7={drink.strMeasure7}
+                    measure8={drink.strMeasure8}
+                    measure9={drink.strMeasure9}
+                    measure10={drink.strMeasure10}
+                    measure11={drink.strMeasure11}
+                    measure12={drink.strMeasure12}
+                    measure13={drink.strMeasure13}
+                    measure14={drink.strMeasure14}
+                    measure15={drink.strMeasure15}
+                    instructions={drink.strInstructions}
+                    glass={drink.strGlass}
+                  />
+                ))
+              : null}
+          </div>
         </div>
-      </div>
 
-      <div className="letterGroup">
-        <p id="s">S</p>
+        <div className="letterGroup">
+          <p id="s">S</p>
 
-        <div className="allCocktails">
-          {s
-            ? s.map(drink => (
-                <RenderOne
-                  key={drink.idDrink}
-                  id={drink.idDrink}
-                  name={drink.strDrink}
-                  type={drink.strAlcoholic}
-                  image={drink.strDrinkThumb}
-                  ing1={drink.strIngredient1}
-                  ing2={drink.strIngredient2}
-                  ing3={drink.strIngredient3}
-                  ing4={drink.strIngredient4}
-                  ing5={drink.strIngredient5}
-                  ing6={drink.strIngredient6}
-                  ing7={drink.strIngredient7}
-                  ing8={drink.strIngredient8}
-                  ing9={drink.strIngredient9}
-                  ing10={drink.strIngredient10}
-                  ing11={drink.strIngredient11}
-                  ing12={drink.strIngredient12}
-                  ing13={drink.strIngredient13}
-                  ing14={drink.strIngredient14}
-                  ing15={drink.strIngredient15}
-                  measure1={drink.strMeasure1}
-                  measure2={drink.strMeasure2}
-                  measure3={drink.strMeasure3}
-                  measure4={drink.strMeasure4}
-                  measure5={drink.strMeasure5}
-                  measure6={drink.strMeasure6}
-                  measure7={drink.strMeasure7}
-                  measure8={drink.strMeasure8}
-                  measure9={drink.strMeasure9}
-                  measure10={drink.strMeasure10}
-                  measure11={drink.strMeasure11}
-                  measure12={drink.strMeasure12}
-                  measure13={drink.strMeasure13}
-                  measure14={drink.strMeasure14}
-                  measure15={drink.strMeasure15}
-                  instructions={drink.strInstructions}
-                  glass={drink.strGlass}
-                />
-              ))
-            : null}
+          <div className="allCocktails">
+            {s
+              ? s.map(drink => (
+                  <RenderOne
+                    key={drink.idDrink}
+                    id={drink.idDrink}
+                    name={drink.strDrink}
+                    type={drink.strAlcoholic}
+                    image={drink.strDrinkThumb}
+                    ing1={drink.strIngredient1}
+                    ing2={drink.strIngredient2}
+                    ing3={drink.strIngredient3}
+                    ing4={drink.strIngredient4}
+                    ing5={drink.strIngredient5}
+                    ing6={drink.strIngredient6}
+                    ing7={drink.strIngredient7}
+                    ing8={drink.strIngredient8}
+                    ing9={drink.strIngredient9}
+                    ing10={drink.strIngredient10}
+                    ing11={drink.strIngredient11}
+                    ing12={drink.strIngredient12}
+                    ing13={drink.strIngredient13}
+                    ing14={drink.strIngredient14}
+                    ing15={drink.strIngredient15}
+                    measure1={drink.strMeasure1}
+                    measure2={drink.strMeasure2}
+                    measure3={drink.strMeasure3}
+                    measure4={drink.strMeasure4}
+                    measure5={drink.strMeasure5}
+                    measure6={drink.strMeasure6}
+                    measure7={drink.strMeasure7}
+                    measure8={drink.strMeasure8}
+                    measure9={drink.strMeasure9}
+                    measure10={drink.strMeasure10}
+                    measure11={drink.strMeasure11}
+                    measure12={drink.strMeasure12}
+                    measure13={drink.strMeasure13}
+                    measure14={drink.strMeasure14}
+                    measure15={drink.strMeasure15}
+                    instructions={drink.strInstructions}
+                    glass={drink.strGlass}
+                  />
+                ))
+              : null}
+          </div>
         </div>
-      </div>
 
-      <div className="letterGroup">
-        <p id="t">T</p>
+        <div className="letterGroup">
+          <p id="t">T</p>
 
-        <div className="allCocktails">
-          {t
-            ? t.map(drink => (
-                <RenderOne
-                  key={drink.idDrink}
-                  id={drink.idDrink}
-                  name={drink.strDrink}
-                  type={drink.strAlcoholic}
-                  image={drink.strDrinkThumb}
-                  ing1={drink.strIngredient1}
-                  ing2={drink.strIngredient2}
-                  ing3={drink.strIngredient3}
-                  ing4={drink.strIngredient4}
-                  ing5={drink.strIngredient5}
-                  ing6={drink.strIngredient6}
-                  ing7={drink.strIngredient7}
-                  ing8={drink.strIngredient8}
-                  ing9={drink.strIngredient9}
-                  ing10={drink.strIngredient10}
-                  ing11={drink.strIngredient11}
-                  ing12={drink.strIngredient12}
-                  ing13={drink.strIngredient13}
-                  ing14={drink.strIngredient14}
-                  ing15={drink.strIngredient15}
-                  measure1={drink.strMeasure1}
-                  measure2={drink.strMeasure2}
-                  measure3={drink.strMeasure3}
-                  measure4={drink.strMeasure4}
-                  measure5={drink.strMeasure5}
-                  measure6={drink.strMeasure6}
-                  measure7={drink.strMeasure7}
-                  measure8={drink.strMeasure8}
-                  measure9={drink.strMeasure9}
-                  measure10={drink.strMeasure10}
-                  measure11={drink.strMeasure11}
-                  measure12={drink.strMeasure12}
-                  measure13={drink.strMeasure13}
-                  measure14={drink.strMeasure14}
-                  measure15={drink.strMeasure15}
-                  instructions={drink.strInstructions}
-                  glass={drink.strGlass}
-                />
-              ))
-            : null}
+          <div className="allCocktails">
+            {t
+              ? t.map(drink => (
+                  <RenderOne
+                    key={drink.idDrink}
+                    id={drink.idDrink}
+                    name={drink.strDrink}
+                    type={drink.strAlcoholic}
+                    image={drink.strDrinkThumb}
+                    ing1={drink.strIngredient1}
+                    ing2={drink.strIngredient2}
+                    ing3={drink.strIngredient3}
+                    ing4={drink.strIngredient4}
+                    ing5={drink.strIngredient5}
+                    ing6={drink.strIngredient6}
+                    ing7={drink.strIngredient7}
+                    ing8={drink.strIngredient8}
+                    ing9={drink.strIngredient9}
+                    ing10={drink.strIngredient10}
+                    ing11={drink.strIngredient11}
+                    ing12={drink.strIngredient12}
+                    ing13={drink.strIngredient13}
+                    ing14={drink.strIngredient14}
+                    ing15={drink.strIngredient15}
+                    measure1={drink.strMeasure1}
+                    measure2={drink.strMeasure2}
+                    measure3={drink.strMeasure3}
+                    measure4={drink.strMeasure4}
+                    measure5={drink.strMeasure5}
+                    measure6={drink.strMeasure6}
+                    measure7={drink.strMeasure7}
+                    measure8={drink.strMeasure8}
+                    measure9={drink.strMeasure9}
+                    measure10={drink.strMeasure10}
+                    measure11={drink.strMeasure11}
+                    measure12={drink.strMeasure12}
+                    measure13={drink.strMeasure13}
+                    measure14={drink.strMeasure14}
+                    measure15={drink.strMeasure15}
+                    instructions={drink.strInstructions}
+                    glass={drink.strGlass}
+                  />
+                ))
+              : null}
+          </div>
         </div>
-      </div>
 
-      <div className="letterGroup">
-        <p id="u">U</p>
+        <div className="letterGroup">
+          <p id="u">U</p>
 
-        <div className="allCocktails">
-          {u
-            ? u.map(drink => (
-                <RenderOne
-                  key={drink.idDrink}
-                  id={drink.idDrink}
-                  name={drink.strDrink}
-                  type={drink.strAlcoholic}
-                  image={drink.strDrinkThumb}
-                  ing1={drink.strIngredient1}
-                  ing2={drink.strIngredient2}
-                  ing3={drink.strIngredient3}
-                  ing4={drink.strIngredient4}
-                  ing5={drink.strIngredient5}
-                  ing6={drink.strIngredient6}
-                  ing7={drink.strIngredient7}
-                  ing8={drink.strIngredient8}
-                  ing9={drink.strIngredient9}
-                  ing10={drink.strIngredient10}
-                  ing11={drink.strIngredient11}
-                  ing12={drink.strIngredient12}
-                  ing13={drink.strIngredient13}
-                  ing14={drink.strIngredient14}
-                  ing15={drink.strIngredient15}
-                  measure1={drink.strMeasure1}
-                  measure2={drink.strMeasure2}
-                  measure3={drink.strMeasure3}
-                  measure4={drink.strMeasure4}
-                  measure5={drink.strMeasure5}
-                  measure6={drink.strMeasure6}
-                  measure7={drink.strMeasure7}
-                  measure8={drink.strMeasure8}
-                  measure9={drink.strMeasure9}
-                  measure10={drink.strMeasure10}
-                  measure11={drink.strMeasure11}
-                  measure12={drink.strMeasure12}
-                  measure13={drink.strMeasure13}
-                  measure14={drink.strMeasure14}
-                  measure15={drink.strMeasure15}
-                  instructions={drink.strInstructions}
-                  glass={drink.strGlass}
-                />
-              ))
-            : null}
+          <div className="allCocktails">
+            {u
+              ? u.map(drink => (
+                  <RenderOne
+                    key={drink.idDrink}
+                    id={drink.idDrink}
+                    name={drink.strDrink}
+                    type={drink.strAlcoholic}
+                    image={drink.strDrinkThumb}
+                    ing1={drink.strIngredient1}
+                    ing2={drink.strIngredient2}
+                    ing3={drink.strIngredient3}
+                    ing4={drink.strIngredient4}
+                    ing5={drink.strIngredient5}
+                    ing6={drink.strIngredient6}
+                    ing7={drink.strIngredient7}
+                    ing8={drink.strIngredient8}
+                    ing9={drink.strIngredient9}
+                    ing10={drink.strIngredient10}
+                    ing11={drink.strIngredient11}
+                    ing12={drink.strIngredient12}
+                    ing13={drink.strIngredient13}
+                    ing14={drink.strIngredient14}
+                    ing15={drink.strIngredient15}
+                    measure1={drink.strMeasure1}
+                    measure2={drink.strMeasure2}
+                    measure3={drink.strMeasure3}
+                    measure4={drink.strMeasure4}
+                    measure5={drink.strMeasure5}
+                    measure6={drink.strMeasure6}
+                    measure7={drink.strMeasure7}
+                    measure8={drink.strMeasure8}
+                    measure9={drink.strMeasure9}
+                    measure10={drink.strMeasure10}
+                    measure11={drink.strMeasure11}
+                    measure12={drink.strMeasure12}
+                    measure13={drink.strMeasure13}
+                    measure14={drink.strMeasure14}
+                    measure15={drink.strMeasure15}
+                    instructions={drink.strInstructions}
+                    glass={drink.strGlass}
+                  />
+                ))
+              : null}
+          </div>
         </div>
-      </div>
 
-      <div className="letterGroup">
-        <p id="v">V</p>
+        <div className="letterGroup">
+          <p id="v">V</p>
 
-        <div className="allCocktails">
-          {v
-            ? v.map(drink => (
-                <RenderOne
-                  key={drink.idDrink}
-                  id={drink.idDrink}
-                  name={drink.strDrink}
-                  type={drink.strAlcoholic}
-                  image={drink.strDrinkThumb}
-                  ing1={drink.strIngredient1}
-                  ing2={drink.strIngredient2}
-                  ing3={drink.strIngredient3}
-                  ing4={drink.strIngredient4}
-                  ing5={drink.strIngredient5}
-                  ing6={drink.strIngredient6}
-                  ing7={drink.strIngredient7}
-                  ing8={drink.strIngredient8}
-                  ing9={drink.strIngredient9}
-                  ing10={drink.strIngredient10}
-                  ing11={drink.strIngredient11}
-                  ing12={drink.strIngredient12}
-                  ing13={drink.strIngredient13}
-                  ing14={drink.strIngredient14}
-                  ing15={drink.strIngredient15}
-                  measure1={drink.strMeasure1}
-                  measure2={drink.strMeasure2}
-                  measure3={drink.strMeasure3}
-                  measure4={drink.strMeasure4}
-                  measure5={drink.strMeasure5}
-                  measure6={drink.strMeasure6}
-                  measure7={drink.strMeasure7}
-                  measure8={drink.strMeasure8}
-                  measure9={drink.strMeasure9}
-                  measure10={drink.strMeasure10}
-                  measure11={drink.strMeasure11}
-                  measure12={drink.strMeasure12}
-                  measure13={drink.strMeasure13}
-                  measure14={drink.strMeasure14}
-                  measure15={drink.strMeasure15}
-                  instructions={drink.strInstructions}
-                  glass={drink.strGlass}
-                />
-              ))
-            : null}
+          <div className="allCocktails">
+            {v
+              ? v.map(drink => (
+                  <RenderOne
+                    key={drink.idDrink}
+                    id={drink.idDrink}
+                    name={drink.strDrink}
+                    type={drink.strAlcoholic}
+                    image={drink.strDrinkThumb}
+                    ing1={drink.strIngredient1}
+                    ing2={drink.strIngredient2}
+                    ing3={drink.strIngredient3}
+                    ing4={drink.strIngredient4}
+                    ing5={drink.strIngredient5}
+                    ing6={drink.strIngredient6}
+                    ing7={drink.strIngredient7}
+                    ing8={drink.strIngredient8}
+                    ing9={drink.strIngredient9}
+                    ing10={drink.strIngredient10}
+                    ing11={drink.strIngredient11}
+                    ing12={drink.strIngredient12}
+                    ing13={drink.strIngredient13}
+                    ing14={drink.strIngredient14}
+                    ing15={drink.strIngredient15}
+                    measure1={drink.strMeasure1}
+                    measure2={drink.strMeasure2}
+                    measure3={drink.strMeasure3}
+                    measure4={drink.strMeasure4}
+                    measure5={drink.strMeasure5}
+                    measure6={drink.strMeasure6}
+                    measure7={drink.strMeasure7}
+                    measure8={drink.strMeasure8}
+                    measure9={drink.strMeasure9}
+                    measure10={drink.strMeasure10}
+                    measure11={drink.strMeasure11}
+                    measure12={drink.strMeasure12}
+                    measure13={drink.strMeasure13}
+                    measure14={drink.strMeasure14}
+                    measure15={drink.strMeasure15}
+                    instructions={drink.strInstructions}
+                    glass={drink.strGlass}
+                  />
+                ))
+              : null}
+          </div>
         </div>
-      </div>
 
-      <div className="letterGroup">
-        <p id="w">W</p>
+        <div className="letterGroup">
+          <p id="w">W</p>
 
-        <div className="allCocktails">
-          {w
-            ? w.map(drink => (
-                <RenderOne
-                  key={drink.idDrink}
-                  id={drink.idDrink}
-                  name={drink.strDrink}
-                  type={drink.strAlcoholic}
-                  image={drink.strDrinkThumb}
-                  ing1={drink.strIngredient1}
-                  ing2={drink.strIngredient2}
-                  ing3={drink.strIngredient3}
-                  ing4={drink.strIngredient4}
-                  ing5={drink.strIngredient5}
-                  ing6={drink.strIngredient6}
-                  ing7={drink.strIngredient7}
-                  ing8={drink.strIngredient8}
-                  ing9={drink.strIngredient9}
-                  ing10={drink.strIngredient10}
-                  ing11={drink.strIngredient11}
-                  ing12={drink.strIngredient12}
-                  ing13={drink.strIngredient13}
-                  ing14={drink.strIngredient14}
-                  ing15={drink.strIngredient15}
-                  measure1={drink.strMeasure1}
-                  measure2={drink.strMeasure2}
-                  measure3={drink.strMeasure3}
-                  measure4={drink.strMeasure4}
-                  measure5={drink.strMeasure5}
-                  measure6={drink.strMeasure6}
-                  measure7={drink.strMeasure7}
-                  measure8={drink.strMeasure8}
-                  measure9={drink.strMeasure9}
-                  measure10={drink.strMeasure10}
-                  measure11={drink.strMeasure11}
-                  measure12={drink.strMeasure12}
-                  measure13={drink.strMeasure13}
-                  measure14={drink.strMeasure14}
-                  measure15={drink.strMeasure15}
-                  instructions={drink.strInstructions}
-                  glass={drink.strGlass}
-                />
-              ))
-            : null}
+          <div className="allCocktails">
+            {w
+              ? w.map(drink => (
+                  <RenderOne
+                    key={drink.idDrink}
+                    id={drink.idDrink}
+                    name={drink.strDrink}
+                    type={drink.strAlcoholic}
+                    image={drink.strDrinkThumb}
+                    ing1={drink.strIngredient1}
+                    ing2={drink.strIngredient2}
+                    ing3={drink.strIngredient3}
+                    ing4={drink.strIngredient4}
+                    ing5={drink.strIngredient5}
+                    ing6={drink.strIngredient6}
+                    ing7={drink.strIngredient7}
+                    ing8={drink.strIngredient8}
+                    ing9={drink.strIngredient9}
+                    ing10={drink.strIngredient10}
+                    ing11={drink.strIngredient11}
+                    ing12={drink.strIngredient12}
+                    ing13={drink.strIngredient13}
+                    ing14={drink.strIngredient14}
+                    ing15={drink.strIngredient15}
+                    measure1={drink.strMeasure1}
+                    measure2={drink.strMeasure2}
+                    measure3={drink.strMeasure3}
+                    measure4={drink.strMeasure4}
+                    measure5={drink.strMeasure5}
+                    measure6={drink.strMeasure6}
+                    measure7={drink.strMeasure7}
+                    measure8={drink.strMeasure8}
+                    measure9={drink.strMeasure9}
+                    measure10={drink.strMeasure10}
+                    measure11={drink.strMeasure11}
+                    measure12={drink.strMeasure12}
+                    measure13={drink.strMeasure13}
+                    measure14={drink.strMeasure14}
+                    measure15={drink.strMeasure15}
+                    instructions={drink.strInstructions}
+                    glass={drink.strGlass}
+                  />
+                ))
+              : null}
+          </div>
         </div>
-      </div>
 
-      <div className="letterGroup">
-        <p id="x">X</p>
+        <div className="letterGroup">
+          <p id="x">X</p>
 
-        <div className="allCocktails">
-          {x
-            ? x.map(drink => (
-                <RenderOne
-                  key={drink.idDrink}
-                  id={drink.idDrink}
-                  name={drink.strDrink}
-                  type={drink.strAlcoholic}
-                  image={drink.strDrinkThumb}
-                  ing1={drink.strIngredient1}
-                  ing2={drink.strIngredient2}
-                  ing3={drink.strIngredient3}
-                  ing4={drink.strIngredient4}
-                  ing5={drink.strIngredient5}
-                  ing6={drink.strIngredient6}
-                  ing7={drink.strIngredient7}
-                  ing8={drink.strIngredient8}
-                  ing9={drink.strIngredient9}
-                  ing10={drink.strIngredient10}
-                  ing11={drink.strIngredient11}
-                  ing12={drink.strIngredient12}
-                  ing13={drink.strIngredient13}
-                  ing14={drink.strIngredient14}
-                  ing15={drink.strIngredient15}
-                  measure1={drink.strMeasure1}
-                  measure2={drink.strMeasure2}
-                  measure3={drink.strMeasure3}
-                  measure4={drink.strMeasure4}
-                  measure5={drink.strMeasure5}
-                  measure6={drink.strMeasure6}
-                  measure7={drink.strMeasure7}
-                  measure8={drink.strMeasure8}
-                  measure9={drink.strMeasure9}
-                  measure10={drink.strMeasure10}
-                  measure11={drink.strMeasure11}
-                  measure12={drink.strMeasure12}
-                  measure13={drink.strMeasure13}
-                  measure14={drink.strMeasure14}
-                  measure15={drink.strMeasure15}
-                  instructions={drink.strInstructions}
-                  glass={drink.strGlass}
-                />
-              ))
-            : null}
+          <div className="allCocktails">
+            {x
+              ? x.map(drink => (
+                  <RenderOne
+                    key={drink.idDrink}
+                    id={drink.idDrink}
+                    name={drink.strDrink}
+                    type={drink.strAlcoholic}
+                    image={drink.strDrinkThumb}
+                    ing1={drink.strIngredient1}
+                    ing2={drink.strIngredient2}
+                    ing3={drink.strIngredient3}
+                    ing4={drink.strIngredient4}
+                    ing5={drink.strIngredient5}
+                    ing6={drink.strIngredient6}
+                    ing7={drink.strIngredient7}
+                    ing8={drink.strIngredient8}
+                    ing9={drink.strIngredient9}
+                    ing10={drink.strIngredient10}
+                    ing11={drink.strIngredient11}
+                    ing12={drink.strIngredient12}
+                    ing13={drink.strIngredient13}
+                    ing14={drink.strIngredient14}
+                    ing15={drink.strIngredient15}
+                    measure1={drink.strMeasure1}
+                    measure2={drink.strMeasure2}
+                    measure3={drink.strMeasure3}
+                    measure4={drink.strMeasure4}
+                    measure5={drink.strMeasure5}
+                    measure6={drink.strMeasure6}
+                    measure7={drink.strMeasure7}
+                    measure8={drink.strMeasure8}
+                    measure9={drink.strMeasure9}
+                    measure10={drink.strMeasure10}
+                    measure11={drink.strMeasure11}
+                    measure12={drink.strMeasure12}
+                    measure13={drink.strMeasure13}
+                    measure14={drink.strMeasure14}
+                    measure15={drink.strMeasure15}
+                    instructions={drink.strInstructions}
+                    glass={drink.strGlass}
+                  />
+                ))
+              : null}
+          </div>
         </div>
-      </div>
 
-      <div className="letterGroup">
-        <p id="y">Y</p>
+        <div className="letterGroup">
+          <p id="y">Y</p>
 
-        <div className="allCocktails">
-          {y
-            ? y.map(drink => (
-                <RenderOne
-                  key={drink.idDrink}
-                  id={drink.idDrink}
-                  name={drink.strDrink}
-                  type={drink.strAlcoholic}
-                  image={drink.strDrinkThumb}
-                  ing1={drink.strIngredient1}
-                  ing2={drink.strIngredient2}
-                  ing3={drink.strIngredient3}
-                  ing4={drink.strIngredient4}
-                  ing5={drink.strIngredient5}
-                  ing6={drink.strIngredient6}
-                  ing7={drink.strIngredient7}
-                  ing8={drink.strIngredient8}
-                  ing9={drink.strIngredient9}
-                  ing10={drink.strIngredient10}
-                  ing11={drink.strIngredient11}
-                  ing12={drink.strIngredient12}
-                  ing13={drink.strIngredient13}
-                  ing14={drink.strIngredient14}
-                  ing15={drink.strIngredient15}
-                  measure1={drink.strMeasure1}
-                  measure2={drink.strMeasure2}
-                  measure3={drink.strMeasure3}
-                  measure4={drink.strMeasure4}
-                  measure5={drink.strMeasure5}
-                  measure6={drink.strMeasure6}
-                  measure7={drink.strMeasure7}
-                  measure8={drink.strMeasure8}
-                  measure9={drink.strMeasure9}
-                  measure10={drink.strMeasure10}
-                  measure11={drink.strMeasure11}
-                  measure12={drink.strMeasure12}
-                  measure13={drink.strMeasure13}
-                  measure14={drink.strMeasure14}
-                  measure15={drink.strMeasure15}
-                  instructions={drink.strInstructions}
-                  glass={drink.strGlass}
-                />
-              ))
-            : null}
+          <div className="allCocktails">
+            {y
+              ? y.map(drink => (
+                  <RenderOne
+                    key={drink.idDrink}
+                    id={drink.idDrink}
+                    name={drink.strDrink}
+                    type={drink.strAlcoholic}
+                    image={drink.strDrinkThumb}
+                    ing1={drink.strIngredient1}
+                    ing2={drink.strIngredient2}
+                    ing3={drink.strIngredient3}
+                    ing4={drink.strIngredient4}
+                    ing5={drink.strIngredient5}
+                    ing6={drink.strIngredient6}
+                    ing7={drink.strIngredient7}
+                    ing8={drink.strIngredient8}
+                    ing9={drink.strIngredient9}
+                    ing10={drink.strIngredient10}
+                    ing11={drink.strIngredient11}
+                    ing12={drink.strIngredient12}
+                    ing13={drink.strIngredient13}
+                    ing14={drink.strIngredient14}
+                    ing15={drink.strIngredient15}
+                    measure1={drink.strMeasure1}
+                    measure2={drink.strMeasure2}
+                    measure3={drink.strMeasure3}
+                    measure4={drink.strMeasure4}
+                    measure5={drink.strMeasure5}
+                    measure6={drink.strMeasure6}
+                    measure7={drink.strMeasure7}
+                    measure8={drink.strMeasure8}
+                    measure9={drink.strMeasure9}
+                    measure10={drink.strMeasure10}
+                    measure11={drink.strMeasure11}
+                    measure12={drink.strMeasure12}
+                    measure13={drink.strMeasure13}
+                    measure14={drink.strMeasure14}
+                    measure15={drink.strMeasure15}
+                    instructions={drink.strInstructions}
+                    glass={drink.strGlass}
+                  />
+                ))
+              : null}
+          </div>
         </div>
-      </div>
 
-      <div className="letterGroup">
-        <p id="z">Z</p>
+        <div className="letterGroup">
+          <p id="z">Z</p>
 
-        <div className="allCocktails">
-          {z
-            ? z.map(drink => (
-                <RenderOne
-                  key={drink.idDrink}
-                  id={drink.idDrink}
-                  name={drink.strDrink}
-                  type={drink.strAlcoholic}
-                  image={drink.strDrinkThumb}
-                  ing1={drink.strIngredient1}
-                  ing2={drink.strIngredient2}
-                  ing3={drink.strIngredient3}
-                  ing4={drink.strIngredient4}
-                  ing5={drink.strIngredient5}
-                  ing6={drink.strIngredient6}
-                  ing7={drink.strIngredient7}
-                  ing8={drink.strIngredient8}
-                  ing9={drink.strIngredient9}
-                  ing10={drink.strIngredient10}
-                  ing11={drink.strIngredient11}
-                  ing12={drink.strIngredient12}
-                  ing13={drink.strIngredient13}
-                  ing14={drink.strIngredient14}
-                  ing15={drink.strIngredient15}
-                  measure1={drink.strMeasure1}
-                  measure2={drink.strMeasure2}
-                  measure3={drink.strMeasure3}
-                  measure4={drink.strMeasure4}
-                  measure5={drink.strMeasure5}
-                  measure6={drink.strMeasure6}
-                  measure7={drink.strMeasure7}
-                  measure8={drink.strMeasure8}
-                  measure9={drink.strMeasure9}
-                  measure10={drink.strMeasure10}
-                  measure11={drink.strMeasure11}
-                  measure12={drink.strMeasure12}
-                  measure13={drink.strMeasure13}
-                  measure14={drink.strMeasure14}
-                  measure15={drink.strMeasure15}
-                  instructions={drink.strInstructions}
-                  glass={drink.strGlass}
-                />
-              ))
-            : null}
+          <div className="allCocktails">
+            {z
+              ? z.map(drink => (
+                  <RenderOne
+                    key={drink.idDrink}
+                    id={drink.idDrink}
+                    name={drink.strDrink}
+                    type={drink.strAlcoholic}
+                    image={drink.strDrinkThumb}
+                    ing1={drink.strIngredient1}
+                    ing2={drink.strIngredient2}
+                    ing3={drink.strIngredient3}
+                    ing4={drink.strIngredient4}
+                    ing5={drink.strIngredient5}
+                    ing6={drink.strIngredient6}
+                    ing7={drink.strIngredient7}
+                    ing8={drink.strIngredient8}
+                    ing9={drink.strIngredient9}
+                    ing10={drink.strIngredient10}
+                    ing11={drink.strIngredient11}
+                    ing12={drink.strIngredient12}
+                    ing13={drink.strIngredient13}
+                    ing14={drink.strIngredient14}
+                    ing15={drink.strIngredient15}
+                    measure1={drink.strMeasure1}
+                    measure2={drink.strMeasure2}
+                    measure3={drink.strMeasure3}
+                    measure4={drink.strMeasure4}
+                    measure5={drink.strMeasure5}
+                    measure6={drink.strMeasure6}
+                    measure7={drink.strMeasure7}
+                    measure8={drink.strMeasure8}
+                    measure9={drink.strMeasure9}
+                    measure10={drink.strMeasure10}
+                    measure11={drink.strMeasure11}
+                    measure12={drink.strMeasure12}
+                    measure13={drink.strMeasure13}
+                    measure14={drink.strMeasure14}
+                    measure15={drink.strMeasure15}
+                    instructions={drink.strInstructions}
+                    glass={drink.strGlass}
+                  />
+                ))
+              : null}
+          </div>
         </div>
       </div>
     </div>

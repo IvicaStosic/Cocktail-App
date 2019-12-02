@@ -55,7 +55,7 @@ const RenderOne = ({
         </Link>
       </div>
       <div className="shortDescription">
-        <h4>{name}</h4>
+        <h2>{name}</h2>
       </div>
       {popup ? (
         <Popup
