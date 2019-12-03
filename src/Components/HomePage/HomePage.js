@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Menu from "./Menu";
 
 const HomePage = () => {
   return (
@@ -29,6 +30,10 @@ const HomePage = () => {
         If you have some specific drink in mind, fill free to search for it by
         writing it's name, ingredient or even type of glass it is served in.
       </h3>
+
+      <div className="menu">
+        <Menu />
+      </div>
 
       <h5>
         For information about this app please visit{" "}

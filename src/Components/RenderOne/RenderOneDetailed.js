@@ -43,7 +43,7 @@ const RenderOneDetailed = ({
   return (
     <div className="renderOneDetailed">
       <h4>{name}</h4>
-      <p>
+      <p className="tableLink">
         (
         <Link to={`/all/2/${type}`} key="id">
           {type}
@@ -54,14 +54,16 @@ const RenderOneDetailed = ({
       <table className="table">
         <thead className="thead">
           <tr>
-            <td>Ingredient</td>
-            <td>Measure</td>
+            <td id="thleft">Ingredient</td>
+            <td id="thright">Measure</td>
           </tr>
         </thead>
         <tbody className="tbody">
           <tr>
             <td>
-              <Link to={`/all/ing/${ing1}`}>{ing1}</Link>
+              <Link to={`/all/ing/${ing1}`} className="tableLink">
+                {ing1}
+              </Link>
             </td>
             <td>{measure1}</td>
           </tr>
@@ -128,9 +130,9 @@ const RenderOneDetailed = ({
           </tr>
 
           <tr>
-            <td colSpan="2">
+            <td colSpan="2" id="tf">
               Serve in{" "}
-              <Link to={`/all/3/${glass}`} key={id}>
+              <Link to={`/all/3/${glass}`} key={id} className="tableLink">
                 {glass}
               </Link>
             </td>

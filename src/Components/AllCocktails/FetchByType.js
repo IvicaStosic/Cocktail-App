@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import RenderOne from "../RenderOne/RenderOne";
-import "../../styles/style.css";
 
 const FetchByType = ({ match }) => {
   const [type, setType] = useState([]);
