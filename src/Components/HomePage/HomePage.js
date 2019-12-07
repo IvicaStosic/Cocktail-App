@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Menu from "./Menu";
+import HomePageNameMenu from "./HomePageNameMenu";
 
 const HomePage = () => {
   return (
@@ -8,11 +9,11 @@ const HomePage = () => {
       <h1>
         Welcome to Cocktail App where you can search for and see information
         about your favorite drinks whether they are{" "}
-        <Link to="/all/2/Alcoholic" className="homeLinks">
+        <Link to="/all/type/Alcoholic" className="homeLinks">
           alcoholic
         </Link>{" "}
         or{" "}
-        <Link to="/all/2/Non%20alcoholic" className="homeLinks">
+        <Link to="/all/type/Non%20alcoholic" className="homeLinks">
           non-alcoholic
         </Link>
         .

@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import RenderOne from "../RenderOne/RenderOne";
 import { CocktailContext } from "../CocktailProvider/CocktailContext";
-import ToTopButton from "../Nav/toTopButton";
+import ToTopButton from "../Nav/ToTopButton";
 
 import "../../styles/style.css";
 
@@ -97,7 +97,7 @@ const AllCocktails = props => {
       {links}
       <div className="mainContentGroup">
         <div className="letterGroup">
-          <p id="a">~A~</p>
+          <p id="a">A</p>
 
           <div className="allCocktails">
             {a

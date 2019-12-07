@@ -45,7 +45,7 @@ const RenderOneDetailed = ({
       <h4>{name}</h4>
       <p className="tableLink">
         (
-        <Link to={`/all/2/${type}`} key="id">
+        <Link to={`/all/type/${type}`} key="id">
           {type}
         </Link>
         )
@@ -188,7 +188,7 @@ const RenderOneDetailed = ({
           <tr>
             <td colSpan="2" id="tf">
               Serve in{" "}
-              <Link to={`/all/3/${glass}`} key={id} className="tableLink">
+              <Link to={`/all/glass/${glass}`} key={id} className="tableLink">
                 {glass}
               </Link>
             </td>

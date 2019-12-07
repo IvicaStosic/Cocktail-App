@@ -2,28 +2,29 @@ import React, { useState, useEffect } from "react";
 import RenderOne from "../RenderOne/RenderOne";
 import RenderOneDetailed from "../RenderOne/RenderOneDetailed";
 
-const FetchById = ({ match }) => {
-  const [id, setId] = useState([]);
+const FetchByIds = ({ id }) => {
+  const [details, setDetails] = useState([]);
 
   useEffect(() => {
-    fetchById();
+    fetchByIds();
   }, []);
 
-  const fetchById = async () => {
+  const fetchByIds = async () => {
     const response = await fetch(
-      `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${match.params.id}`
+      `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${id}`
     );
-    console.log({ match });
+    console.log("test Ids");
+    console.log({ id });
     const data = await response.json();
     console.log(data);
-    setId(data.drinks);
+    setDetails(data.drinks);
   };
 
   return (
     <div>
-      {id.map(drink => (
+      {details.map(drink => (
         <div key={drink.idDrink}>
-          <RenderOneDetailed
+          <RenderOne
             id={drink.idDrink}
             name={drink.strDrink}
             type={drink.strAlcoholic}
@@ -67,4 +68,4 @@ const FetchById = ({ match }) => {
   );
 };
 
-export default FetchById;
+export default FetchByIds;

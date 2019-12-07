@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import RenderOne from "../RenderOne/RenderOne";
+import FetchByIds from "./FetchByIds";
 import "../../styles/style.css";
-import ToTopButton from "../Nav/toTopButton";
+import ToTopButton from "../Nav/ToTopButton";
 
 const FetchByIngredient = ({ match }) => {
   const [ingredient, setIngredient] = useState([]);
@@ -24,17 +25,12 @@ const FetchByIngredient = ({ match }) => {
   return (
     <div className="renderFetchChoice">
       <div>
-        <h1 className="fetchChoice">{match.params.ing1}</h1>
+        <h1 className="fetchChoice">Cocktails with {match.params.ing}</h1>
       </div>
       <div className="fetchChoiceList">
         {ingredient.map(drink => (
           <div key={drink.idDrink}>
-            <RenderOne
-              id={drink.idDrink}
-              name={drink.strDrink}
-              type={drink.strAlcoholic}
-              image={drink.strDrinkThumb}
-            />
+            <FetchByIds id={drink.idDrink} />
           </div>
         ))}
       </div>

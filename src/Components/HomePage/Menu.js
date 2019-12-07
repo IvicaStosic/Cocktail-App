@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import HomePageNameMenu from "./HomePageNameMenu";
+import HomePageTypeMenu from "./HomePageTypeMenu";
+import HomePageIngredientMenu from "./HomePageIngredientMenu";
 
 class Menu extends Component {
   constructor() {
@@ -40,9 +43,18 @@ class Menu extends Component {
               this.dropdownMenu = element;
             }}
           >
-            <button> Search by cocktail name </button>
-            <button> Search by ingredient </button>
-            <button> Search by type of glass </button>
+            <button>
+              {" "}
+              <HomePageNameMenu />{" "}
+            </button>
+            <button>
+              {" "}
+              <HomePageIngredientMenu />{" "}
+            </button>
+            <button>
+              {" "}
+              <HomePageTypeMenu />{" "}
+            </button>
           </div>
         ) : null}
       </div>
