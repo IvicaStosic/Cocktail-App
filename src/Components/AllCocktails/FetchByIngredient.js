@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import RenderOne from "../RenderOne/RenderOne";
 import "../../styles/style.css";
+import ToTopButton from "../Nav/toTopButton";
 
 const FetchByIngredient = ({ match }) => {
   const [ingredient, setIngredient] = useState([]);
@@ -10,10 +11,8 @@ const FetchByIngredient = ({ match }) => {
   }, []);
 
   const FetchByIngredientList = async () => {
-    /*let ing = [];
-    match.params.ing1 ? ing.push(match.params.ing1.split(" ").join("_")) : null;*/
-    let ingredientChoice = match.params.ing1.split(" ").join("_");
-    //console.log(ing);
+    let ingredientChoice = match.params.ing.split(" ").join("_");
+
     const response = await fetch(
       `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${ingredientChoice}`
     );
@@ -39,6 +38,7 @@ const FetchByIngredient = ({ match }) => {
           </div>
         ))}
       </div>
+      <ToTopButton />
     </div>
   );
 };

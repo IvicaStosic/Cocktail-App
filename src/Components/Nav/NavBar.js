@@ -22,7 +22,7 @@ function NavBar() {
         <Route path="/all/3/:glass" exact component={FetchByGlass} />
         <Route path="/all/2/:type" exact component={FetchByType} />
         <Route path="/all/1/:id" exact component={FetchById} />
-        <Route path="/all/ing/:ing1" exact component={FetchByIngredient} />
+        <Route path="/all/ing/:ing" exact component={FetchByIngredient} />
         <Route path="/random" exact component={RandomCocktail} />
       </Switch>
     </Router>

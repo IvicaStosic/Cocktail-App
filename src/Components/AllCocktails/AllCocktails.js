@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import RenderOne from "../RenderOne/RenderOne";
 import { CocktailContext } from "../CocktailProvider/CocktailContext";
+import ToTopButton from "../Nav/toTopButton";
 
 import "../../styles/style.css";
 
@@ -1395,6 +1396,7 @@ const AllCocktails = props => {
           </div>
         </div>
       </div>
+      <ToTopButton />
     </div>
   );
 };

@@ -253,7 +253,7 @@ pre {
   color: white;
 }
 
-.navLinks .link:hover, .navLinks .link:active, .navLinks .link:focus, .navLinks .linkvisited, .navLinks .link:link, .navLinks .link:active {
+.navLinks .link:hover, .navLinks .link:active, .navLinks .link:focus, .navLinks .link:visited, .navLinks .link:link, .navLinks .link:active {
   text-decoration: none;
 }
 
@@ -304,7 +304,7 @@ pre {
   width: 80%;
 }
 
-.homePage .homeLinks:hover, .homePage .homeLinks:active, .homePage .homeLinks:focus, .homePage .homeLinksvisited, .homePage .homeLinks:link, .homePage .homeLinks:active {
+.homePage .homeLinks:hover, .homePage .homeLinks:active, .homePage .homeLinks:focus, .homePage .homeLinks:visited, .homePage .homeLinks:link, .homePage .homeLinks:active {
   text-decoration: none;
 }
 
@@ -338,7 +338,7 @@ pre {
   color: white;
 }
 
-.allCocktailsPage .pageLinks a:hover, .allCocktailsPage .pageLinks a:active, .allCocktailsPage .pageLinks a:focus, .allCocktailsPage .pageLinks avisited, .allCocktailsPage .pageLinks a:link, .allCocktailsPage .pageLinks a:active {
+.allCocktailsPage .pageLinks a:hover, .allCocktailsPage .pageLinks a:active, .allCocktailsPage .pageLinks a:focus, .allCocktailsPage .pageLinks a:visited, .allCocktailsPage .pageLinks a:link, .allCocktailsPage .pageLinks a:active {
   text-decoration: none;
 }
 
@@ -475,7 +475,7 @@ pre {
   border-radius: 20px;
 }
 
-.renderOneDetailed table .tableLink:hover, .renderOneDetailed table .tableLink:active, .renderOneDetailed table .tableLink:focus, .renderOneDetailed table .tableLinkvisited, .renderOneDetailed table .tableLink:link, .renderOneDetailed table .tableLink:active {
+.renderOneDetailed table .tableLink:hover, .renderOneDetailed table .tableLink:active, .renderOneDetailed table .tableLink:focus, .renderOneDetailed table .tableLink:visited, .renderOneDetailed table .tableLink:link, .renderOneDetailed table .tableLink:active {
   text-decoration: none;
 }
 

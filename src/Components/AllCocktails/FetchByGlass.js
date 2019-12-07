@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import RenderOne from "../RenderOne/RenderOne";
 import "../../styles/style.css";
+import ToTopButton from "../Nav/toTopButton";
 
 const FetchByGlass = ({ match }) => {
   const [glass, setGlass] = useState([]);
@@ -36,6 +37,7 @@ const FetchByGlass = ({ match }) => {
           </div>
         ))}
       </div>
+      <ToTopButton />
     </div>
   );
 };

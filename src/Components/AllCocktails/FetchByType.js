@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import RenderOne from "../RenderOne/RenderOne";
+import ToTopButton from "../Nav/toTopButton";
 
 const FetchByType = ({ match }) => {
   const [type, setType] = useState([]);
@@ -33,6 +34,7 @@ const FetchByType = ({ match }) => {
           </div>
         ))}
       </div>
+      <ToTopButton />
     </div>
   );
 };

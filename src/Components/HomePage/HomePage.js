@@ -7,7 +7,15 @@ const HomePage = () => {
     <div className="homePage">
       <h1>
         Welcome to Cocktail App where you can search for and see information
-        about your favorite drinks whether they are alcoholic or non-alcoholic.
+        about your favorite drinks whether they are{" "}
+        <Link to="/all/2/Alcoholic" className="homeLinks">
+          alcoholic
+        </Link>{" "}
+        or{" "}
+        <Link to="/all/2/Non%20alcoholic" className="homeLinks">
+          non-alcoholic
+        </Link>
+        .
       </h1>
 
       <h3>
