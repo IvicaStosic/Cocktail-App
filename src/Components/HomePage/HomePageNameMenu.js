@@ -22,9 +22,11 @@ class HomePageNameMenu extends Component {
   }
 
   closeMenu(event) {
-    this.setState({ showMenu: false }, () => {
-      document.removeEventListener("click", this.closeMenu);
-    });
+    if (!this.dropdownMenu.contains(event.target)) {
+      this.setState({ showMenu: false }, () => {
+        document.removeEventListener("click", this.closeMenu);
+      });
+    }
   }
 
   render() {

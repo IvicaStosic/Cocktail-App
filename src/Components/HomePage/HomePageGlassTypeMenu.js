@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import HomePageTypeForm from "./HomePageTypeForm";
+import HomePageGlassTypeForm from "./HomePageGlassTypeForm";
 
-class HomePageTypeMenu extends Component {
+class HomePageGlassTypeMenu extends Component {
   constructor() {
     super();
 
@@ -22,9 +22,11 @@ class HomePageTypeMenu extends Component {
   }
 
   closeMenu(event) {
-    this.setState({ showMenu: false }, () => {
-      document.removeEventListener("click", this.closeMenu);
-    });
+    if (!this.dropdownMenu.contains(event.target)) {
+      this.setState({ showMenu: false }, () => {
+        document.removeEventListener("click", this.closeMenu);
+      });
+    }
   }
 
   render() {
@@ -39,7 +41,7 @@ class HomePageTypeMenu extends Component {
               this.dropdownMenu = element;
             }}
           >
-            <HomePageTypeForm />
+            <HomePageGlassTypeForm />
           </div>
         ) : null}
       </div>
@@ -47,4 +49,4 @@ class HomePageTypeMenu extends Component {
   }
 }
 
-export default HomePageTypeMenu;
+export default HomePageGlassTypeMenu;

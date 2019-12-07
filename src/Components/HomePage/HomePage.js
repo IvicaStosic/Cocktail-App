@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Menu from "./Menu";
 import HomePageNameMenu from "./HomePageNameMenu";
+import HomePageIngredientMenu from "./HomePageIngredientMenu";
+import HomePageGlassTypeMenu from "./HomePageGlassTypeMenu";
 
 const HomePage = () => {
   return (
@@ -40,8 +42,10 @@ const HomePage = () => {
         writing it's name, ingredient or even type of glass it is served in.
       </h3>
 
-      <div className="menu">
-        <Menu />
+      <div className="menuList">
+        <HomePageNameMenu />
+        <HomePageIngredientMenu />
+        <HomePageGlassTypeMenu />
       </div>
 
       <h5>

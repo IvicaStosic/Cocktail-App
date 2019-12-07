@@ -22,15 +22,17 @@ class HomePageIngredientMenu extends Component {
   }
 
   closeMenu(event) {
-    this.setState({ showMenu: false }, () => {
-      document.removeEventListener("click", this.closeMenu);
-    });
+    if (!this.dropdownMenu.contains(event.target)) {
+      this.setState({ showMenu: false }, () => {
+        document.removeEventListener("click", this.closeMenu);
+      });
+    }
   }
 
   render() {
     return (
       <div>
-        <button onClick={this.showMenu}>Search by type of glass</button>
+        <button onClick={this.showMenu}>Search by ingredient</button>
 
         {this.state.showMenu ? (
           <div

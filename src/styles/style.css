@@ -308,6 +308,24 @@ pre {
   text-decoration: none;
 }
 
+.homePage .menuList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .allCocktailsPage .pageLinks {
   position: -webkit-sticky;
   position: sticky;
@@ -412,10 +430,23 @@ pre {
   bottom: 0;
   margin: auto;
   background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .popup .popup\_inner {
-  border: 2px solid blue;
+  border: 2px solid red;
   position: absolute;
   width: 80vh;
   height: 80%;
@@ -426,10 +457,24 @@ pre {
   margin: auto;
   border-radius: 20px;
   background: white;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 2 80%;
+          flex: 1 2 80%;
 }
 
-.popup .popup\_inner button {
-  padding: 5px;
+.popup .popup\_inner .popupButton {
+  height: 50px;
+  width: 300px;
+  background: #683737c0;
+  border-radius: 0 0 25px 25px;
+}
+
+.popup .popup\_inner .popupButton:hover {
+  cursor: pointer;
+}
+
+.popup .popup\_inner .popupButton:focus {
+  outline: none;
 }
 
 .renderOneDetailed {

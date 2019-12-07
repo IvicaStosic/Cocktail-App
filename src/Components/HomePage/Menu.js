@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import HomePageNameMenu from "./HomePageNameMenu";
-import HomePageTypeMenu from "./HomePageTypeMenu";
+import HomePageGlassTypeMenu from "./HomePageGlassTypeMenu";
 import HomePageIngredientMenu from "./HomePageIngredientMenu";
 
 class Menu extends Component {
@@ -53,7 +53,7 @@ class Menu extends Component {
             </button>
             <button>
               {" "}
-              <HomePageTypeMenu />{" "}
+              <HomePageGlassTypeMenu />{" "}
             </button>
           </div>
         ) : null}

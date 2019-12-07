@@ -45,7 +45,9 @@ const Popup = props => {
           instructions={props.instructions}
           glass={props.glass}
         />
-        <button onClick={props.closePopup}>close me</button>
+        <button className="popupButton" onClick={props.closePopup}>
+          close me
+        </button>
       </div>
     </div>
   );

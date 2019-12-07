@@ -1,6 +1,6 @@
 import React from "react";
 
-const HomePageTypeForm = () => {
+const HomePageGlassTypeForm = () => {
   return (
     <div>
       <form action="">
@@ -11,4 +11,4 @@ const HomePageTypeForm = () => {
   );
 };
 
-export default HomePageTypeForm;
+export default HomePageGlassTypeForm;
