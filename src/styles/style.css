@@ -52,6 +52,11 @@ pre {
   line-height: 18.5714px;
 }
 
+button {
+  font-family: "Covered By Your Grace";
+  font-size: 17px;
+}
+
 .App {
   text-align: center;
   background-color: #282c34;
@@ -267,6 +272,10 @@ pre {
   color: yellowgreen;
 }
 
+.toTopButton:focus {
+  outline: none;
+}
+
 .homePage {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -324,6 +333,42 @@ pre {
           flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.menuButton {
+  width: 30vh;
+  border: 2px solid black;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 5px;
+}
+
+.menuButton:focus {
+  outline: none;
+}
+
+.menuButton .menuForm {
+  width: 100%;
 }
 
 .allCocktailsPage .pageLinks {
@@ -457,23 +502,22 @@ pre {
   margin: auto;
   border-radius: 20px;
   background: white;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 2 80%;
-          flex: 1 2 80%;
+  -ms-flex-negative: 2;
+      flex-shrink: 2;
 }
 
-.popup .popup\_inner .popupButton {
+.popup .popup\_inner button {
   height: 50px;
   width: 300px;
   background: #683737c0;
   border-radius: 0 0 25px 25px;
 }
 
-.popup .popup\_inner .popupButton:hover {
+.popup .popup\_inner button:hover {
   cursor: pointer;
 }
 
-.popup .popup\_inner .popupButton:focus {
+.popup .popup\_inner button:focus {
   outline: none;
 }
 

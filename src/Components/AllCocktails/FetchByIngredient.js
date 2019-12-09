@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import RenderOne from "../RenderOne/RenderOne";
 import FetchByIds from "./FetchByIds";
 import "../../styles/style.css";
 import ToTopButton from "../Nav/ToTopButton";

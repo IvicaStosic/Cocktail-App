@@ -16,6 +16,9 @@ function Nav() {
         <Link to="/random" className="link">
           <li>Random Cocktail</li>
         </Link>
+        <Link to="/search" className="link">
+          <li>Search By</li>
+        </Link>
         <Link to="/about" className="link">
           <li>About</li>
         </Link>

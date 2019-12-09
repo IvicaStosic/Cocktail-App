@@ -49,6 +49,11 @@ pre {
   line-height: 18.5714px;
 }
 
+button {
+  font-family: "Covered By Your Grace";
+  font-size: 17px;
+}
+
 .App {
   text-align: center;
   background-color: #282c34;
@@ -118,6 +123,12 @@ pre {
   }
 }
 
+.toTopButton {
+  &:focus {
+    outline: none;
+  }
+}
+
 .homePage {
   @include flexCenter(column);
   height: 80vh;
@@ -146,6 +157,26 @@ pre {
     @include flexCenter(row);
     justify-content: center;
     align-items: center;
+  }
+}
+
+.menu {
+  @include flexCenter(row);
+  flex-wrap: wrap;
+}
+.menuButton {
+  &:focus {
+    outline: none;
+  }
+  width: 30vh;
+  border: 2px solid black;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 5px;
+  .menuForm {
+    width: 100%;
   }
 }
 
@@ -223,9 +254,8 @@ pre {
     margin: auto;
     border-radius: 20px;
     background: white;
-
-    flex: 1 2 80%;
-    .popupButton {
+    flex-shrink: 2;
+    button {
       @include searchButton;
       &:focus {
         outline: none;

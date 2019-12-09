@@ -9,6 +9,10 @@ import AllCocktails from "../AllCocktails/AllCocktails";
 import FetchByType from "../AllCocktails/FetchByType";
 import FetchByGlass from "../AllCocktails/FetchByGlass";
 import FetchByIngredient from "../AllCocktails/FetchByIngredient";
+import Search from "../Search/Search";
+import SearchByName from "../Search/SearchByName";
+import SearchByIng from "../Search/SearchByIng";
+import SearchByGlass from "../Search/SearchByGlass";
 
 function NavBar() {
   return (
@@ -22,6 +26,10 @@ function NavBar() {
         <Route path="/all/type/:type" exact component={FetchByType} />
         <Route path="/all/ing/:ing" exact component={FetchByIngredient} />
         <Route path="/random" exact component={RandomCocktail} />
+        <Route path="/search" exact component={Search} />
+        <Route path="/search/s_name/:name" exact component={SearchByName} />
+        <Route path="/search/s_ing/:ing" exact component={SearchByIng} />
+        <Route path="/search/s_glass/:glass" exact component={SearchByGlass} />
       </Switch>
     </Router>
   );
