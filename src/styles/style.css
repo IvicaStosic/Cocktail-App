@@ -318,6 +318,10 @@ button {
   text-decoration: none;
 }
 
+.homePage .homeLinks:hover {
+  color: #858585;
+}
+
 .homePage .menuList {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -509,6 +513,22 @@ button {
   padding-bottom: 20px;
 }
 
+.renderOneDetailed .link:hover, .renderOneDetailed .link:active, .renderOneDetailed .link:focus, .renderOneDetailed .link:visited, .renderOneDetailed .link:link, .renderOneDetailed .link:active {
+  text-decoration: none;
+}
+
+.renderOneDetailed .link:hover {
+  color: #858585;
+}
+
+.renderOneDetailed .linkB:hover, .renderOneDetailed .linkB:active, .renderOneDetailed .linkB:focus, .renderOneDetailed .linkB:visited, .renderOneDetailed .linkB:link, .renderOneDetailed .linkB:active {
+  text-decoration: none;
+}
+
+.renderOneDetailed .linkB:hover {
+  color: #1d1d1d;
+}
+
 .renderOneDetailed h4 {
   color: black;
   font-size: 2em;
@@ -530,10 +550,6 @@ button {
   border: 2px solid black;
   font-size: 2em;
   border-radius: 20px;
-}
-
-.renderOneDetailed table .tableLink:hover, .renderOneDetailed table .tableLink:active, .renderOneDetailed table .tableLink:focus, .renderOneDetailed table .tableLink:visited, .renderOneDetailed table .tableLink:link, .renderOneDetailed table .tableLink:active {
-  text-decoration: none;
 }
 
 .renderOneDetailed table thead {

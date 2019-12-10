@@ -45,7 +45,7 @@ const RenderOneDetailed = ({
       <h4>{name}</h4>
       <p className="tableLink">
         (
-        <Link to={`/all/type/${type}`} key="id">
+        <Link to={`/all/type/${type}`} key="id" className="link">
           {type}
         </Link>
         )
@@ -61,7 +61,7 @@ const RenderOneDetailed = ({
         <tbody className="tbody">
           <tr>
             <td>
-              <Link to={`/all/ing/${ing1}`} className="tableLink">
+              <Link to={`/all/ing/${ing1}`} className="link">
                 {ing1}
               </Link>
             </td>
@@ -69,7 +69,7 @@ const RenderOneDetailed = ({
           </tr>
           <tr>
             <td>
-              <Link to={`/all/ing/${ing2}`} className="tableLink">
+              <Link to={`/all/ing/${ing2}`} className="link">
                 {ing2}
               </Link>
             </td>
@@ -77,7 +77,7 @@ const RenderOneDetailed = ({
           </tr>
           <tr>
             <td>
-              <Link to={`/all/ing/${ing3}`} className="tableLink">
+              <Link to={`/all/ing/${ing3}`} className="link">
                 {ing3}
               </Link>
             </td>
@@ -85,7 +85,7 @@ const RenderOneDetailed = ({
           </tr>
           <tr>
             <td>
-              <Link to={`/all/ing/${ing4}`} className="tableLink">
+              <Link to={`/all/ing/${ing4}`} className="link">
                 {ing4}
               </Link>
             </td>
@@ -93,7 +93,7 @@ const RenderOneDetailed = ({
           </tr>
           <tr>
             <td>
-              <Link to={`/all/ing/${ing5}`} className="tableLink">
+              <Link to={`/all/ing/${ing5}`} className="link">
                 {ing5}
               </Link>
             </td>
@@ -101,7 +101,7 @@ const RenderOneDetailed = ({
           </tr>
           <tr>
             <td>
-              <Link to={`/all/ing/${ing6}`} className="tableLink">
+              <Link to={`/all/ing/${ing6}`} className="link">
                 {ing6}
               </Link>
             </td>
@@ -109,7 +109,7 @@ const RenderOneDetailed = ({
           </tr>
           <tr>
             <td>
-              <Link to={`/all/ing/${ing7}`} className="tableLink">
+              <Link to={`/all/ing/${ing7}`} className="link">
                 {ing7}
               </Link>
             </td>
@@ -117,7 +117,7 @@ const RenderOneDetailed = ({
           </tr>
           <tr>
             <td>
-              <Link to={`/all/ing/${ing8}`} className="tableLink">
+              <Link to={`/all/ing/${ing8}`} className="link">
                 {ing8}
               </Link>
             </td>
@@ -133,7 +133,7 @@ const RenderOneDetailed = ({
           </tr>
           <tr>
             <td>
-              <Link to={`/all/ing/${ing10}`} className="tableLink">
+              <Link to={`/all/ing/${ing10}`} className="link">
                 {ing10}
               </Link>
             </td>
@@ -141,7 +141,7 @@ const RenderOneDetailed = ({
           </tr>
           <tr>
             <td>
-              <Link to={`/all/ing/${ing11}`} className="tableLink">
+              <Link to={`/all/ing/${ing11}`} className="link">
                 {ing11}
               </Link>
             </td>
@@ -149,7 +149,7 @@ const RenderOneDetailed = ({
           </tr>
           <tr>
             <td>
-              <Link to={`/all/ing/${ing12}`} className="tableLink">
+              <Link to={`/all/ing/${ing12}`} className="link">
                 {ing12}
               </Link>
             </td>
@@ -157,7 +157,7 @@ const RenderOneDetailed = ({
           </tr>
           <tr>
             <td>
-              <Link to={`/all/ing/${ing13}`} className="tableLink">
+              <Link to={`/all/ing/${ing13}`} className="link">
                 {ing13}
               </Link>
             </td>
@@ -165,7 +165,7 @@ const RenderOneDetailed = ({
           </tr>
           <tr>
             <td>
-              <Link to={`/all/ing/${ing14}`} className="tableLink">
+              <Link to={`/all/ing/${ing14}`} className="link">
                 {ing14}
               </Link>
             </td>
@@ -173,7 +173,7 @@ const RenderOneDetailed = ({
           </tr>
           <tr>
             <td>
-              <Link to={`/all/ing/${ing15}`} className="tableLink">
+              <Link to={`/all/ing/${ing15}`} className="link">
                 {ing15}
               </Link>
             </td>
@@ -188,7 +188,7 @@ const RenderOneDetailed = ({
           <tr>
             <td colSpan="2" id="tf">
               Serve in{" "}
-              <Link to={`/all/glass/${glass}`} key={id} className="tableLink">
+              <Link to={`/all/glass/${glass}`} key={id} className="linkB">
                 {glass}
               </Link>
             </td>

@@ -153,6 +153,9 @@ button {
   }
   .homeLinks {
     @include textDecorationNone;
+    &:hover {
+      color: rgba($color: #858585, $alpha: 1);
+    }
   }
   .menuList {
     @include flexCenter(row);
@@ -254,6 +257,18 @@ button {
   border-radius: 20px;
   background: white;
   padding-bottom: 20px;
+  .link {
+    @include textDecorationNone;
+    &:hover {
+      color: rgba($color: #858585, $alpha: 1);
+    }
+  }
+  .linkB {
+    @include textDecorationNone;
+    &:hover {
+      color: rgba($color: #1d1d1d, $alpha: 1);
+    }
+  }
   h4 {
     color: black;
     font-size: 2em;
@@ -270,9 +285,7 @@ button {
     border: 2px solid black;
     font-size: 2em;
     border-radius: 20px;
-    .tableLink {
-      @include textDecorationNone;
-    }
+
     thead {
       height: 100px;
       background-color: grey;
