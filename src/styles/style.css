@@ -217,6 +217,7 @@ button {
   border: 2px solid green;
   border: none;
   min-height: 90vh;
+  clear: top;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#9be15d), to(#00e3ae));
   background-image: linear-gradient(to top, #9be15d 0%, #00e3ae 100%);
 }
@@ -335,42 +336,6 @@ button {
   align-items: center;
 }
 
-.menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.menuButton {
-  width: 30vh;
-  border: 2px solid black;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  margin-left: 5px;
-  margin-right: 5px;
-  padding: 5px;
-}
-
-.menuButton:focus {
-  outline: none;
-}
-
-.menuButton .menuForm {
-  width: 100%;
-}
-
 .allCocktailsPage .pageLinks {
   position: -webkit-sticky;
   position: sticky;
@@ -435,9 +400,11 @@ button {
 }
 
 .allCocktailsPage .mainContentGroup .letterGroup p {
-  font-size: 1.8em;
+  font-size: 2.3em;
   font-weight: 600;
   padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 2em;
 }
 
 .allCocktailsPage .mainContentGroup .letterGroup .allCocktails {
@@ -454,14 +421,8 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  border: 2px solid green;
-  border: none;
 }
 
 .popup {
@@ -488,36 +449,42 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.popup .popup\_inner {
-  border: 2px solid red;
+.popup .popupInner {
   position: absolute;
-  width: 80vh;
-  height: 80%;
+  width: 90vh;
+  height: 100%;
   left: 25%;
   right: 25%;
   top: 25%;
   bottom: 25%;
   margin: auto;
   border-radius: 20px;
-  background: white;
+  background-color: rgba(0, 0, 0, 0.25);
   -ms-flex-negative: 2;
       flex-shrink: 2;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
-.popup .popup\_inner button {
+.popup .popupButton {
+  background-color: black;
   height: 50px;
   width: 300px;
   background: #683737c0;
   border-radius: 0 0 25px 25px;
 }
 
-.popup .popup\_inner button:hover {
+.popup .popupButton:hover {
   cursor: pointer;
 }
 
-.popup .popup\_inner button:focus {
+.popup .popupButton:focus {
   outline: none;
 }
 
@@ -539,6 +506,7 @@ button {
   border: 2px solid grey;
   border-radius: 20px;
   background: white;
+  padding-bottom: 20px;
 }
 
 .renderOneDetailed h4 {
@@ -664,6 +632,7 @@ button {
 .renderFetchChoice .fetchChoice {
   color: black;
   font-size: 2em;
+  padding: 1.2em;
 }
 
 .renderFetchChoice .fetchChoiceList {
@@ -732,5 +701,114 @@ button {
 
 .randomCoctail .searchButtonBottom:focus {
   outline: none;
+}
+
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.search .searchLink:hover, .search .searchLink:active, .search .searchLink:focus, .search .searchLink:visited, .search .searchLink:link, .search .searchLink:active {
+  text-decoration: none;
+}
+
+.search .searchLink .searchChoiceLink {
+  font-size: 2em;
+  padding: 2em;
+}
+
+.search .searchLink .searchChoiceLink:hover {
+  color: #858585;
+}
+
+.searchChoice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.searchChoice .searchForm {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 60%;
+  font-family: "Covered By Your Grace";
+  padding: 2em;
+}
+
+.searchChoice .searchForm input {
+  font-family: "Covered By Your Grace";
+  font-size: 2em;
+  height: 2.5em;
+  width: 60%;
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.searchChoice .searchForm input:focus {
+  outline: none;
+}
+
+.searchChoice .searchForm button {
+  height: 2em;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: 1.5em;
+  padding: 5px;
+}
+
+.searchChoice .searchForm button:focus {
+  outline: none;
+}
+
+.searchChoice .searchResult {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about {
+  padding: 2em;
+  font-size: 1.2em;
+  text-align: left;
 }
 /*# sourceMappingURL=style.css.map */

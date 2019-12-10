@@ -85,6 +85,7 @@ button {
     border: 2px solid green;
     border: none;
     min-height: 90vh;
+    clear: top;
     background-image: linear-gradient(to top, #9be15d 0%, #00e3ae 100%);
   }
 }
@@ -160,26 +161,6 @@ button {
   }
 }
 
-.menu {
-  @include flexCenter(row);
-  flex-wrap: wrap;
-}
-.menuButton {
-  &:focus {
-    outline: none;
-  }
-  width: 30vh;
-  border: 2px solid black;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  margin-left: 5px;
-  margin-right: 5px;
-  padding: 5px;
-  .menuForm {
-    width: 100%;
-  }
-}
-
 .allCocktailsPage {
   .pageLinks {
     position: sticky;
@@ -213,17 +194,15 @@ button {
       border: none;
       padding: 5px;
       p {
-        font-size: 1.8em;
+        font-size: 2.3em;
         font-weight: 600;
         padding-bottom: 20px;
+        padding-top: 20px;
+        padding-left: 2em;
       }
       .allCocktails {
         @include flexCenter(row);
-        justify-content: start;
-        align-items: center;
         flex-wrap: wrap;
-        border: 2px solid green;
-        border: none;
       }
     }
   }
@@ -241,27 +220,30 @@ button {
   margin: auto;
   background-color: rgba(0, 0, 0, 0.5);
   @include flexCenter(column);
-
-  .popup\_inner {
-    border: 2px solid rgb(255, 0, 0);
+  justify-content: space-around;
+  box-sizing: border-box;
+  .popupInner {
     position: absolute;
-    width: 80vh;
-    height: 80%;
+    width: 90vh;
+    height: 100%;
     left: 25%;
     right: 25%;
     top: 25%;
     bottom: 25%;
     margin: auto;
     border-radius: 20px;
-    background: white;
+    background-color: rgba(0, 0, 0, 0.25);
     flex-shrink: 2;
-    button {
-      @include searchButton;
-      &:focus {
-        outline: none;
-      }
-      border-radius: 0 0 25px 25px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .popupButton {
+    background-color: rgba(0, 0, 0, 1);
+    @include searchButton;
+    &:focus {
+      outline: none;
     }
+    border-radius: 0 0 25px 25px;
   }
 }
 
@@ -271,6 +253,7 @@ button {
   border: 2px solid grey;
   border-radius: 20px;
   background: white;
+  padding-bottom: 20px;
   h4 {
     color: black;
     font-size: 2em;
@@ -347,6 +330,7 @@ button {
   .fetchChoice {
     color: black;
     font-size: 2em;
+    padding: 1.2em;
   }
 
   .fetchChoiceList {
@@ -375,4 +359,63 @@ button {
     }
     border-radius: 0 0 25px 25px;
   }
+}
+
+.search {
+  @include flexCenter(row);
+  height: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  .searchLink {
+    @include textDecorationNone;
+    .searchChoiceLink {
+      font-size: 2em;
+      padding: 2em;
+      &:hover {
+        color: rgba($color: #858585, $alpha: 1);
+      }
+    }
+  }
+}
+
+.searchChoice {
+  @include flexCenter(column);
+  .searchForm {
+    align-self: center;
+    width: 60%;
+    font-family: "Covered By Your Grace";
+    padding: 2em;
+    input {
+      font-family: "Covered By Your Grace";
+      font-size: 2em;
+      height: 2.5em;
+      width: 60%;
+      border: none;
+      border-bottom: 2px solid black;
+      background-color: rgba(255, 255, 255, 0);
+      &:focus {
+        outline: none;
+      }
+    }
+    button {
+      height: 2em;
+      border: 2px solid black;
+      border-radius: 8px;
+      font-size: 1.5em;
+      padding: 5px;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  .searchResult {
+    @include flexCenter(row);
+    flex-wrap: wrap;
+  }
+}
+
+.about {
+  padding: 2em;
+  font-size: 1.2em;
+  text-align: left;
 }

@@ -5,7 +5,7 @@ import "../../styles/style.css";
 
 function Nav() {
   return (
-    <div>
+    <div className="navBlock">
       <ul className="navLinks">
         <Link to="/" className="link">
           <li>Home</li>

@@ -13,10 +13,7 @@ const FetchByIds = ({ id }) => {
     const response = await fetch(
       `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${id}`
     );
-    console.log("test Ids");
-    console.log({ id });
     const data = await response.json();
-    console.log(data);
     setDetails(data.drinks);
   };
 

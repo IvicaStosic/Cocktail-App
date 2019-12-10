@@ -5,7 +5,7 @@ import "../../styles/style.css";
 const Popup = props => {
   return (
     <div className="popup">
-      <div className="popup\_inner">
+      <div className="popupInner">
         <RenderOneDetailed
           key={props.id}
           id={props.id}
@@ -45,10 +45,10 @@ const Popup = props => {
           instructions={props.instructions}
           glass={props.glass}
         />
-        <button className="popupButton" onClick={props.closePopup}>
-          close me
-        </button>
       </div>
+      <button className="popupButton" onClick={props.closePopup}>
+        close me
+      </button>
     </div>
   );
 };
