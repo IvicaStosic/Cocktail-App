@@ -5,7 +5,7 @@ const HomePage = () => {
   return (
     <div className="homePage">
       <h1>
-        Welcome to Cocktail App where you can search for and see information
+        Welcome to the Cocktail App where you can search for and see information
         about your favorite drinks whether they are{" "}
         <Link to="/all/type/Alcoholic" className="homeLinks">
           alcoholic
@@ -18,7 +18,7 @@ const HomePage = () => {
       </h1>
 
       <h3>
-        If you are interested in trying something new you can check{" "}
+        If you are interested in trying something new you can check out the{" "}
         <Link to="/all" className="homeLinks">
           A-Z Cocktails
         </Link>{" "}
@@ -26,7 +26,7 @@ const HomePage = () => {
       </h3>
 
       <h3>
-        Or... you can always let yourself be surprised by going for{" "}
+        Or... you can always let yourself be surprised by going for a{" "}
         <Link to="/random" className="homeLinks">
           Random Cocktail
         </Link>
@@ -51,7 +51,7 @@ const HomePage = () => {
       </h3>
 
       <h5>
-        For information about this app please visit{" "}
+        For information on this app please visit{" "}
         <Link to="/about" className="homeLinks">
           About
         </Link>{" "}
