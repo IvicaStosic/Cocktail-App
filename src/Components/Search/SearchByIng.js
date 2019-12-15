@@ -18,7 +18,7 @@ const SearchByIng = () => {
     const response = await fetch(
       `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${query}`
     );
-
+    console.log(query);
     const data = await response.json();
     setIng(data.drinks);
   };
@@ -40,6 +40,10 @@ const SearchByIng = () => {
         <input type="text" value={search} onChange={updateSearch} />
         <button type="submit">Search by ingredient name</button>
       </form>
+
+      <div>
+        <h1>{query}</h1>
+      </div>
 
       <div className="searchResult">
         {ing ? (

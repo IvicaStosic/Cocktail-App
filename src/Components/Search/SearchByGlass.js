@@ -5,24 +5,38 @@ import ToTopButton from "../Nav/ToTopButton";
 
 import "../../styles/style.css";
 
-const SearchByGlass = () => {
+function useGlassDB(query) {
   const [glass, setGlass] = useState([]);
-  const [search, setSearch] = useState("");
-  const [query, setQuery] = useState("");
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    FetchByGlassList();
+    const FetchByGlassList = async () => {
+      try {
+        setLoading(true);
+        const response = await fetch(
+          `https://www.thecocktaildb.com/api/json/v1/1/filter.php?g=${query}`
+        );
+
+        const data = await response.json();
+        //console.log(data);
+        setGlass(data.drinks);
+      } catch (error) {
+      } finally {
+        setLoading(false);
+      }
+    };
+    if (query !== "") {
+      FetchByGlassList();
+    }
   }, [query]);
 
-  const FetchByGlassList = async () => {
-    const response = await fetch(
-      `https://www.thecocktaildb.com/api/json/v1/1/filter.php?g=${query}`
-    );
+  return [glass, loading];
+}
 
-    let data = response.json();
-    console.log(data);
-    setGlass(data.drinks);
-  };
+const SearchByGlass = () => {
+  const [search, setSearch] = useState("");
+  const [query, setQuery] = useState("");
+  const [glass, loading] = useGlassDB(query);
 
   const updateSearch = e => {
     setSearch(e.target.value);
@@ -42,15 +56,19 @@ const SearchByGlass = () => {
         <button type="submit">Search by glass type</button>
       </form>
 
+      <div>
+        <h1>{query}</h1>
+      </div>
+
       <div className="searchResult">
-        {glass ? (
+        {loading ? (
+          <h1>loading</h1>
+        ) : (
           glass.map(drink => (
             <div key={drink.idDrink}>
               <FetchByIds id={drink.idDrink} />
             </div>
           ))
-        ) : (
-          <h1>No results yet, type something</h1>
         )}
       </div>
       <ToTopButton />
