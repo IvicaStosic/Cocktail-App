@@ -13,12 +13,15 @@ function useGlassDB(query) {
     const FetchByGlassList = async () => {
       try {
         setLoading(true);
+
+        let queryFix = query.charAt(0).toUpperCase() + query.slice(1);
+
         const response = await fetch(
-          `https://www.thecocktaildb.com/api/json/v1/1/filter.php?g=${query}`
+          `https://www.thecocktaildb.com/api/json/v1/1/filter.php?g=${queryFix}`
         );
 
         const data = await response.json();
-        //console.log(data);
+
         setGlass(data.drinks);
       } catch (error) {
       } finally {
@@ -57,12 +60,12 @@ const SearchByGlass = () => {
       </form>
 
       <div>
-        <h1>{query}</h1>
+        <h1>Cocktails served in {query}</h1>
       </div>
 
       <div className="searchResult">
         {loading ? (
-          <h1>loading</h1>
+          <h1>loading...</h1>
         ) : (
           glass.map(drink => (
             <div key={drink.idDrink}>

@@ -5,23 +5,41 @@ import ToTopButton from "../Nav/ToTopButton";
 
 import "../../styles/style.css";
 
-const SearchByIng = () => {
+function useIngDB(query) {
   const [ing, setIng] = useState([]);
-  const [search, setSearch] = useState("");
-  const [query, setQuery] = useState("");
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    FetchByIng();
+    const FetchByIngList = async () => {
+      try {
+        setLoading(true);
+
+        let queryFix = query.charAt(0).toUpperCase() + query.slice(1);
+
+        const response = await fetch(
+          `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${queryFix}`
+        );
+
+        const data = await response.json();
+
+        setIng(data.drinks);
+      } catch (error) {
+      } finally {
+        setLoading(false);
+      }
+    };
+    if (query !== "") {
+      FetchByIngList();
+    }
   }, [query]);
 
-  const FetchByIng = async () => {
-    const response = await fetch(
-      `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${query}`
-    );
-    console.log(query);
-    const data = await response.json();
-    setIng(data.drinks);
-  };
+  return [ing, loading];
+}
+
+const SearchByIng = () => {
+  const [search, setSearch] = useState("");
+  const [query, setQuery] = useState("");
+  const [ing, loading] = useIngDB(query);
 
   const updateSearch = e => {
     setSearch(e.target.value);
@@ -46,14 +64,14 @@ const SearchByIng = () => {
       </div>
 
       <div className="searchResult">
-        {ing ? (
+        {loading ? (
+          <h1>loading...</h1>
+        ) : (
           ing.map(drink => (
             <div key={drink.idDrink}>
               <FetchByIds id={drink.idDrink} />
             </div>
           ))
-        ) : (
-          <h1>No results yet, type something</h1>
         )}
       </div>
       <ToTopButton />

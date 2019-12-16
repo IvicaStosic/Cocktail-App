@@ -17,9 +17,8 @@ function About() {
       <p>Api used to get all data is https://www.thecocktaildb.com/.</p>
       <h3>Curent tasks</h3>
       <ul>
-        <li>
-          Fix search by ingredient and by glass - deal with empty json return
-        </li>
+        <li>Make different layouts for different screen resolutions</li>
+        <li>Fix "missing dependency" in various components</li>
       </ul>
       <p>Ivica</p>
     </div>
