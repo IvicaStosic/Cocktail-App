@@ -60,7 +60,7 @@ const SearchByIng = () => {
       </form>
 
       <div>
-        <h1>{query}</h1>
+        <h1>Cocktails with {query}</h1>
       </div>
 
       <div className="searchResult">
