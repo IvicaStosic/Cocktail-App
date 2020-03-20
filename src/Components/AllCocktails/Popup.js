@@ -44,11 +44,11 @@ const Popup = props => {
           measure15={props.measure15}
           instructions={props.instructions}
           glass={props.glass}
-        />
-      </div>
-      <button className="popupButton" onClick={props.closePopup}>
-        close me
+        /><button className="popupButton" onClick={props.closePopup}>
+          close me
       </button>
+      </div>
+
     </div>
   );
 };

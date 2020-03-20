@@ -4,6 +4,7 @@ import FetchByIds from "../AllCocktails/FetchByIds";
 import ToTopButton from "../Nav/ToTopButton";
 
 import "../../styles/style.css";
+import FetchGlassList from "../AllCocktails/FetchGlassList";
 
 function useGlassDB(query) {
   const [glass, setGlass] = useState([]);
@@ -55,17 +56,15 @@ const SearchByGlass = () => {
   return (
     <div className="searchChoice">
       <form onSubmit={getSearch} className="searchForm">
-        <input type="text" value={search} onChange={updateSearch} />
-        <button type="submit">Search by glass type</button>
+        <input type="text" value={search} onChange={updateSearch} />{" "}
+        <button type="submit"> Search by glass type </button>{" "}
       </form>
-
       <div>
-        <h1>Cocktails served in {query}</h1>
+        <h1> Cocktails served in {query} </h1>
       </div>
-
       <div className="searchResult">
         {loading ? (
-          <h1>loading...</h1>
+          <h1> loading... </h1>
         ) : (
           glass.map(drink => (
             <div key={drink.idDrink}>
@@ -74,6 +73,9 @@ const SearchByGlass = () => {
           ))
         )}
       </div>
+
+      <FetchGlassList className="glassesList" />
+
       <ToTopButton />
     </div>
   );

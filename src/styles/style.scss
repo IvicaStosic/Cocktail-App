@@ -1,437 +1,509 @@
 @import "./_variables";
-
+@import "./drawer";
+@import "./_glassesList";
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 h1 {
-  font-family: "Covered By Your Grace";
-  font-size: 23px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 700;
-  line-height: 23px;
+    font-family: "Covered By Your Grace";
+    font-size: 23px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 23px;
 }
+
 h3 {
-  font-family: "Covered By Your Grace";
-  font-size: 17px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 700;
-  line-height: 23px;
+    font-family: "Covered By Your Grace";
+    font-size: 17px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 23px;
 }
+
 p {
-  font-family: "Covered By Your Grace";
-  font-size: 14px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 400;
-  line-height: 23px;
+    font-family: "Covered By Your Grace";
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 23px;
 }
+
 blockquote {
-  font-family: "Covered By Your Grace";
-  font-size: 17px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 400;
-  line-height: 23px;
+    font-family: "Covered By Your Grace";
+    font-size: 17px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 23px;
 }
+
 pre {
-  font-family: "Covered By Your Grace";
-  font-size: 13px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 400;
-  line-height: 18.5714px;
+    font-family: "Covered By Your Grace";
+    font-size: 13px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 18.5714px;
 }
 
 button {
-  font-family: "Covered By Your Grace";
-  font-size: 17px;
+    font-family: "Covered By Your Grace";
+    font-size: 17px;
 }
 
 .App {
-  text-align: center;
-  background-color: #282c34;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: black;
-  position: relative;
-  min-width: 100vh;
-  height: 200px;
-  font-family: "Covered By Your Grace", "serif", "sans-serif";
-  font-optical-sizing: auto;
-  .logo {
-    border: 2px solid yellow;
-    border: none;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    min-height: 10vh;
-    width: 25%;
-    @include logo;
-  }
-  .main {
     width: 100%;
-    position: absolute;
-    left: 0px;
-    top: 100px;
-    border: 2px solid green;
-    border: none;
-    min-height: 90vh;
-    clear: top;
-    background-image: linear-gradient(to top, #9be15d 0%, #00e3ae 100%);
-  }
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    position: relative;
+    font-family: "Covered By Your Grace", "serif", "sans-serif";
+    font-optical-sizing: auto;
+    .main {
+        width: 100%;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        border: 2px solid green;
+        border: none;
+        height: auto;
+        clear: top;
+        background-image: linear-gradient(to top, #9be15d 0%, #00e3ae 100%);
+    }
 }
 
-.navLinks {
-  @include flexCenter(row);
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-around;
-  list-style: none;
-  padding: 10px;
-  margin: 0 auto;
-  border: 2px solid blue;
-  border: none;
-  width: 75%;
-  position: absolute;
-  top: -100px;
-  right: 0px;
-  min-height: 100px;
-  font-size: 2em;
-  .link {
-    padding: 10px;
-    color: white;
-    @include textDecorationNone;
-    &:hover {
-      background-color: white;
-      color: black;
-      border-radius: 10px;
+.navBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #282c34;
+    .logo {
+        border: 2px solid yellow;
+        border: none;
+        min-height: 10vh;
+        width: 25%;
+        margin-left: 1rem;
+        @include logo;
     }
-
-    li {
-      &:active {
-        color: yellowgreen;
-      }
+    .filler {
+        flex: 0;
     }
-  }
+    .navLinks {
+        display: none;
+    }
 }
 
 .toTopButton {
-  &:focus {
-    outline: none;
-  }
+    &:focus {
+        outline: none;
+    }
 }
 
 .homePage {
-  @include flexCenter(column);
-  height: 80vh;
-  justify-content: space-around;
-
-  h1 {
-    font-size: 2em;
-    line-height: 1.2;
-    width: 80%;
-  }
-  h3 {
-    font-size: 2em;
-    line-height: 1.2;
-    width: 80%;
-  }
-
-  h5 {
-    font-size: 2em;
-    line-height: 1.2;
-    width: 80%;
-  }
-  .homeLinks {
-    @include textDecorationNone;
-    &:hover {
-      color: rgba($color: #858585, $alpha: 1);
+    width: 100%;
+    @include flexCenter(column);
+    justify-content: space-around;
+    h1 {
+        font-size: 2em;
+        line-height: 1.2;
+        width: 80%;
     }
-  }
-  .menuList {
-    @include flexCenter(row);
-    justify-content: center;
-    align-items: center;
-  }
+    h3 {
+        font-size: 2em;
+        line-height: 1.2;
+        width: 80%;
+    }
+    h5 {
+        font-size: 2em;
+        line-height: 1.2;
+        width: 80%;
+    }
+    .homeLinks {
+        @include textDecorationNone;
+        &:hover {
+            color: rgba($color: #858585, $alpha: 1);
+        }
+    }
+    .menuList {
+        @include flexCenter(row);
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .allCocktailsPage {
-  .pageLinks {
-    position: sticky;
-    top: 0;
-    background: #282c34;
-    padding-bottom: 0px;
-    @include flexCenter(row);
-    flex-wrap: wrap;
-    a {
-      font-size: 2em;
-      font-weight: 500;
-      padding: 10px;
-      color: white;
-      @include textDecorationNone;
-      &:focus {
-        color: blue;
-      }
-      &:hover {
-        color: rgb(100, 99, 143);
-      }
-    }
-  }
-  .mainContentGroup {
-    .letterGroup {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: flex-start;
-      box-sizing: border-box;
-      border: 2px solid yellow;
-      border: none;
-      padding: 5px;
-      p {
-        font-size: 2.3em;
-        font-weight: 600;
-        padding-bottom: 20px;
-        padding-top: 20px;
-        padding-left: 2em;
-      }
-      .allCocktails {
+    .pageLinks {
+        position: sticky;
+        top: 0;
+        background: #282c34;
+        padding-bottom: 0px;
         @include flexCenter(row);
         flex-wrap: wrap;
-      }
+        a {
+            font-size: 2em;
+            font-weight: 500;
+            padding: 10px;
+            color: white;
+            @include textDecorationNone;
+            &:focus {
+                color: blue;
+            }
+            &:hover {
+                color: rgb(100, 99, 143);
+            }
+        }
     }
-  }
+    .mainContentGroup {
+        .letterGroup {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            box-sizing: border-box;
+            border: 2px solid yellow;
+            border: none;
+            padding: 5px;
+            p {
+                font-size: 2.3em;
+                font-weight: 600;
+                padding-bottom: 20px;
+                padding-top: 20px;
+                margin: 0 auto;
+                text-align: center;
+            }
+            .allCocktails {
+                @include flexCenter(row);
+                flex-wrap: wrap;
+            }
+        }
+    }
 }
 
 .popup {
-  border: 2px solid blue;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  background-color: rgba(0, 0, 0, 0.5);
-  @include flexCenter(column);
-  justify-content: space-around;
-  box-sizing: border-box;
-  .popupInner {
-    position: absolute;
-    width: 90vh;
+    //border: 2px solid blue;
+    position: fixed;
+    width: 100%;
     height: 100%;
-    left: 25%;
-    right: 25%;
-    top: 25%;
-    bottom: 25%;
+    top: 0;
+    left: 0;
     margin: auto;
-    border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0.25);
-    flex-shrink: 2;
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
-  .popupButton {
-    background-color: rgba(0, 0, 0, 1);
-    @include searchButton;
-    &:focus {
-      outline: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    @include flexCenter(column);
+    justify-content: space-around;
+    box-sizing: border-box;
+    .popupInner {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.25);
+        flex-shrink: 2;
+        overflow-y: scroll;
+        overflow-x: hidden;
     }
-    border-radius: 0 0 25px 25px;
-  }
+    .popupButton {
+        background-color: rgba(0, 0, 0, 1);
+        @include searchButton;
+        &:focus {
+            outline: none;
+        }
+        border-radius: 0 0 25px 25px;
+    }
 }
 
 .renderOneDetailed {
-  @include flexCenter(column);
-  width: 90vh;
-  border: 2px solid grey;
-  border-radius: 20px;
-  background: white;
-  padding-bottom: 20px;
-  .link {
-    @include textDecorationNone;
-    &:hover {
-      color: rgba($color: #858585, $alpha: 1);
-    }
-  }
-  .linkB {
-    @include textDecorationNone;
-    &:hover {
-      color: rgba($color: #1d1d1d, $alpha: 1);
-    }
-  }
-  h4 {
-    color: black;
-    font-size: 2em;
-  }
-  p {
-    color: black;
-    font-size: 2em;
-  }
-  .imgLarge {
-    @include imgRound(150px, 150px, 25px);
-  }
-  table {
-    width: 80vh;
-    border: 2px solid black;
-    font-size: 2em;
+    @include flexCenter(column);
+    width: 90%;
+    border: 2px solid grey;
     border-radius: 20px;
-
-    thead {
-      height: 100px;
-      background-color: grey;
-      border: 2px solid yellow;
-      #thleft {
-        border-top-left-radius: 20px;
-      }
-      #thright {
-        border-top-right-radius: 20px;
-      }
+    background: white;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    .link {
+        text-align: center;
+        @include textDecorationNone;
+        &:hover {
+            color: rgba($color: #858585, $alpha: 1);
+        }
     }
-    tbody {
-      background-color: white;
-      border: 2px solid black;
-      color: black;
-      td {
-        width: 50%;
-      }
+    .linkB {
+        @include textDecorationNone;
+        &:hover {
+            color: rgba($color: #1d1d1d, $alpha: 1);
+        }
     }
-    tfoot {
-      background: grey;
-      #tf {
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-      }
+    h4 {
+        color: black;
+        font-size: 2em;
     }
-  }
+    p {
+        color: black;
+        font-size: 2em;
+    }
+    .imgLarge {
+        @include imgRound(150px, 150px, 25px);
+    }
+    table {
+        width: 80%;
+        border: 2px solid black;
+        font-size: 2em;
+        border-radius: 20px;
+        thead {
+            height: 100px;
+            background-color: grey;
+            border: 2px solid yellow;
+            #thleft {
+                border-top-left-radius: 20px;
+            }
+            #thright {
+                border-top-right-radius: 20px;
+            }
+        }
+        tbody {
+            background-color: white;
+            border: 2px solid black;
+            color: black;
+            td {
+                width: 50%;
+            }
+        }
+        tfoot {
+            background: grey;
+            #tf {
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
+        }
+    }
 }
 
 .renderOne {
-  @include flexCenter(row);
-  box-sizing: border-box;
-  border: 3px solid black;
-  box-shadow: 0px 5px 20px black;
-  border-radius: 7px;
-  height: 100px;
-  width: 300px;
-  justify-content: space-around;
-  margin: 10px;
-  background: white;
-  .imgSmall {
-    @include imgRound(80px, 80px, 40px);
-  }
-  &:hover {
-    background: rgba($color: #858585, $alpha: 1);
-    cursor: context-menu;
-  }
+    @include flexCenter(row);
+    box-sizing: border-box;
+    border: 3px solid black;
+    box-shadow: 0px 5px 20px black;
+    border-radius: 7px;
+    height: 100px;
+    width: 300px;
+    justify-content: space-around;
+    margin: 10px;
+    background: white;
+    .imgSmall {
+        @include imgRound(80px, 80px, 40px);
+    }
 }
 
 .renderFetchChoice {
-  @include flexCenter(column);
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-around;
-  .fetchChoice {
-    color: black;
-    font-size: 2em;
-    padding: 1.2em;
-  }
-
-  .fetchChoiceList {
-    @include flexCenter(row);
+    @include flexCenter(column);
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-around;
-  }
+    .fetchChoice {
+        color: black;
+        font-size: 2em;
+        padding: 1.2em;
+    }
+    .fetchChoiceList {
+        @include flexCenter(row);
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+    }
 }
 
 .randomCoctail {
-  @include flexCenter(column);
-  padding-top: 20px;
-  .searchButtonTop {
-    @include searchButton;
-    &:focus {
-      outline: none;
+    @include flexCenter(column);
+    padding-top: 20px;
+    .searchButtonTop {
+        @include searchButton;
+        &:focus {
+            outline: none;
+        }
+        border-radius: 25px 25px 0 0;
     }
-    border-radius: 25px 25px 0 0;
-  }
-
-  .searchButtonBottom {
-    @include searchButton;
-    &:focus {
-      outline: none;
+    .searchButtonBottom {
+        @include searchButton;
+        &:focus {
+            outline: none;
+        }
+        border-radius: 0 0 25px 25px;
     }
-    border-radius: 0 0 25px 25px;
-  }
 }
 
 .search {
-  @include flexCenter(row);
-  height: 100%;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  .searchLink {
-    @include textDecorationNone;
-    .searchChoiceLink {
-      font-size: 2em;
-      padding: 2em;
-      &:hover {
-        color: rgba($color: #858585, $alpha: 1);
-      }
+    @include flexCenter(row);
+    height: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .searchLink {
+        @include textDecorationNone;
+        .searchChoiceLink {
+            font-size: 2em;
+            padding: 2em;
+        }
     }
-  }
 }
 
 .searchChoice {
-  @include flexCenter(column);
-  .searchForm {
-    align-self: center;
-    width: 60%;
-    font-family: "Covered By Your Grace";
-    padding: 2em;
-    input {
-      font-family: "Covered By Your Grace";
-      font-size: 2em;
-      height: 2.5em;
-      width: 60%;
-      border: none;
-      border-bottom: 2px solid black;
-      background-color: rgba(255, 255, 255, 0);
-      &:focus {
-        outline: none;
-      }
+    @include flexCenter(column);
+    .searchForm {
+        align-self: center;
+        width: 60%;
+        font-family: "Covered By Your Grace";
+        padding: 2em;
+        input {
+            font-family: "Covered By Your Grace";
+            font-size: 2em;
+            height: 2.5em;
+            width: 60%;
+            border: none;
+            border-bottom: 2px solid black;
+            background-color: rgba(255, 255, 255, 0);
+            &:focus {
+                outline: none;
+            }
+        }
+        button {
+            height: 2em;
+            border: 2px solid black;
+            border-radius: 8px;
+            font-size: 1.5em;
+            padding: 5px;
+            &:focus {
+                outline: none;
+            }
+        }
     }
-    button {
-      height: 2em;
-      border: 2px solid black;
-      border-radius: 8px;
-      font-size: 1.5em;
-      padding: 5px;
-      &:focus {
-        outline: none;
-      }
-      &:hover {
-        color: rgba($color: #858585, $alpha: 1);
-      }
+    .searchResult {
+        @include flexCenter(row);
+        flex-wrap: wrap;
     }
-  }
-  .searchResult {
-    @include flexCenter(row);
-    flex-wrap: wrap;
-  }
 }
 
 .about {
-  padding: 2em;
-  font-size: 1.2em;
-  text-align: left;
+    height: 100vh;
+    padding: 2em;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+@media (max-width: 599px) {}
+
+@media (min-width: 600px) {
+    .App {
+        min-width: 100vh;
+        height: 200px;
+        font-family: "Covered By Your Grace", "serif", "sans-serif";
+        font-optical-sizing: auto;
+    }
+    .navBlock {
+        justify-content: space-around;
+        .filler {
+            flex: 1;
+        }
+        .navLinks {
+            display: visible;
+            @include flexCenter(row);
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: space-around;
+            list-style: none;
+            padding: 10px;
+            margin: 0 auto;
+            border: 2px solid blue;
+            border: none;
+            width: 75%;
+            font-size: 2em;
+            .link {
+                padding: 10px;
+                color: white;
+                @include textDecorationNone;
+                &:hover {
+                    background-color: white;
+                    color: black;
+                    border-radius: 10px;
+                }
+                li {
+                    &:active {
+                        color: yellowgreen;
+                    }
+                }
+            }
+        }
+    }
+    .homePage {
+        min-height: 100vh;
+        .homeLinks {}
+        .menuList {}
+    }
+    .allCocktailsPage {
+        .pageLinks {
+            a {}
+        }
+        .mainContentGroup {
+            .letterGroup {}
+        }
+    }
+    .popup {
+        .popupInner {}
+        .popupButton {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    }
+    .renderOneDetailed {
+        width: 70%;
+        height: auto;
+        padding-bottom: 20px;
+        .imgLarge {}
+        table {
+            width: 90%;
+            height: auto;
+            thead {
+                height: 100px;
+                background-color: grey;
+                border: 2px solid yellow;
+            }
+        }
+    }
+    .renderOne {
+        .imgSmall {}
+        &:hover {
+            background: rgba($color: #858585, $alpha: 1);
+            cursor: context-menu;
+        }
+    }
+    .renderFetchChoice {}
+    .randomCoctail {}
+    .search {
+        height: 100vh;
+        .searchLink {
+            .searchChoiceLink {
+                &:hover {
+                    color: rgba($color: #858585, $alpha: 1);
+                }
+            }
+        }
+    }
+    .searchChoice {
+        .searchForm {
+            button {
+                &:hover {
+                    color: rgba($color: #858585, $alpha: 1);
+                }
+            }
+        }
+    }
 }

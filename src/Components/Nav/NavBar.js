@@ -13,11 +13,13 @@ import Search from "../Search/Search";
 import SearchByName from "../Search/SearchByName";
 import SearchByIng from "../Search/SearchByIng";
 import SearchByGlass from "../Search/SearchByGlass";
+import SideDrawer from "./SideDrawer";
 
 function NavBar() {
   return (
     <Router>
       <Nav />
+      <SideDrawer />
       <Switch>
         <Route path="/About" component={About} />
         <Route path="/" exact component={HomePage} />
