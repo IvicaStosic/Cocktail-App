@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import FetchByGlass from "./FetchByGlass";
+
 import RenderList from "../RenderOne/RenderList";
 
 const FetchGlassList = () => {
@@ -7,7 +7,7 @@ const FetchGlassList = () => {
 
   useEffect(() => {
     fetchGlassesList();
-  });
+  }, []);
 
   const fetchGlassesList = async () => {
     const response = await fetch(
@@ -18,9 +18,9 @@ const FetchGlassList = () => {
   };
 
   return (
-    <div>
+    <div className="glassesList">
       {glasses.map(glass => (
-        <div key={glass.strGlass}>
+        <div key={glass.strGlass} className="glassesListSpecific">
           <RenderList name={glass.strGlass} />
         </div>
       ))}

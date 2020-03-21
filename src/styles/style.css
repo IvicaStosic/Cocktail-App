@@ -43,6 +43,7 @@
   width: 70%;
   max-width: 400px;
   z-index: 200;
+  overflow: scroll;
 }
 
 .sideDrawer .sideDrawerNavLinks {
@@ -97,11 +98,31 @@
 }
 
 .glassesList {
+  width: 90%;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 0;
+}
+
+.glassesListSpecific {
+  padding: 0.5rem 1rem;
+}
+
+@media (min-width: 600px) {
+  .glassesListSpecific:hover {
+    color: blue;
+    cursor: pointer;
+  }
 }
 
 *,
@@ -210,13 +231,14 @@ button {
       -ms-flex-align: center;
           align-items: center;
   background-color: #282c34;
+  min-height: 15vh;
 }
 
 .navBlock .logo {
   border: 2px solid yellow;
   border: none;
-  min-height: 10vh;
-  width: 25%;
+  min-height: 2rem;
+  width: 50%;
   margin-left: 1rem;
 }
 
@@ -350,6 +372,8 @@ button {
 
 .homePage {
   width: 100%;
+  min-height: 85vh;
+  padding: 2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -437,7 +461,7 @@ button {
 .allCocktailsPage .pageLinks a {
   font-size: 2em;
   font-weight: 500;
-  padding: 10px;
+  padding: 5px;
   color: white;
 }
 
@@ -445,12 +469,8 @@ button {
   text-decoration: none;
 }
 
-.allCocktailsPage .pageLinks a:focus {
+.allCocktailsPage .pageLinks a:focus, .allCocktailsPage .pageLinks a:active {
   color: blue;
-}
-
-.allCocktailsPage .pageLinks a:hover {
-  color: #64638f;
 }
 
 .allCocktailsPage .mainContentGroup .letterGroup {
@@ -472,6 +492,7 @@ button {
   border: 2px solid yellow;
   border: none;
   padding: 5px;
+  padding-top: 4rem;
 }
 
 .allCocktailsPage .mainContentGroup .letterGroup p {
@@ -546,6 +567,9 @@ button {
   height: 50px;
   width: 300px;
   background: #683737c0;
+  color: white;
+  font-size: 1.5em;
+  max-width: 50%;
   border-radius: 0 0 25px 25px;
 }
 
@@ -751,13 +775,15 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 20px;
+  padding: 2rem 0;
 }
 
 .randomCoctail .searchButtonTop {
   height: 50px;
   width: 300px;
   background: #683737c0;
+  font-size: 1.5em;
+  max-width: 75%;
   border-radius: 25px 25px 0 0;
 }
 
@@ -773,6 +799,8 @@ button {
   height: 50px;
   width: 300px;
   background: #683737c0;
+  font-size: 1.5em;
+  max-width: 75%;
   border-radius: 0 0 25px 25px;
 }
 
@@ -798,7 +826,7 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 100%;
+  min-height: 85vh;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -ms-flex-wrap: wrap;
@@ -815,6 +843,7 @@ button {
 }
 
 .searchChoice {
+  min-height: 85vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -834,7 +863,7 @@ button {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: 60%;
+  width: 100%;
   font-family: "Covered By Your Grace";
   padding: 2em;
 }
@@ -844,6 +873,7 @@ button {
   font-size: 2em;
   height: 2.5em;
   width: 60%;
+  min-width: 200px;
   border: none;
   border-bottom: 2px solid black;
   background-color: rgba(255, 255, 255, 0);
@@ -854,14 +884,17 @@ button {
 }
 
 .searchChoice .searchForm button {
-  height: 2em;
+  margin-top: 1rem;
+  min-height: 2em;
   border: 2px solid black;
   border-radius: 8px;
   font-size: 1.5em;
   padding: 5px;
+  cursor: pointer;
 }
 
 .searchChoice .searchForm button:focus {
+  cursor: pointer;
   outline: none;
 }
 
@@ -884,7 +917,7 @@ button {
 }
 
 .about {
-  height: 100vh;
+  min-height: 85vh;
   padding: 2em;
   font-size: 1.2em;
   text-align: left;
@@ -900,6 +933,10 @@ button {
   .navBlock {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  .navBlock .logo {
+    min-height: 10vh;
+    width: 25%;
   }
   .navBlock .filler {
     -webkit-box-flex: 1;
@@ -949,11 +986,14 @@ button {
   .navBlock .navLinks .link li:active {
     color: yellowgreen;
   }
-  .homePage {
-    min-height: 100vh;
+  .allCocktailsPage .pageLinks a {
+    padding: 10px;
   }
-  .popup .popupButton {
-    background-color: rgba(0, 0, 0, 0.5);
+  .allCocktailsPage .pageLinks a:hover {
+    color: #64638f;
+  }
+  .popup .popupInner h4 {
+    padding-top: 1rem;
   }
   .renderOneDetailed {
     width: 70%;
@@ -971,10 +1011,7 @@ button {
   }
   .renderOne:hover {
     background: #858585;
-    cursor: context-menu;
-  }
-  .search {
-    height: 100vh;
+    cursor: pointer;
   }
   .search .searchLink .searchChoiceLink:hover {
     color: #858585;

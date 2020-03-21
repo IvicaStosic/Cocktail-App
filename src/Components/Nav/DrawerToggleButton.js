@@ -12,7 +12,7 @@ const DrawerToggleButton = () => {
   if (isToggled) {
     return (
       <div>
-        <SideDrawer clicked={isToggled} />
+        <SideDrawer clicked={drawerClickHandler} />
         <Backdrop clicked={drawerClickHandler} />
       </div>
     );

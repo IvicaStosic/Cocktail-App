@@ -74,7 +74,7 @@ const SearchByGlass = () => {
         )}
       </div>
 
-      <FetchGlassList className="glassesList" />
+      <FetchGlassList />
 
       <ToTopButton />
     </div>

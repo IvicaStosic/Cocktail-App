@@ -96,8 +96,8 @@ const AllCocktails = props => {
     <div className="allCocktailsPage">
       {links}
       <div className="mainContentGroup">
-        <div className="letterGroup">
-          <p id="a">A</p>
+        <div id="a" className="letterGroup">
+          <p>A</p>
 
           <div className="allCocktails">
             {a
@@ -146,8 +146,8 @@ const AllCocktails = props => {
           </div>
         </div>
 
-        <div className="letterGroup">
-          <p id="b">B</p>
+        <div id="b" className="letterGroup">
+          <p>B</p>
 
           <div className="allCocktails">
             {b
@@ -196,8 +196,8 @@ const AllCocktails = props => {
           </div>
         </div>
 
-        <div className="letterGroup">
-          <p id="c">C</p>
+        <div id="c" className="letterGroup">
+          <p>C</p>
 
           <div className="allCocktails">
             {c
@@ -246,8 +246,8 @@ const AllCocktails = props => {
           </div>
         </div>
 
-        <div className="letterGroup">
-          <p id="d">D</p>
+        <div id="d" className="letterGroup">
+          <p>D</p>
 
           <div className="allCocktails">
             {d
@@ -296,8 +296,8 @@ const AllCocktails = props => {
           </div>
         </div>
 
-        <div className="letterGroup">
-          <p id="e">E</p>
+        <div id="e" className="letterGroup">
+          <p>E</p>
 
           <div className="allCocktails">
             {e
@@ -346,8 +346,8 @@ const AllCocktails = props => {
           </div>
         </div>
 
-        <div className="letterGroup">
-          <p id="f">F</p>
+        <div id="f" className="letterGroup">
+          <p>F</p>
 
           <div className="allCocktails">
             {f
@@ -396,8 +396,8 @@ const AllCocktails = props => {
           </div>
         </div>
 
-        <div className="letterGroup">
-          <p id="g">G</p>
+        <div id="g" className="letterGroup">
+          <p>G</p>
 
           <div className="allCocktails">
             {g
@@ -446,8 +446,8 @@ const AllCocktails = props => {
           </div>
         </div>
 
-        <div className="letterGroup">
-          <p id="h">H</p>
+        <div id="h" className="letterGroup">
+          <p>H</p>
 
           <div className="allCocktails">
             {h
@@ -496,8 +496,8 @@ const AllCocktails = props => {
           </div>
         </div>
 
-        <div className="letterGroup">
-          <p id="i">I</p>
+        <div id="i" className="letterGroup">
+          <p>I</p>
 
           <div className="allCocktails">
             {i
@@ -546,8 +546,8 @@ const AllCocktails = props => {
           </div>
         </div>
 
-        <div className="letterGroup">
-          <p id="j">J</p>
+        <div id="j" className="letterGroup">
+          <p>J</p>
 
           <div className="allCocktails">
             {j
@@ -596,8 +596,8 @@ const AllCocktails = props => {
           </div>
         </div>
 
-        <div className="letterGroup">
-          <p id="k">K</p>
+        <div id="k" className="letterGroup">
+          <p>K</p>
 
           <div className="allCocktails">
             {k
@@ -646,8 +646,8 @@ const AllCocktails = props => {
           </div>
         </div>
 
-        <div className="letterGroup">
-          <p id="l">L</p>
+        <div id="l" className="letterGroup">
+          <p>L</p>
 
           <div className="allCocktails">
             {l
@@ -696,8 +696,8 @@ const AllCocktails = props => {
           </div>
         </div>
 
-        <div className="letterGroup">
-          <p id="m">M</p>
+        <div id="m" className="letterGroup">
+          <p>M</p>
 
           <div className="allCocktails">
             {m
@@ -746,8 +746,8 @@ const AllCocktails = props => {
           </div>
         </div>
 
-        <div className="letterGroup">
-          <p id="n">N</p>
+        <div id="n" className="letterGroup">
+          <p>N</p>
 
           <div className="allCocktails">
             {n
@@ -796,8 +796,8 @@ const AllCocktails = props => {
           </div>
         </div>
 
-        <div className="letterGroup">
-          <p id="o">O</p>
+        <div id="o" className="letterGroup">
+          <p>O</p>
 
           <div className="allCocktails">
             {o
@@ -846,8 +846,8 @@ const AllCocktails = props => {
           </div>
         </div>
 
-        <div className="letterGroup">
-          <p id="p">P</p>
+        <div id="p" className="letterGroup">
+          <p>P</p>
 
           <div className="allCocktails">
             {p
@@ -896,8 +896,8 @@ const AllCocktails = props => {
           </div>
         </div>
 
-        <div className="letterGroup">
-          <p id="q">Q</p>
+        <div id="q" className="letterGroup">
+          <p>Q</p>
 
           <div className="allCocktails">
             {q
@@ -946,8 +946,8 @@ const AllCocktails = props => {
           </div>
         </div>
 
-        <div className="letterGroup">
-          <p id="r">R</p>
+        <div id="r" className="letterGroup">
+          <p>R</p>
 
           <div className="allCocktails">
             {r
@@ -996,8 +996,8 @@ const AllCocktails = props => {
           </div>
         </div>
 
-        <div className="letterGroup">
-          <p id="s">S</p>
+        <div id="s" className="letterGroup">
+          <p>S</p>
 
           <div className="allCocktails">
             {s
@@ -1046,8 +1046,8 @@ const AllCocktails = props => {
           </div>
         </div>
 
-        <div className="letterGroup">
-          <p id="t">T</p>
+        <div id="t" className="letterGroup">
+          <p>T</p>
 
           <div className="allCocktails">
             {t
@@ -1096,8 +1096,8 @@ const AllCocktails = props => {
           </div>
         </div>
 
-        <div className="letterGroup">
-          <p id="u">U</p>
+        <div id="u" className="letterGroup">
+          <p>U</p>
 
           <div className="allCocktails">
             {u
@@ -1146,8 +1146,8 @@ const AllCocktails = props => {
           </div>
         </div>
 
-        <div className="letterGroup">
-          <p id="v">V</p>
+        <div id="v" className="letterGroup">
+          <p>V</p>
 
           <div className="allCocktails">
             {v
@@ -1196,8 +1196,8 @@ const AllCocktails = props => {
           </div>
         </div>
 
-        <div className="letterGroup">
-          <p id="w">W</p>
+        <div id="w" className="letterGroup">
+          <p>W</p>
 
           <div className="allCocktails">
             {w
@@ -1246,8 +1246,8 @@ const AllCocktails = props => {
           </div>
         </div>
 
-        <div className="letterGroup">
-          <p id="x">X</p>
+        <div id="x" className="letterGroup">
+          <p>X</p>
 
           <div className="allCocktails">
             {x
@@ -1296,8 +1296,8 @@ const AllCocktails = props => {
           </div>
         </div>
 
-        <div className="letterGroup">
-          <p id="y">Y</p>
+        <div id="y" className="letterGroup">
+          <p>Y</p>
 
           <div className="allCocktails">
             {y
@@ -1346,8 +1346,8 @@ const AllCocktails = props => {
           </div>
         </div>
 
-        <div className="letterGroup">
-          <p id="z">Z</p>
+        <div id="z" className="letterGroup">
+          <p>Z</p>
 
           <div className="allCocktails">
             {z

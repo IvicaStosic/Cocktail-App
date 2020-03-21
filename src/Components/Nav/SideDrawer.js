@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import "../../styles/style.css";
+import DrawerToggleButton from "./DrawerToggleButton";
 
 const SideDrawer = ({ clicked }) => {
   return (
@@ -10,19 +11,19 @@ const SideDrawer = ({ clicked }) => {
         <div className="sideDrawer">
           <ul className="sideDrawerNavLinks">
             <Link to="/" className="sideDrawerLink">
-              <li>Home</li>
+              <li onClick={clicked}>Home</li>
             </Link>
             <Link to="/all" className="sideDrawerLink">
-              <li>A-Z Cocktails</li>
+              <li onClick={clicked}>A-Z Cocktails</li>
             </Link>
             <Link to="/random" className="sideDrawerLink">
-              <li>Random Cocktail</li>
+              <li onClick={clicked}>Random Cocktail</li>
             </Link>
             <Link to="/search" className="sideDrawerLink">
-              <li>Search By</li>
+              <li onClick={clicked}>Search By</li>
             </Link>
             <Link to="/about" className="sideDrawerLink">
-              <li>About</li>
+              <li onClick={clicked}>About</li>
             </Link>
           </ul>
         </div>

@@ -4,6 +4,7 @@ import FetchByIds from "../AllCocktails/FetchByIds";
 import ToTopButton from "../Nav/ToTopButton";
 
 import "../../styles/style.css";
+import FetchIngredientList from "../AllCocktails/FetchIngredientList";
 
 function useIngDB(query) {
   const [ing, setIng] = useState([]);
@@ -74,6 +75,7 @@ const SearchByIng = () => {
           ))
         )}
       </div>
+      <FetchIngredientList />
       <ToTopButton />
     </div>
   );

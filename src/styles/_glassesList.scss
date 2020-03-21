@@ -1,4 +1,22 @@
 .glassesList {
+    width: 90%;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.glassesListSpecific {
+    padding: 0.5rem 1rem;
+}
+
+@media (min-width: 600px) {
+    .glassesListSpecific {
+        &:hover {
+            color: blue;
+            cursor: pointer;
+        }
+    }
 }
