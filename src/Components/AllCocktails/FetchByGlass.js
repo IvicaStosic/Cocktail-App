@@ -35,7 +35,7 @@ const FetchByGlass = ({ match }) => {
           </div>
         ))}
       </div>
-      <Link to="/search/s_glass/glass">
+      <Link to="/search/s_glass/glass" className="returnLink">
         <h1>Search by some other glass type</h1>
       </Link>
       <ToTopButton />

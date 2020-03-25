@@ -34,7 +34,7 @@ const FetchByIngredient = ({ match }) => {
           </div>
         ))}
       </div>
-      <Link to="/search/s_ing/ing">
+      <Link to="/search/s_ing/ing" className="returnLink">
         <h1>Search by some other ingredient</h1>
       </Link>
       <ToTopButton />

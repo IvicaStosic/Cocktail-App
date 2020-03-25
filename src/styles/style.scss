@@ -330,6 +330,10 @@ button {
         width: 100%;
         justify-content: space-around;
     }
+    .returnLink {
+        padding: 2rem;
+        @include textDecorationNone;
+    }
 }
 
 .randomCoctail {
@@ -511,7 +515,14 @@ button {
             cursor: pointer;
         }
     }
-    .renderFetchChoice {}
+    .renderFetchChoice {
+        .returnLink {
+            &:hover {
+                background: rgba($color: #858585, $alpha: 1);
+                cursor: pointer;
+            }
+        }
+    }
     .randomCoctail {
         .mainContent {
             width: 100%;
@@ -523,8 +534,10 @@ button {
     .search {
         .searchLink {
             .searchChoiceLink {
-                &:hover {
-                    color: rgba($color: #858585, $alpha: 1);
+                h1 {
+                    &:hover {
+                        cursor: pointer;
+                    }
                 }
             }
         }

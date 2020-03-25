@@ -636,7 +636,7 @@ button {
 }
 
 .renderOneDetailed .imgLarge {
-  hight: 150px;
+  height: 150px;
   width: 150px;
   border-radius: 25px;
 }
@@ -710,7 +710,7 @@ button {
 }
 
 .renderOne .imgSmall {
-  hight: 80px;
+  height: 80px;
   width: 80px;
   border-radius: 40px;
 }
@@ -762,6 +762,14 @@ button {
   width: 100%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.renderFetchChoice .returnLink {
+  padding: 2rem;
+}
+
+.renderFetchChoice .returnLink:hover, .renderFetchChoice .returnLink:active, .renderFetchChoice .returnLink:focus, .renderFetchChoice .returnLink:visited, .renderFetchChoice .returnLink:link, .renderFetchChoice .returnLink:active {
+  text-decoration: none;
 }
 
 .randomCoctail {
@@ -1016,14 +1024,18 @@ button {
     background: #858585;
     cursor: pointer;
   }
+  .renderFetchChoice .returnLink:hover {
+    background: #858585;
+    cursor: pointer;
+  }
   .randomCoctail .mainContent {
     width: 100%;
   }
   .randomCoctail .mainContent .randomCocktailContent {
     width: 100%;
   }
-  .search .searchLink .searchChoiceLink:hover {
-    color: #858585;
+  .search .searchLink .searchChoiceLink h1:hover {
+    cursor: pointer;
   }
   .searchChoice .searchForm button:hover {
     color: #858585;
