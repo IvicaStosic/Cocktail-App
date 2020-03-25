@@ -56,7 +56,12 @@ const SearchByGlass = () => {
   return (
     <div className="searchChoice">
       <form onSubmit={getSearch} className="searchForm">
-        <input type="text" value={search} onChange={updateSearch} />{" "}
+        <input
+          type="text"
+          value={search}
+          onChange={updateSearch}
+          placeholder="e.g. jar"
+        />
         <button type="submit"> Search by glass type </button>{" "}
       </form>
       <div>

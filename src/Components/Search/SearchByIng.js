@@ -37,7 +37,7 @@ function useIngDB(query) {
   return [ing, loading];
 }
 
-const SearchByIng = () => {
+const SearchByIng = props => {
   const [search, setSearch] = useState("");
   const [query, setQuery] = useState("");
   const [ing, loading] = useIngDB(query);
@@ -56,17 +56,20 @@ const SearchByIng = () => {
   return (
     <div className="searchChoice">
       <form onSubmit={getSearch} className="searchForm">
-        <input type="text" value={search} onChange={updateSearch} />
-        <button type="submit">Search by ingredient name</button>
+        <input
+          type="text"
+          value={search}
+          onChange={updateSearch}
+          placeholder="e.g. vodka"
+        />
+        <button type="submit"> Search by ingredient name </button>
       </form>
-
       <div>
-        <h1>Cocktails with {query}</h1>
+        <h1> Cocktails with {query} </h1>
       </div>
-
       <div className="searchResult">
         {loading ? (
-          <h1>loading...</h1>
+          <h1> loading... </h1>
         ) : (
           ing.map(drink => (
             <div key={drink.idDrink}>
@@ -75,7 +78,10 @@ const SearchByIng = () => {
           ))
         )}
       </div>
-      <FetchIngredientList />
+      <div>
+        <FetchIngredientList />
+      </div>
+
       <ToTopButton />
     </div>
   );

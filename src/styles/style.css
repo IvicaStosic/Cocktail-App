@@ -474,6 +474,7 @@ button {
 }
 
 .allCocktailsPage .mainContentGroup .letterGroup {
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -520,6 +521,7 @@ button {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 .popup {
@@ -730,6 +732,7 @@ button {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
+  min-height: 85vh;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -996,9 +999,9 @@ button {
     padding-top: 1rem;
   }
   .renderOneDetailed {
-    width: 70%;
+    width: 60%;
+    min-width: 60%;
     height: auto;
-    padding-bottom: 20px;
   }
   .renderOneDetailed table {
     width: 90%;
@@ -1012,6 +1015,12 @@ button {
   .renderOne:hover {
     background: #858585;
     cursor: pointer;
+  }
+  .randomCoctail .mainContent {
+    width: 100%;
+  }
+  .randomCoctail .mainContent .randomCocktailContent {
+    width: 100%;
   }
   .search .searchLink .searchChoiceLink:hover {
     color: #858585;

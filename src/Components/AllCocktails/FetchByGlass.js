@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import FetchByIds from "./FetchByIds";
 import "../../styles/style.css";
 import ToTopButton from "../Nav/ToTopButton";
+import { Link } from "react-router-dom";
 
 const FetchByGlass = ({ match }) => {
   const [glass, setGlass] = useState([]);
@@ -34,6 +35,9 @@ const FetchByGlass = ({ match }) => {
           </div>
         ))}
       </div>
+      <Link to="/search/s_glass/glass">
+        <h1>Search by some other glass type</h1>
+      </Link>
       <ToTopButton />
     </div>
   );

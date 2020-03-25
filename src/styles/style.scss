@@ -168,6 +168,7 @@ button {
     }
     .mainContentGroup {
         .letterGroup {
+            margin: 0 auto;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -188,6 +189,7 @@ button {
             .allCocktails {
                 @include flexCenter(row);
                 flex-wrap: wrap;
+                margin: 0 auto;
             }
         }
     }
@@ -315,6 +317,7 @@ button {
     @include flexCenter(column);
     flex-wrap: wrap;
     width: 100%;
+    min-height: 85vh;
     justify-content: space-around;
     .fetchChoice {
         color: black;
@@ -480,7 +483,6 @@ button {
         }
     }
     .popup {
-        //padding-top: 5rem;
         .popupInner {
             h4 {
                 padding-top: 1rem;
@@ -488,9 +490,9 @@ button {
         }
     }
     .renderOneDetailed {
-        width: 70%;
+        width: 60%;
+        min-width: 60%;
         height: auto;
-        padding-bottom: 20px;
         .imgLarge {}
         table {
             width: 90%;
@@ -510,7 +512,14 @@ button {
         }
     }
     .renderFetchChoice {}
-    .randomCoctail {}
+    .randomCoctail {
+        .mainContent {
+            width: 100%;
+            .randomCocktailContent {
+                width: 100%;
+            }
+        }
+    }
     .search {
         .searchLink {
             .searchChoiceLink {

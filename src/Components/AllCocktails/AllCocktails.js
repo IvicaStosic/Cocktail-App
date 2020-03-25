@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import RenderOne from "../RenderOne/RenderOne";
 import { CocktailContext } from "../CocktailProvider/CocktailContext";
 import ToTopButton from "../Nav/ToTopButton";
@@ -34,32 +34,32 @@ const AllCocktails = props => {
     Y,
     Z
   } = useContext(CocktailContext);
-  const [a, setA] = A;
-  const [b, setB] = B;
-  const [c, setC] = C;
-  const [d, setD] = D;
-  const [e, setE] = E;
-  const [f, setF] = F;
-  const [g, setG] = G;
-  const [h, setH] = H;
-  const [i, setI] = I;
-  const [j, setJ] = J;
-  const [k, setK] = K;
-  const [l, setL] = L;
-  const [m, setM] = M;
-  const [n, setN] = N;
-  const [o, setO] = O;
-  const [p, setP] = P;
-  const [q, setQ] = Q;
-  const [r, setR] = R;
-  const [s, setS] = S;
-  const [t, setT] = T;
-  const [u, setU] = U;
-  const [v, setV] = V;
-  const [w, setW] = W;
-  const [x, setX] = X;
-  const [y, setY] = Y;
-  const [z, setZ] = Z;
+  const [a] = A;
+  const [b] = B;
+  const [c] = C;
+  const [d] = D;
+  const [e] = E;
+  const [f] = F;
+  const [g] = G;
+  const [h] = H;
+  const [i] = I;
+  const [j] = J;
+  const [k] = K;
+  const [l] = L;
+  const [m] = M;
+  const [n] = N;
+  const [o] = O;
+  const [p] = P;
+  const [q] = Q;
+  const [r] = R;
+  const [s] = S;
+  const [t] = T;
+  const [u] = U;
+  const [v] = V;
+  const [w] = W;
+  const [x] = X;
+  const [y] = Y;
+  const [z] = Z;
 
   const links = (
     <div className="pageLinks">
@@ -89,6 +89,12 @@ const AllCocktails = props => {
       <a href="#x">X</a>
       <a href="#y">Y</a>
       <a href="#z">Z</a>
+    </div>
+  );
+
+  const noResult = (
+    <div className="noResultDiv">
+      <p className="noResult">No results under this letter :(</p>
     </div>
   );
 
@@ -142,7 +148,7 @@ const AllCocktails = props => {
                     glass={drink.strGlass}
                   />
                 ))
-              : null}
+              : noResult}
           </div>
         </div>
 
@@ -192,7 +198,7 @@ const AllCocktails = props => {
                     glass={drink.strGlass}
                   />
                 ))
-              : null}
+              : noResult}
           </div>
         </div>
 
@@ -242,7 +248,7 @@ const AllCocktails = props => {
                     glass={drink.strGlass}
                   />
                 ))
-              : null}
+              : noResult}
           </div>
         </div>
 
@@ -292,7 +298,7 @@ const AllCocktails = props => {
                     glass={drink.strGlass}
                   />
                 ))
-              : null}
+              : noResult}
           </div>
         </div>
 
@@ -342,7 +348,7 @@ const AllCocktails = props => {
                     glass={drink.strGlass}
                   />
                 ))
-              : null}
+              : noResult}
           </div>
         </div>
 
@@ -392,7 +398,7 @@ const AllCocktails = props => {
                     glass={drink.strGlass}
                   />
                 ))
-              : null}
+              : noResult}
           </div>
         </div>
 
@@ -442,7 +448,7 @@ const AllCocktails = props => {
                     glass={drink.strGlass}
                   />
                 ))
-              : null}
+              : noResult}
           </div>
         </div>
 
@@ -492,7 +498,7 @@ const AllCocktails = props => {
                     glass={drink.strGlass}
                   />
                 ))
-              : null}
+              : noResult}
           </div>
         </div>
 
@@ -542,7 +548,7 @@ const AllCocktails = props => {
                     glass={drink.strGlass}
                   />
                 ))
-              : null}
+              : noResult}
           </div>
         </div>
 
@@ -592,7 +598,7 @@ const AllCocktails = props => {
                     glass={drink.strGlass}
                   />
                 ))
-              : null}
+              : noResult}
           </div>
         </div>
 
@@ -642,7 +648,7 @@ const AllCocktails = props => {
                     glass={drink.strGlass}
                   />
                 ))
-              : null}
+              : noResult}
           </div>
         </div>
 
@@ -692,7 +698,7 @@ const AllCocktails = props => {
                     glass={drink.strGlass}
                   />
                 ))
-              : null}
+              : noResult}
           </div>
         </div>
 
@@ -742,7 +748,7 @@ const AllCocktails = props => {
                     glass={drink.strGlass}
                   />
                 ))
-              : null}
+              : noResult}
           </div>
         </div>
 
@@ -792,7 +798,7 @@ const AllCocktails = props => {
                     glass={drink.strGlass}
                   />
                 ))
-              : null}
+              : noResult}
           </div>
         </div>
 
@@ -842,7 +848,7 @@ const AllCocktails = props => {
                     glass={drink.strGlass}
                   />
                 ))
-              : null}
+              : noResult}
           </div>
         </div>
 
@@ -892,7 +898,7 @@ const AllCocktails = props => {
                     glass={drink.strGlass}
                   />
                 ))
-              : null}
+              : noResult}
           </div>
         </div>
 
@@ -942,7 +948,7 @@ const AllCocktails = props => {
                     glass={drink.strGlass}
                   />
                 ))
-              : null}
+              : noResult}
           </div>
         </div>
 
@@ -992,7 +998,7 @@ const AllCocktails = props => {
                     glass={drink.strGlass}
                   />
                 ))
-              : null}
+              : noResult}
           </div>
         </div>
 
@@ -1042,7 +1048,7 @@ const AllCocktails = props => {
                     glass={drink.strGlass}
                   />
                 ))
-              : null}
+              : noResult}
           </div>
         </div>
 
@@ -1092,7 +1098,7 @@ const AllCocktails = props => {
                     glass={drink.strGlass}
                   />
                 ))
-              : null}
+              : noResult}
           </div>
         </div>
 
@@ -1142,7 +1148,7 @@ const AllCocktails = props => {
                     glass={drink.strGlass}
                   />
                 ))
-              : null}
+              : noResult}
           </div>
         </div>
 
@@ -1192,7 +1198,7 @@ const AllCocktails = props => {
                     glass={drink.strGlass}
                   />
                 ))
-              : null}
+              : noResult}
           </div>
         </div>
 
@@ -1242,7 +1248,7 @@ const AllCocktails = props => {
                     glass={drink.strGlass}
                   />
                 ))
-              : null}
+              : noResult}
           </div>
         </div>
 
@@ -1292,7 +1298,7 @@ const AllCocktails = props => {
                     glass={drink.strGlass}
                   />
                 ))
-              : null}
+              : noResult}
           </div>
         </div>
 
@@ -1342,7 +1348,7 @@ const AllCocktails = props => {
                     glass={drink.strGlass}
                   />
                 ))
-              : null}
+              : noResult}
           </div>
         </div>
 
@@ -1392,7 +1398,7 @@ const AllCocktails = props => {
                     glass={drink.strGlass}
                   />
                 ))
-              : null}
+              : noResult}
           </div>
         </div>
       </div>

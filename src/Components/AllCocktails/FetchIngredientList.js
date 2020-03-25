@@ -17,11 +17,19 @@ const FetchIngredientList = () => {
     setIngredients(data.drinks);
   };
 
+  const choseFromListHandler = e => {
+    let choice = e.target.child;
+    console.log(choice);
+  };
+
   return (
     <div className="glassesList">
       {ingredients.map(ingredient => (
         <div key={ingredient.strIngredient1} className="glassesListSpecific">
-          <RenderList name={ingredient.strIngredient1} />
+          <RenderList
+            name={ingredient.strIngredient1}
+            choice={choseFromListHandler}
+          />
         </div>
       ))}
     </div>
@@ -29,3 +37,6 @@ const FetchIngredientList = () => {
 };
 
 export default FetchIngredientList;
+
+/*
+ */

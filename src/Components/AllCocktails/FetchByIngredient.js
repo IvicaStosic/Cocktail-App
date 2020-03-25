@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import FetchByIds from "./FetchByIds";
 import "../../styles/style.css";
 import ToTopButton from "../Nav/ToTopButton";
+import { Link } from "react-router-dom";
 
 const FetchByIngredient = ({ match }) => {
   const [ingredient, setIngredient] = useState([]);
@@ -33,6 +34,9 @@ const FetchByIngredient = ({ match }) => {
           </div>
         ))}
       </div>
+      <Link to="/search/s_ing/ing">
+        <h1>Search by some other ingredient</h1>
+      </Link>
       <ToTopButton />
     </div>
   );

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, createContext, useMemo } from "react";
+import React, { useState, useEffect, createContext } from "react";
 
 export const CocktailContext = createContext();
 
@@ -30,37 +30,37 @@ export const CocktailProvider = props => {
   const [y, setY] = useState([]);
   const [z, setZ] = useState([]);
 
-  const letter = [
-    "a",
-    "b",
-    "c",
-    "d",
-    "e",
-    "f",
-    "g",
-    "h",
-    "i",
-    "j",
-    "k",
-    "l",
-    "m",
-    "n",
-    "o",
-    "p",
-    "q",
-    "r",
-    "s",
-    "t",
-    "u",
-    "v",
-    "w",
-    "x",
-    "y",
-    "z"
-  ];
   //console.log("test");
 
   useEffect(() => {
+    const letter = [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "i",
+      "j",
+      "k",
+      "l",
+      "m",
+      "n",
+      "o",
+      "p",
+      "q",
+      "r",
+      "s",
+      "t",
+      "u",
+      "v",
+      "w",
+      "x",
+      "y",
+      "z"
+    ];
     const getCoktails = async () => {
       let data = [];
 
@@ -105,14 +105,14 @@ export const CocktailProvider = props => {
   }, []);
 
   /*const providerValue = useMemo(
-    () => ({
-      a,
-      setA,
-      b,
-      setB
-    }),
-    [a, b]
-  );*/
+      () => ({
+        a,
+        setA,
+        b,
+        setB
+      }),
+      [a, b]
+    );*/
   return (
     <CocktailContext.Provider
       value={{
@@ -144,7 +144,7 @@ export const CocktailProvider = props => {
         Z: [z, setZ]
       }}
     >
-      {props.children}
+      {props.children}{" "}
     </CocktailContext.Provider>
   );
 };

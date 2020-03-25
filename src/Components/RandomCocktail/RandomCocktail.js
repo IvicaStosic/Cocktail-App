@@ -27,7 +27,7 @@ const RandomCocktail = () => {
       </div>
       <div className="mainContent">
         {random.map(drink => (
-          <div key="drink.idDrink">
+          <div key="drink.idDrink" className="randomCocktailContent">
             <RenderOneDetailed
               name={drink.strDrink}
               type={drink.strAlcoholic}
